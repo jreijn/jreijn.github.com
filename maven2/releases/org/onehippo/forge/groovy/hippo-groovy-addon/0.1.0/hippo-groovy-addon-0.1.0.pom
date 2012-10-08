@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.onehippo.forge.groovy</groupId>
+  <artifactId>hippo-groovy-addon</artifactId>
+  <version>0.1.0</version>
+  <packaging>pom</packaging>
+
+  <inceptionYear>2011</inceptionYear>
+
+  <url>https://github.com/jreijn/hippo-groovy-addon</url>
+  <issueManagement>
+    <url>https://github.com/jreijn/hippo-groovy-addon/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>Apache V2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/jreijn/hippo-groovy-addon</url>
+    <connection>scm:git:git://github.com/jreijn/hippo-groovy-addon.git</connection>
+    <developerConnection>scm:git:git@github.com:jreijn/hippo-groovy-addon.git</developerConnection>
+  </scm>
+
+  <properties>
+    <groovy.version>1.8.6</groovy.version>
+    <hippo.cms.version>2.22.01</hippo.cms.version>
+    <hippo.repository.version>2.22.04</hippo.repository.version>
+    <junit.version>4.10</junit.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <compiler.version>1.6</compiler.version>
+    <github.downloads.plugin.version>0.6</github.downloads.plugin.version>
+  </properties>
+
+  <modules>
+    <module>hippo-groovy-addon-cms</module>
+  </modules>
+
+  <build>
+    <resources>
+      <resource>
+        <filtering>false</filtering>
+        <directory>${basedir}/src/etc</directory>
+        <includes>
+          <include>**/*.txt</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.1.2</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <forkMode>always</forkMode>
+          <workingDirectory>${project.build.directory}</workingDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>${compiler.version}</source>
+          <target>${compiler.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.0</version>
+      </plugin>
+      <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+      <!--<plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>1.9.0</version>
+        <configuration>
+          <strictCheck>true</strictCheck>
+          <header>src/etc/license.txt</header>
+          <excludes>
+            <exclude>target/**</exclude>
+            <exclude>.idea/**</exclude>
+            <exclude>LICENSE.txt</exclude>
+            <exclude>NOTICE.txt</exclude>
+            <exclude>README.textile</exclude>
+            <exclude>src/etc/**</exclude>
+            <exclude>src/main/**/**.js</exclude>
+            <exclude>src/main/**/**.css</exclude>
+            <exclude>src/main/**/**.properties</exclude>
+          </excludes>
+          <properties>
+            <name>${project.name}</name>
+            <year>${project.inceptionYear}</year>
+            <holder>Hippo</holder>
+          </properties>
+          <encoding>UTF-8</encoding>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.2.1</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <developers>
+    <developer>
+      <id>jreijn</id>
+      <name>Jeroen Reijn</name>
+      <organization>Hippo</organization>
+      <organizationUrl>http://www.onehippo.com</organizationUrl>
+      <timezone>+1</timezone>
+      <url>http://blog.jeroenreijn.com/</url>
+      <email>j.reijn@onehippo.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <repositories>
+    <repository>
+      <id>hippo</id>
+      <name>Hippo maven 2 repository.</name>
+      <url>http://maven.onehippo.com/maven2/</url>
+    </repository>
+  </repositories>
+
+</project>
