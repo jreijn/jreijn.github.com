@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Getting started with Vaadin"
+date: 2010-10-22
+comments: false
+categories:
+ - java
+---
+
+<div class='post'>
+<a href="http://3.bp.blogspot.com/_hd6Y7yyFK7E/TLd_RYJLjYI/AAAAAAAAAZc/6kONtTl_gy8/s1600/vaadin.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="76" src="http://3.bp.blogspot.com/_hd6Y7yyFK7E/TLd_RYJLjYI/AAAAAAAAAZc/6kONtTl_gy8/s320/vaadin.png" width="320" /></a>A couple of weeks ago I made myself a promise that I would look into a new technology every month and write something about it here. I've been looking around for technologies unknown to me and perhaps to some of you, so I will start out with a RIA framework called <a href="http://vaadin.com/home">Vaadin</a>.<br /><br /><br /><h2>About Vaadin</h2><br />Before I started my journey with Vaadin, I have to say that I had never heard of it before. I was quite surprised that they were at version 6.4.6 already. That must mean something right? Let's find out.<br />My first impression is that for an open source framework their documentation is excellent. It's something you don't see everyday with open source frameworks and I've seen quite a few over the past years.<br />Vaadin really impressed with that and there even&nbsp;is a free (e-)book called '<a href="http://vaadin.com/book">The book of Vaadin</a>', which will get you started and gives you a lot of information about the history of Vaadin, the architecture, the different components bundled with Vaadin and much more.<br /><br /><h2>The architecture</h2><br />I don't want to go into to much detail here, since you can find all this information on the Vaadin website, but from an architectural point of view I think these are the key concepts you need to know about Vaadin:<br /><br /><ul><li>Everything is written in plain Java (no need for HTML templates, like with for instance <a href="http://wicket.apache.org/">Wicket</a>)</li><li>All request processing happens on the server-side</li><li><a href="http://code.google.com/webtoolkit/">GWT</a> is used for the client-side rendering</li><li>Vaadin is more application than page oriented</li><li>Vaadin applications are&nbsp;state-full&nbsp;applications. Everything is stored in the user session.</li><li>You can program with Vaadin, like you would program with Swing or AWT.</li></ul><div>Now let's try to actually start with a small application.</div><h2>Getting started</h2><br />There are several ways to get started with Vaadin. Vaadin has it's own <a href="http://vaadin.com/eclipse">plugin for Eclipse</a>, <a href="http://vaadin.com/netbeans">NetBeans</a> and a nice <a href="http://refcardz.dzone.com/refcardz/getting-started-vaadin">DZone refcard</a>, but since I don't use either of those IDE's, I went for the Maven2 way. There are several Maven 2 archetypes available, which you can use from the command line or use from your favorite IDE (IntelliJ in my case).<br /><br />Now let's create a clean Vaadin application by calling the archetype:<br /><br /><pre>mvn archetype:generate \<br />-DarchetypeGroupId=com.vaadin \<br />-DarchetypeArtifactId=vaadin-archetype-clean \<br />-DarchetypeVersion=LATEST \<br />-DgroupId=com.jeroenreijn \<br />-DartifactId=vaadin-demo \<br />-Dversion=1.0-SNAPSHOT \<br />-Dpackaging=war<br /></pre><br />This will result in a new folder called 'vaadin-demo' and all this folder contains is a pom.xml, a web.xml and a simple HelloWorld Vaadin application. There is nothing more to it than that.<br /><br />The application class is really small and simple. It just contains some components to get you going. This is what it looks like:<br /><br /><pre class="brush:java">package com.jeroenreijn;<br /><br />import com.vaadin.Application;<br />import com.vaadin.ui.Button;<br />import com.vaadin.ui.Window;<br /><br />public class MyVaadinApplication extends Application<br />{<br />    private Window window;<br /><br />    @Override<br />    public void init()<br />    {<br />        window = new Window("My Vaadin Application");<br />        setMainWindow(window);<br />        window.addComponent(new Button("Click Me"));<br />    }<br />}<br /></pre><br />Now that is nice and small right? The only thing this application does for now is that it creates a Window to put elements on with a default layout. Next to that a button with the label "Click me" is added to this window. It does not do much, but it's enough to get you going.<br /><br /><h2>What's next?</h2>I don't want to go into a full application in this post, but even after playing around with some more complex things, I have the feeling that I only scratched the surface. I think Vaadin is really interesting if you have to write rich web applications. The framework itself also has an <a href="http://vaadin.com/directory">addon directory</a> filled with interesting and mature&nbsp;add-ons. I have some ideas I want to work out so I will keep you posted with my progress.</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+It is now even easier to start a typical webapp, have a look at: http://code.google.com/p/instant-webapp/</div>
+</div>
+<div class='comment'>
+<div class='author'>Stephan Oudmaijer</div>
+<div class='content'>
+Vaadin is great, you realize you need something like vaadin when you start coding plain GWT FlexTable components ;-)</div>
+</div>
+<div class='comment'>
+<div class='author'>Jeroen Reijn</div>
+<div class='content'>
+Joonas thanks for commenting! I agree that the refcard or even the Vaadin site itself is probably a better starting point then this blog post, but I wanted to share my 2 cents.</div>
+</div>
+<div class='comment'>
+<div class='author'>Joonas</div>
+<div class='content'>
+Probably the best place to get started quickly is DZone Vaadin Refcard. Please add a link to it: http://refcardz.dzone.com/refcardz/getting-started-vaadin</div>
+</div>
+</div>
