@@ -3,6 +3,7 @@ layout: post
 title: "Using Markdown with the Maven site plugin"
 date: 2014-02-19
 comments: true
+summary: "I find that generating Maven project documentation is always a bit cumbersome with the default XDOC or APT syntaxes. This probably has to do with getting accustomed to using Markdown while doing my thing on GitHub."
 categories:
  - hippo
  - maven
