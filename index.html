@@ -9,16 +9,18 @@ layout: default
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <p>{{post.excerpt}}</p>
+        <p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}<a href="{{ post.url | prepend: site.baseurl }}">Read more...</a></p>
       </li>
     {% endfor %}
   </ul>
 
-  <div class="pagination">
+  <nav class="pagination">
     {% if paginator.previous_page %}
-      <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
+      {% if paginator.previous_page !=1 %}
+        <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% else %}
+        <a href="/" class="previous">Previous</a>
+      {% endif %}
     {% endif %}
     <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
@@ -26,8 +28,8 @@ layout: default
     {% else %}
       <span class="next ">Next</span>
     {% endif %}
-  </div>
+  </nav>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> or <a href="{{ "/atom.xml" | prepend: site.baseurl }}">via Atom</a></p>
 
 </div>
