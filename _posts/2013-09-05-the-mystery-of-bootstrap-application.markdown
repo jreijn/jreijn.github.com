@@ -64,6 +64,7 @@ The first approach would be to add the <span style="font-family: &quot;Courier N
 The problem with this approach is that you will have a local copy inside your project which you have to recheck when upgrading the cargo plugin or the container instance or it might not work when switching to a different container then Tomcat.
 
 The other more simple approach which will work across multiple containers is by adding a system property to the cargo plugin.
+
 ``` xml
 <build>
   <plugins>
@@ -81,9 +82,12 @@ The other more simple approach which will work across multiple containers is by 
   </plugins>
 </build>
 ```
+
 This way the system property is added to the Java run-time when starting up Tomcat from cargo and the <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">Bootstrap</span> application does not pop up anymore inside the OS X dock.
 
 I hope this post will help those of you in search for the same answers and could not find it.
 
-####References
-<a href="http://stackoverflow.com/questions/8189635/any-idea-why-org-apache-catalina-startup-bootstrap-pops-up-in-dock-on-mac" target="_blank">Stack overflow: Any idea why org.apache.catalina.startup.Bootstrap pops up in dock on Mac?</a><br /><a href="https://issues.jenkins-ci.org/browse/JENKINS-9785" target="_blank">Jenkins JIRA: on OSX a java icon jump on dock for all starting maven build and takes focus</a>
+###References
+
++ <a href="http://stackoverflow.com/questions/8189635/any-idea-why-org-apache-catalina-startup-bootstrap-pops-up-in-dock-on-mac" target="_blank">Stack overflow: Any idea why org.apache.catalina.startup.Bootstrap pops up in dock on Mac?</a>
++ <a href="https://issues.jenkins-ci.org/browse/JENKINS-9785" target="_blank">Jenkins JIRA: on OSX a java icon jump on dock for all starting maven build and takes focus</a>
