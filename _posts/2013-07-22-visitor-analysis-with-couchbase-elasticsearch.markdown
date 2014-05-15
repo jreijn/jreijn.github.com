@@ -16,11 +16,13 @@ In this post we will go through all the necessary steps to setup Couchbase, Elas
 If you are familiar with <a href="http://logstash.net/" target="_blank">LogStash</a> you might wonder why we use Couchbase as an additional storage for our request data. Well it's because  with Hippo CMS we store more than just the request log information. We  also store information about a visitor over multiple requests with  regards to (content) characteristics and persona based matching. We need  a cluster-wide high performance database for that and that's why we use  Couchbase as a first layer of storage.
 
 ###Setting up Couchbase
+
 As I've said before at Hippo we use Couchbase as our storage solution. For installation instructions please see the <a href="http://www.couchbase.com/download" target="_blank">official Couchbase download page</a>. Couchbase uses data buckets for storage.
 There are two kind of buckets available; 'couchbase' buckets and 'memcached' buckets. For this specific use-case you will need to create a bucket of type 'couchbase'  called '<i>targeting</i>'.
 Buckets of type 'couchbase' allow you to store JSON documents and perform for instance map-reduce functions on the available data in a bucket.
 
 <img border="0" height="185" src="http://3.bp.blogspot.com/-amiy44P1_28/Ue0LbdI6lJI/AAAAAAAAAmE/GYPQUcFZuFQ/s400/CapturFiles-201307203_1207.png" width="400" />
+
 In this bucket we will be storing request data. An example of a request document could look similar to this:
 
 ``` json
@@ -182,21 +184,31 @@ The above mapping maps certain fields of our example request log document and te
 
 Next we need to setup replication from Couchbase to Elasticsearch. The target bucket in this case is the Elasticsearch index called 'targeting' which we created a few minutes ago.
 
-<a href="http://3.bp.blogspot.com/-ImONF7udzBk/Ue0oPNHNIhI/AAAAAAAAAmc/h1LaYcqFWZ8/s1600/CapturFiles-201307203_1407_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="148" src="http://3.bp.blogspot.com/-ImONF7udzBk/Ue0oPNHNIhI/AAAAAAAAAmc/h1LaYcqFWZ8/s400/CapturFiles-201307203_1407_1.png" width="400" /></a></div><br />Now when you press replicate Couchbase will start replicating your existing data into the targeting index within Elasticsearch. Now let's move on to our final step: setting up Kibana 3.
+<a href="http://3.bp.blogspot.com/-ImONF7udzBk/Ue0oPNHNIhI/AAAAAAAAAmc/h1LaYcqFWZ8/s1600/CapturFiles-201307203_1407_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="148" src="http://3.bp.blogspot.com/-ImONF7udzBk/Ue0oPNHNIhI/AAAAAAAAAmc/h1LaYcqFWZ8/s400/CapturFiles-201307203_1407_1.png" width="400" /></a>
 
-<br /><h3>Analytics with Kibana 3</h3><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-UBWdYxjQgxw/Ue0sHiOE5SI/AAAAAAAAAm0/0BANIxO6RG0/s1600/kibana.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="146" src="http://3.bp.blogspot.com/-UBWdYxjQgxw/Ue0sHiOE5SI/AAAAAAAAAm0/0BANIxO6RG0/s200/kibana.png" width="200" /></a></div>Kibana 3 is an open source (ASL 2.0) analytics and search interface, which you can use for any kind of timestamped data sets stored in Elasticsearch. It's really easy to use and gives you a visually attractive representation of the data in graphs, charts and (world)maps. With Kibana you can easily create your own dashboard that represents a nice overview of your dataset.
+Now when you press replicate Couchbase will start replicating your existing data into the targeting index within Elasticsearch. Now let's move on to our final step: setting up Kibana 3.
+
+### Analytics with Kibana 3
+
+<img border="0" height="146" src="http://3.bp.blogspot.com/-UBWdYxjQgxw/Ue0sHiOE5SI/AAAAAAAAAm0/0BANIxO6RG0/s200/kibana.png" width="200" style="float: left;" />
+Kibana 3 is an open source (ASL 2.0) analytics and search interface, which you can use for any kind of timestamped data sets stored in Elasticsearch. It's really easy to use and gives you a visually attractive representation of the data in graphs, charts and (world)maps. With Kibana you can easily create your own dashboard that represents a nice overview of your dataset.
 
 Kibana 3 is a very easy to install HTML + Javascript application. It only requires a webserver and a connection to Elasticsearch. For more information on how to install Kibana see the <a href="http://three.kibana.org/intro.html" target="_blank">introduction page</a>. If you run Elasticsearch on a different port then 9200 you will need to change the config.js file and point it to your Elasticsearch instance. I'll skip the the installation and move on to showing the data in our own dashboard. <a href="https://gist.github.com/jreijn/5830593"><br /></a>
 
 Now when the data is in Elasticsearch you can start adding panels to your dashboard. Adding a pie chart is as easy as couple of clicks. Here is an example of how to add a pie chart panel based on the available channels(sites) within Hippo CMS.
 
-<img border="0" height="483" src="http://4.bp.blogspot.com/-EQYdU_MFG-Y/Ue0s1mTS8_I/AAAAAAAAAm8/DHDkCJHodRo/s640/CapturFiles-201307203_1407_2.png" width="640" />
+<img border="0" height="483" src="http://4.bp.blogspot.com/-EQYdU_MFG-Y/Ue0s1mTS8_I/AAAAAAAAAm8/DHDkCJHodRo/s640/CapturFiles-201307203_1407_2.png" width="640" style="margin-left: 1em; margin-right: 1em;" />
 
-Now when you add a set of panels you might and up with entire dashboard with live streaming data.&nbsp; <br />One of the nice features of Kibana is that it can load a dashboard  configuration from GitHub by using a gist URL. A dashboard I created for  Hippo targeting data can be found at: <a href="https://gist.github.com/jreijn/5830593">https://gist.github.com/jreijn/5830593</a> <br />It's is a nice example of a dashboard and it's based on request log information of our online documentation website.<br /><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-PqpXdy4k6KY/Ue0r6vUSuiI/AAAAAAAAAms/kfYY3t-kWIw/s1600/CapturFiles-201306175_1106.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="451" src="http://1.bp.blogspot.com/-PqpXdy4k6KY/Ue0r6vUSuiI/AAAAAAAAAms/kfYY3t-kWIw/s640/CapturFiles-201306175_1106.png" width="640" /></a></div>Well that's it. In this post we've seen how to setup Couchbase, Elasticsearch and Kibana to perform real-time visitor analysis for your website / web application. Last month at the Hippo GetTogether 2013 I gave a live demonstration of what I've written here. When the video becomes available I'll do a short update or new post, so you can hear more about our relevance module and the integration with Couchbase.
+Now when you add a set of panels you might and up with entire dashboard with live streaming data.
 
-####References
-<ul>
-  <li><a href="http://www.couchbase.com/" target="_blank">Couchbase server</a></li>
-  <li><a href="http://www.elasticsearch.org/" target="_blank">Elasticsearch</a></li>
-  <li><a href="http://three.kibana.org/" target="_blank">Kibana 3</a></li>
-</ul>
+One of the nice features of Kibana is that it can load a dashboard  configuration from GitHub by using a gist URL. A dashboard I created for  Hippo targeting data can be found at: <a href="https://gist.github.com/jreijn/5830593">https://gist.github.com/jreijn/5830593</a> <br />It's is a nice example of a dashboard and it's based on request log information of our online documentation website.
+
+<img border="0" height="451" src="http://1.bp.blogspot.com/-PqpXdy4k6KY/Ue0r6vUSuiI/AAAAAAAAAms/kfYY3t-kWIw/s640/CapturFiles-201306175_1106.png" width="640" style="margin-left: 1em; margin-right: 1em;" />
+
+Well that's it. In this post we've seen how to setup Couchbase, Elasticsearch and Kibana to perform real-time visitor analysis for your website / web application. Last month at the Hippo GetTogether 2013 I gave a live demonstration of what I've written here. When the video becomes available I'll do a short update or new post, so you can hear more about our relevance module and the integration with Couchbase.
+
+###References
+
++ <a href="http://www.couchbase.com/" target="_blank">Couchbase server</a>
++ <a href="http://www.elasticsearch.org/" target="_blank">Elasticsearch</a>
++ <a href="http://three.kibana.org/" target="_blank">Kibana 3</a>

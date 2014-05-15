@@ -3,6 +3,7 @@ layout: post
 title: "The mystery of the Bootstrap application during a Maven build on Mac OS "
 date: 2013-09-05
 comments: true
+summary: "While developing Java based web application with Tomcat I always get nagged with an application called 'Bootstrap' popup up in my dock and taking over the focus from what I'm doing."
 categories:
  - hippo
  - maven

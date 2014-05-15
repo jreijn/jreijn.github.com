@@ -1,11 +1,13 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about.html
 ---
+Hello, my name is Jeroen Reijn, and I’m an engineer @ [Hippo](http://www.onehippo.com), committer at the Apache Software Foundation and Open Source enthusiast.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Most of what I write here is about Java based software development.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+My own open source work is available on [GitHub](https://github.com/jreijn), while my work history is on [LinkedIn](https://www.linkedin.com/in/jeroenreijn).
+Oh and you can also find my ramblings on [Twitter](https://twitter.com/jreijn)

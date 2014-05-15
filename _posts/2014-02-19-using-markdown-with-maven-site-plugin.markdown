@@ -52,7 +52,8 @@ dog's back.
 > This is a blockquote.>
 > This is the second paragraph in the blockquote.
 >
-> ## This is an H2 in a blockquote&nbsp;
+
+## This is an H2 in a blockquote
 ```
 
 Now start the <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">maven-site-plugin</span> from the command-line:

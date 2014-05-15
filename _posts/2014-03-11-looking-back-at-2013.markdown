@@ -5,10 +5,10 @@ date: 2014-03-11
 comments: true
 summary: "Last year was a great year! 2013 was the year that I celebrated 10 years, spoke at several conferences and run my first 10 mile run."
 categories:
- - Personal
 ---
 
 This post has been in draft mode for a couple of months now. I don't know why it actually took this long to publish. Last year was a great year and a lot of things happened, so here goes.
+
 ###Professionally
 <img border="0" src="http://2.bp.blogspot.com/-4MvbcrhwYb0/UxuOFD2NgzI/AAAAAAAAAsQ/Y3mfjQ7VW9w/s1600/df511f2a688811e3b39112207f9a801b_8.jpg" height="320" width="320" align="right" />
 

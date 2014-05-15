@@ -7,14 +7,13 @@ categories:
  - hippo
 ---
 
-
-<img border="0" src="http://3.bp.blogspot.com/-LL67ydKgPzU/ULp4TEfCTQI/AAAAAAAAAjU/CXRkkmLM4nw/s1600/dotJS.png" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" />
-
-Last Friday I traveled to the wonderful city of Paris together with some <a href="http://www.onehippo.com/" target="_blank">Hippo</a> colleagues for the <a href="http://www.dotjs.eu/" target="_blank">dotJS conference</a>.
+<img border="0" src="http://3.bp.blogspot.com/-LL67ydKgPzU/ULp4TEfCTQI/AAAAAAAAAjU/CXRkkmLM4nw/s1600/dotJS.png" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" /> Last Friday I traveled to the wonderful city of Paris together with some <a href="http://www.onehippo.com/" target="_blank">Hippo</a> colleagues for the <a href="http://www.dotjs.eu/" target="_blank">dotJS conference</a>.
 It was going to be my first tech conference in France and I was really excited. dotJS is a new conference and promoted itself as: <b>"The largest JavaScript conference in France"</b>, which raised my expectations.
 The list of speakers looked promising with for instance Jeremy Ashkenas (creator of <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>) and <span class="st">Jacob Thornton (one of the creators of Twitters Bootstrap)</span>.
 It was a two day conference of which I only attended the first day (second day were workshops).
 The rest of this post will be about how I experienced the conference.
+
+
 
 ###The venue
 

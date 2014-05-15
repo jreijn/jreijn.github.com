@@ -9,7 +9,6 @@ categories:
 ---
 
 <a href="http://3.bp.blogspot.com/-0PN-ehj_nQ4/TzQz3WID_6I/AAAAAAAAAhU/vMD-iMenY68/s1600/SpringInsight_Logo_black_0.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="90" src="http://3.bp.blogspot.com/-0PN-ehj_nQ4/TzQz3WID_6I/AAAAAAAAAhU/vMD-iMenY68/s320/SpringInsight_Logo_black_0.png" width="320" /></a>
-
 Ever wondered what your application was doing? Why that specific page was so slow?
 I've asked myself this question numerous times and always had to change some log level or attach a profiler to get actual feedback on what was going on inside my application.
 
@@ -97,7 +96,7 @@ Now that we've created the aspect for the <i>HstQuery</i>, let's create a view f
 You can create a freemarker template for each inspection if you want.
 For the <i>HstQuery</i> I've created the following template.
 
-``` 
+```
 <#ftl strip_whitespace=true>
 <#import "/insight-1.0.ftl" as insight />
 <@insight.group label="HST Query">

@@ -2,7 +2,7 @@
 layout: post
 title: "Lightning 0.9 and Thunderbird 2.0.0.17"
 date: 2008-11-11
-comments: false
+comments: true
 categories:
  - Open Source
 ---
