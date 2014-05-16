@@ -7,8 +7,8 @@ layout: none
   <link href="http://www.jeroenreijn.com/"/>
   <link type="application/atom+xml" rel="self" href="http://blog.jeroenreijn.com/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://blog.jeroenreijn.com/</id>
-  {% for post in site.posts %}
+  <id>{{site.url}}</id>
+  {% for post in site.posts limit:20 %}
   <entry>
     <id>http://blog.jeroenreijn.com{{ post.url }}</id>
     <link type="text/html" rel="alternate" href="http://blog.jeroenreijn.com{{ post.url }}"/>
@@ -18,6 +18,7 @@ layout: none
       <name>Jeroen Reijn</name>
       <uri>http://blog.jeroenreijn.com/</uri>
     </author>
+    <summary type="html">{{ post.excerpt | strip_html | xml_escape }}</summary>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
