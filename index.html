@@ -7,9 +7,10 @@ layout: default
   <ul class="posts">
     {% for post in paginator.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}<a href="{{ post.url | prepend: site.baseurl }}">Read more...</a></p>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }} • {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
+{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span>
+        <p>{{post.excerpt | strip_html | remove: '<p>' | remove: '</p>'}}<a href="{{ post.url | prepend: site.baseurl }}">Read more...</a></p>
       </li>
     {% endfor %}
   </ul>
