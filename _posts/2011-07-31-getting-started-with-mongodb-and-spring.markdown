@@ -272,5 +272,5 @@ public class MongoDBApp {
 All this application does for now is setup a connection with MongoDB, insert 20 persons (documents), fetch them all and write the information to the log.
 As a first experiment this was quite fun to do.
 
-##Conclusion
+##Summary
 As you can see with Spring Data it's quite easy to get some basic functionality within only a couple of minutes. All the sources mentioned above and a working project can be found on <a href="https://github.com/jreijn/spring-mongo-demo">GitHub</a>. It was a fun first experiment and I already started working on a bit more advanced project, which combines Spring Data, MongoDB, HTML5 and CSS3. It will be on GitHub shortly together with another blog post here so be sure to come back.</div>
