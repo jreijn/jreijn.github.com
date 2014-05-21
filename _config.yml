@@ -15,3 +15,7 @@ paginate: 5
 
 username: jreijn
 disqus_short_name: blogjeroenreijn
+
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
