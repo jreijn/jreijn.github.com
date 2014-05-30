@@ -45,7 +45,7 @@ When we started with Bower, it was only possible to have dependencies stored in 
 
 One thing that is specific to how we combine these technologies is probably how we package and distrubute these dependencies. Our Javascript dependencies are packaged as .zip based artifacts with the ```maven-assembly-plugin```and deployed to our nexus repository just like we do with our normal Maven based artifacts. They have a seperate release cycle and are distributed seperatly from their CMS UI component. The [hippo-plugins project](https://github.com/onehippo/hippo-plugins) is an example of this project setup.
 
-Now when our CI server (or a developer) builds such a CMS component these .zip based artifacts in the ```initialize``` phase of the [Maven build lifecycle](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference). The build downloads and copies the dependencies from our remote maven repository into our build target directory and extract the .zip files, so they can be used by Bower as normal dependencies. 
+Now when our CI server (or a developer) builds such a CMS component these .zip based artifacts in the ```initialize``` phase of the [Maven build lifecycle](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference). The build downloads and copies the dependencies from our remote maven repository into our build target directory and extract the .zip files, so they can be used by Bower as normal dependencies. Once that's done the default Maven build cycle continues and npm, bower and grunt are run during the ```generate-sources phase```, so this has happened before we actually create a package out of the Java based CMS component. See the following XML snippet of our maven pom.xml:
 
 ``` xml
 <build>
@@ -131,3 +131,5 @@ This makes all the new features available to the QA team and product owners, so 
 So the overall CI process looks like this:
 
 ![CI at Hippo](/assets/ci-at-hippo-small.png)
+
+There is still room for improvement, but this is our current setup and it's serving us well.
