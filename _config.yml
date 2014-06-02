@@ -16,6 +16,12 @@ paginate: 5
 username: jreijn
 disqus_short_name: blogjeroenreijn
 
+sitemap:
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feeds/posts/default"
+
 gems:
   - jekyll-mentions
   - jekyll-sitemap
