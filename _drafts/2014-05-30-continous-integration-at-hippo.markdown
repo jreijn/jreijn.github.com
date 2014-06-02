@@ -120,6 +120,21 @@ Now when our CI server (or a developer) builds such a CMS component these .zip b
 </build>
 ```
 
+When Bower is executed it will just find the dependencies in the local ``target`` directory and picks them up. See this little snippet from our bower.json file.
+
+``` json
+{
+  "name": "hippo-addon-channel-manager-frontend",
+  "dependencies": {
+    ...
+    "hippo-theme": "./target/dependency/hippo-theme.zip",
+    "hippo-plugins": "./target/dependency/hippo-plugins.zip",
+  }
+}
+```
+
+This sort of sums the complexity of our build and how it's handled by our CI server. Untill this stage we've talked about integrating changes, but now a last step in this whole cycle would be to automate the deployment.
+
 ##'Nightly' deploys
 
 Now when all builds are successful we have one final step in the process which is creating a distribution of our demo website project (also known as GoGreen) based on the latest version of the entire stack.
@@ -132,4 +147,4 @@ So the overall CI process looks like this:
 
 ![CI at Hippo](/assets/ci-at-hippo-small.png)
 
-There is still room for improvement, but this is our current setup and it's serving us well.
+We don't actively push a new distribution to the test server after each change so there is still room for improvement, but this is our current setup and it's serving us really well.
