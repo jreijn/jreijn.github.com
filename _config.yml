@@ -26,5 +26,4 @@ sitemap:
         - "/feeds/posts/default"
 
 gems:
-  - jekyll-mentions
   - jekyll-sitemap

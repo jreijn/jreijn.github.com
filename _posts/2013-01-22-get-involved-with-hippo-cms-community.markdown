@@ -13,9 +13,9 @@ With this post I would like to remind you about the available channels to commun
 ###Twitter
 
 I guess the most popular channel is <a href="https://twitter.com/" target="_blank">Twitter</a>.
-You can read up on all the latest news regarding Hippo CMS while following the <a href="https://twitter.com/#%21/onehippo" target="_blank">@onehippo</a> account.
+You can read up on all the latest news regarding Hippo CMS while following the [@onehippo](https://twitter.com/onehippo) account.
 We use this for official announcements, news about Hippo as a company and many other things.
-For feedback, plugin announcements and other interesting Hippo news please make use of the <a href="https://twitter.com/#%21/search/%23hippocms" target="_blank">#hippocms</a> hash tag or mention <a href="https://twitter.com/#%21/onehippo" target="_blank">@onehippo</a> in your tweet and we will retweet your post to the rest of the community!
+For feedback, plugin announcements and other interesting Hippo news please make use of the <a href="https://twitter.com/search/hippocms" target="_blank">#hippocms</a> hash tag or mention [@onehippo](https://twitter.com/onehippo) in your tweet and we will retweet your post to the rest of the community!
 
 ###Facebook
 
@@ -34,7 +34,7 @@ The group on LinkedIn is used for different purposes like, discussions, jobs, pr
 If you're not yet connected to the user group please do!
 
 ###Hippo Community Forum
-Currently the best resource for getting (technical) feedback or asking questions is probably the <a href="https://plus.google.com/u/0/communities/105670207925375395187" target="_blank">Hippo Community Forum</a>.
+Currently the best resource for getting (technical) feedback or asking questions is probably the <a href="https://groups.google.com/forum/#!forum/hippo-community" target="_blank">Hippo Community Forum</a>.
 
 ###Stack Overflow
 
