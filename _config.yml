@@ -1,11 +1,14 @@
 # Site settings
 title: Jeroen Reijn
-subtitle: About Java and software development
+subtitle: "On Java and software development"
 author: Jeroen Reijn
 email:
 description: "I work at Hippo. I'm a dad, programmer, consultant and occasional speaker."
+disclaimer: "The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation."
+copyright: "© Jeroen Reijn • All rights reserved."
 baseurl: ""
 url: "http://blog.jeroenreijn.com"
+atom_path: "atom.xml"
 
 # Build settings
 markdown: redcarpet

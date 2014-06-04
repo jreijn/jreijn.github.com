@@ -143,7 +143,7 @@ The distribution will be stored in our nexus repository from which it will be fe
 Once the distribution is on the test server it will be unpacked and deployed in an existing Tomcat container.
 This makes all the new features available to the QA team and product owners, so they can see the 'current' state of the product.
 
-So the overall CI process looks like this:
+So the overall CI process ends up looking quite simple and is shown in the following diagram.
 
 ![CI at Hippo](/assets/ci-at-hippo-small.png)
 

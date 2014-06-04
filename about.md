@@ -10,4 +10,4 @@ Most of what I write here is about Java based software development.
 The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation.
 
 My own open source work is available on [GitHub](https://github.com/jreijn), while my work history is on [LinkedIn](https://www.linkedin.com/in/jeroenreijn).
-Oh and you can also find my ramblings on [Twitter](https://twitter.com/jreijn)
+Oh and you can also find my ramblings on [Twitter](https://twitter.com/jreijn).
