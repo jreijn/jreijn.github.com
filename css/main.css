@@ -103,14 +103,14 @@
 
 .posts { 
     list-style-type: none;
-    margin-top:40px;
+    margin-top:50px;
     padding-left: 0;
 }
 
 .posts li { margin-bottom: 30px; }
 
 .posts .post-link {
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: -1px;
   line-height: 1;
 }
@@ -151,6 +151,10 @@
   main {
       position:relative;
   }
+}
+
+.bottom-banner {
+    text-align:center;
 }
 
 /* Syntax highlighting styles */
