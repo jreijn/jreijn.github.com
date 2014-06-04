@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How we do Continuous Integration at Hippo"
+title: "Continuous Integration at Hippo"
 comments: true
 categories:
  - hippo
 ---
 
 Personally I always like to read how other companies do software development, but sharing our way is probably just as interesting to others.
-In this post I will describe what a typical Hippo CMS development cycle looks like and how we do continuous integration at <a href="http://www.onehippo.com/" target="_blank">Hippo</a>.
+In this post I will describe what a typical Hippo CMS development cycle looks like, how the product is build and how we do continuous integration at <a href="http://www.onehippo.com/" target="_blank">Hippo</a>.
 
-For those of you new to the Continuous Integration concept here is a list of the core values:
+For those of you new to the [Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration) concept here is short list of the core values:
 
 + Maintain a code repository
 + Automate the build
@@ -39,7 +39,7 @@ Development strategy wise we do a lot of trunk based development. For features t
 I think our CI setup is quite common for a Java based project. We use <a href="http://hudson-ci.org/" target="_blank">Hudson</a> as our continuous integration server (we have plans to migrate to <a href="http://jenkins-ci.org/" target="_blank">Jenkins</a>). Our Hudson contains different <a href="https://builds.onehippo.org/" target="_blank">jobs</a> for different parts of our CMS stack ( CMS, HST, Repository and additional modules like replication, relevance, etc).
 Hudson polls the Subversion repository for changes and when a change is detected the Maven build is started and all code gets compiled, unit tested (JUnit) and a bunch of integration tests are run. Commits happen as often as possible, so this cycle happens at least multiple times a day.
 
-As I mentioned before we adopted AngularJS for our CMS UI. Front-end development has changed a lot over the last 5 years. With a framework like AngularJS this also required us to rethink our current build environment, because for AngularJS based projects it's quite common to use a combination of [npm](https://www.npmjs.org/) (package management), [Bower](http://bower.io/) (dependency management) and [Grunt](http://gruntjs.com/) (task automation). Now front-end developers are used to working with these tools these days, but coming from a more Java back-end oriented background we wanted to have our front-end and back-end developers to be happy and use their own preferred set of tools. Maven itself is just focused on Java based dependencies, so we needed to figure out how to get this 'new stuff' to play nicely with our current build lifecycle. There are several ways of doing this actually and some quite nice examples can be found in the [using Grunt and Maven together](http://addyosmani.com/blog/making-maven-grunt/) post by @addyosmani.
+As I mentioned before we adopted AngularJS for our CMS UI. Front-end development has changed a lot over the last 5 years. With a framework like AngularJS this also required us to rethink our current build environment, because for AngularJS based projects it's quite common to use a combination of [npm](https://www.npmjs.org/) (package management), [Bower](http://bower.io/) (dependency management) and [Grunt](http://gruntjs.com/) (task automation). Now front-end developers are used to working with these tools these days, but coming from a more Java back-end oriented background we wanted to have our front-end and back-end developers to be happy and use their own preferred set of tools. Maven itself is just focused on Java based dependencies, so we needed to figure out how to get this 'new stuff' to play nicely with our current build lifecycle. There are several ways of doing this actually and some quite nice examples can be found in the [using Grunt and Maven together](http://addyosmani.com/blog/making-maven-grunt/) post by [@addyosmani](https://twitter.com/addyosmani).
 
 When we started with Bower, it was only possible to have dependencies stored in a git repository, hence we have some of our code on Github. These days that's not needed any more and you can store your dependencies in different systems, like subversion, git and also on a local filesystem (like we do). 
 
@@ -147,4 +147,4 @@ So the overall CI process ends up looking quite simple and is shown in the follo
 
 ![CI at Hippo](/assets/ci-at-hippo-small.png)
 
-We don't actively push a new distribution to the test server after each change so there is still room for improvement, but this is our current setup and it's serving us really well.
+We don't actively push a new distribution to the test server yet so there is still room for improvement, but this is our current setup and it's serving us really well.
