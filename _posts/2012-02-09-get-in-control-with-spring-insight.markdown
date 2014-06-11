@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get in control with Spring Insight!"
-date: 2012-02-09
+date: 2011-10-09
 comments: true
 categories:
  - spring
