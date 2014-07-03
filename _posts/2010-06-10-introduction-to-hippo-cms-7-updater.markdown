@@ -21,10 +21,13 @@ When you start writing an updater module you can start out with the following si
 ``` java
 import org.hippoecm.repository.ext.UpdaterModule;
 import org.hippoecm.repository.ext.UpdaterContext;
+
 public class MyProjectUpdater implements UpdaterModule {
+    
     public void register(final UpdaterContext context) {
        .....
     }
+    
 }
 ```
 
@@ -38,12 +41,15 @@ Performing such an update on your data model is most of the time specific for th
 ``` java
 import org.hippoecm.repository.ext.UpdaterModule;
 import org.hippoecm.repository.ext.UpdaterContext;
+
 public class MyProjectUpdater implements UpdaterModule {
+
     public void register(final UpdaterContext context) {
         context.registerName("myproject-updater-v1-to-v1_1");
         context.registerStartTag("myproject-v1");
         context.registerEndTag("myproject-v1_1");
-   }  
+   }
+   
 }
 ```
 
@@ -82,7 +88,9 @@ Now that we've seen the available visitors, let's see how we can use them. I thi
 <hippostd='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
 <hippostdpubwf='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
 <myproject='http://www.myproject.org/jcr/nt/1.0'>
+
 [myproject:basedocument] > hippo:document, hippostdpubwf:document, hippostd:publishableSummary
+
 [myproject:news] > myproject:basedocument
 - myproject:title (string)
 + myproject:text (hippostd:html)
@@ -95,7 +103,9 @@ We want to move to version 1.1, where we added a new subtitle field. The new nod
 <hippostd='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
 <hippostdpubwf='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
 <myproject='http://www.myproject.org/jcr/nt/1.1'>
+
 [myproject:basedocument] > hippo:document, hippostdpubwf:document, hippostd:publishableSummary
+
 [myproject:news] > myproject:basedocument
 - myproject:title (string)
 - myproject:subtitle (string)
@@ -109,7 +119,9 @@ import java.io.InputStreamReader;
 import org.hippoecm.repository.ext.UpdaterItemVisitor;
 import org.hippoecm.repository.ext.UpdaterModule;
 import org.hippoecm.repository.ext.UpdaterContext;
+
 public class MyProjectUpdater implements UpdaterModule {
+
     public void register(final UpdaterContext context) {
         context.registerName("myproject-updater-v1-to-v1_1");
         context.registerStartTag("myproject-v1");
@@ -117,7 +129,8 @@ public class MyProjectUpdater implements UpdaterModule {
         
         context.registerVisitor(new UpdaterItemVisitor.NamespaceVisitor(context, "myproject", "-",
         new InputStreamReader(getClass().getClassLoader().getResourceAsStream("myproject.cnd"))));
-   }  
+   }
+   
 }
 ```
 
@@ -132,8 +145,10 @@ import javax.jcr.Value;
 import org.hippoecm.repository.ext.UpdaterItemVisitor;
 import org.hippoecm.repository.ext.UpdaterModule;
 import org.hippoecm.repository.ext.UpdaterContext;
+
 public class MyProjectUpdater implements UpdaterModule {
-    public void register(final UpdaterContext context) {
+
+   public void register(final UpdaterContext context) {
         context.registerName("myproject-updater-v1-to-v1_1");
         context.registerStartTag("myproject-v1");
         context.registerEndTag("myproject-v1_1");
