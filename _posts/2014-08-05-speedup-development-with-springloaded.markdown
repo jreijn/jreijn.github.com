@@ -8,7 +8,7 @@ categories:
 
 At [Hippo](http://www.onehippo.com) we use [JRebel](http://zeroturnaround.com/software/jrebel/) a lot during the development of our CMS product. JRebel is a great tool and allows us to do live reloading of source code and enables us to develop the CMS product in a lot less time. The main reason that we use JRebel is that the the CMS suite itself is build from several multi-module Maven projects. JRebel helps limiting the amount of build, aggregate, package and redeploy cycles needed to test the changes and new features which we add to the CMS. For this specific scenario JRebel is excellent and it works really well, but most of the developers I meet are spending time on developing websites with Hippo CMS, which are usually less complex projects. For developers on those kinds of projects getting a JRebel license is usually a thougher challange, but don't worry there are alternatives besides using JRebel that can also help you speed up development. 
 
-One of these alternatives is [Spring Loaded](https://github.com/spring-projects/spring-loaded). Spring Loaded is used as the reloading system in [Grails 2](https://grails.org/) based project. It's battle tested, open source and free to use. In this post I will explain how you can leverage Spring Loaded to implement your Hippo CMS project in less time.
+One of these alternatives is [Spring Loaded](https://github.com/spring-projects/spring-loaded). Spring Loaded is used as the reloading system in [Grails 2](https://grails.org/) based projects. It's battle tested, open source and free to use. In this post I will explain how you can leverage Spring Loaded to implement your Hippo CMS project in less time.
 
 ##Some background information
 
