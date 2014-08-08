@@ -57,9 +57,9 @@ Now if you start your project with both the cargo and the springloaded profile i
 $ mvn -Pcargo.run,springloaded
 ```
 
-Now the next step in this process is to create a context.xml file for the site application that allows us to point to our build path(s), so that Spring Loaded and Tomcat can detect the new packaged templates (JSP's) and new and changed Java classes. To do so we can create a file called context-site.xml and use the VirtualWebappLoader to point to our maven build directory.
+Now the next step in this process is to create a context.xml file for the site application that allows us to point to our build path(s), so that Spring Loaded and Tomcat can detect the new packaged templates (JSP's) and new and changed Java classes. To do so we can create a file called context-site.xml and use the [VirtualWebappLoader](http://tomcat.apache.org/tomcat-7.0-doc/config/loader.html) to point to our maven build directory.
 
-context-site.xml
+site-context.xml
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,7 +71,7 @@ context-site.xml
 </Context>
 ```
 
-As you can see, there are some placeholders in this XML file for which we will let the ``maven-resources-plugin`` replace before Cargo starts our Tomcat container.
+As you can see, there are some placeholders in this XML file for which we will let the ``maven-resources-plugin`` replace before Cargo starts our Tomcat container. For that we add the ``maven-resources-plugin`` to the existing **cargo.run** profile in the root **pom.xml** file.
 
 ``` xml
 <profile>
@@ -109,7 +109,7 @@ As you can see, there are some placeholders in this XML file for which we will l
 </profile>
 ```
 
-The last step in this process is to copy the XML file that results from the above step into the Tomcat installation. We can do this by adding a ``configfile`` to the ``cargo-maven2-plugin`` configuration section.
+The last step in this process is to copy the XML file that results from the above step into the Tomcat installation. We can do this by adding a ``configfile`` to the existing ``cargo-maven2-plugin`` configuration section in the root **pom.xml** file.
 
 ``` xml
 <plugin>
