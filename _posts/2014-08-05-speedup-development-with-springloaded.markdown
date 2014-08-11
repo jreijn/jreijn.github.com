@@ -133,7 +133,7 @@ Now these are actually the only changes required to get started with Spring Load
 
 This video shows all the steps we've done above from beginning till end and shows you a working end result.
 
-<iframe width="853" height="480" src="//www.youtube.com/embed/VBwxFzbjdKo" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="//www.youtube.com/embed/VBwxFzbjdKo" allowfullscreen></iframe>
 
 ## Current limitations
 
