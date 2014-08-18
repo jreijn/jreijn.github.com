@@ -67,6 +67,11 @@ site-context.xml
 
   <Loader className="org.apache.catalina.loader.VirtualWebappLoader" searchVirtualFirst="true"
           virtualClasspath="${project.basedir}/site/target/classes" />
+          
+  <!-- In case you want to reload other files as well you can uncomment the following section -->
+  <!--  <Resources className="org.apache.naming.resources.VirtualDirContext"
+             extraResourcePaths="/=${project.basedir}/site/src/main/webapp" />
+   -->
 
 </Context>
 ```
