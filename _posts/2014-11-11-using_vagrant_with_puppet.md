@@ -5,7 +5,7 @@ date: 2014-11-11 10:29
 
 ---
 
-I still remember my early days with [Vagrant](vagrantup.com). I was amazed with how easy it was to create a new virtual machine from scratch. Remember those days where you had to mount an ISO or DVD before installing Linux in a VM? I'm happy that that belongs to the past now. 
+I still remember my early days with [Vagrant](vagrantup.com). I was amazed with how easy it was to create a new virtual machine from scratch. Remember those days when you had to mount an ISO or DVD before installing Linux in a VM? I'm happy that that belongs to the past now. 
 
 I've been using Vagrant on and off over the last years and most of the time for 'simple' things, like creating bunch of VM's running a Couchbase or Elasticsearch cluster to use in combination with [Hippo CMS](http://www.onehippo.org). I think Vagrant is an ideal tool to test and run new software without having to pollute your own machine. Also clustering the machines is a breeze. By destroying the VM all the stuff that came along with a certain application is gone instantly. No more messy Macbook!
 
