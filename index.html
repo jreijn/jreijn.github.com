@@ -10,7 +10,8 @@ layout: default
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }} • {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
 {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span>
-        <p>{{post.excerpt | strip_html | remove: '<p>' | remove: '</p>'}} [<a href="{{ post.url | prepend: site.baseurl }}">Read more</a>]</p>
+        <p>{{post.excerpt | strip_html | remove: '<p>' | remove: '</p>'}}
+        <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading →</a></p>
       </li>
     {% endfor %}
   </ul>

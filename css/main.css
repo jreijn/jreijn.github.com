@@ -12,6 +12,10 @@ h6,.h6 {font-size: 18px;}
     border:0px;
 }
 
+.text-right {
+    text-align: right;
+}
+
 /*
  * Sidebar
  */
