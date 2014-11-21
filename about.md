@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 Hello, my name is Jeroen Reijn, and I’m a software engineer @ [Hippo](http://www.onehippo.com), committer at the Apache Software Foundation and Open Source enthusiast.
 
-Most of what I write here is about Java based software development.
+Most of what I write here is about Open Source, Tech and Java based software development.
 
 The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation.
 
