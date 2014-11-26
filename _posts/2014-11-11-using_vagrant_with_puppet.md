@@ -1,6 +1,7 @@
 ---
 title: Vagrant, provisioning and Puppet
 layout: post
+comments: true
 date: 2014-11-11 10:29
 
 ---
