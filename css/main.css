@@ -8,102 +8,34 @@ h4,.h4 {font-size: 24px;}
 h5,.h5 {font-size: 20px;}
 h6,.h6 {font-size: 18px;}
 
-.post-content iframe {
-    border:0px;
+.left {
+    margin-top:50px;
+    padding-left: 30px;
 }
 
-.text-right {
-    text-align: right;
-}
-
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
 .sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
+    margin-top:50px;
 }
 
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a {
-  color: #fff;
-  background-color: #428bca;
+.navigation-bar {
+    background-color: #34495e;
 }
 
-/*
- * Main content
- */
-
-.main {
-  
+ul.sidebar-links {
+  list-style-type: none;
+  margin: 0 0 26px;
+  padding: 0;
 }
 
-.post-header {
-    margin-top: 50px;
+ul.sidebar-links li {
+  line-height: 19px;
+  padding: 6px 0;
+  border-bottom: 1px solid #F2F2F2;
 }
 
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
-}
-
-#social > iframe {
-    vertical-align: top;
-}
-
-/*
- * Footer content
- */
-
-.site-footer {
-    background-color: inherit;
-    margin-bottom: 20px;
-}
-
-/*
- * sidebar navigation
- */
-
-.sidebar-links {
-    margin-top: 40px;
-}
-
-.sidebar-links a {
-  
-}
-
-.sidebar-links i {
-  margin-right: 5px;
+ul.sidebar-links li:first-child {
+  border-top: none;
+  padding-top: 1px;
 }
 
 #social li {
@@ -112,27 +44,36 @@ h6,.h6 {font-size: 18px;}
     padding-right: 20px;
 }
 
-.sidebar-links a:hover {
-  text-decoration: none;
+.blog-footer {
+  bottom:0;
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
 }
-.sidebar-links ul {
-  list-style-type: none;
-  margin: 0 0 26px;
-  padding: 0;
+
+.navbar-brand {
+    font-size:40px;
+    color:#FFF;
 }
-.sidebar-links ul li {
-  line-height: 19px;
-  padding: 6px 0;
+
+#archive {
+    margin-top:-17px;
 }
-.sidebar-links ul li:first-child {
-  border-top: none;
-  padding-top: 1px;
+
+.post {
+    margin-top:-17px;
+}
+
+.post-header {
+
 }
 
 .posts { 
     list-style-type: none;
-    margin-top:50px;
-    padding-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .posts li { margin-bottom: 30px; }
@@ -147,43 +88,55 @@ h6,.h6 {font-size: 18px;}
   display: block;
   font-size: 15px;
 }
-@media (max-width: 768px) {
-
-   div#sidebar {
-       margin-bottom: 10px;
-   }
-  .sidebar {
-    display: block;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f5f5f5;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-    
-  .sidebar #disclaimer {
-      display: none;
-  }
-
-  .sidebar #copyright {
-      display:none;
-  }
-    
-  .sidebar-links {
-      display: none;
-  }
-
-  main {
-      position:relative;
-  }
-}
 
 .bottom-banner {
     text-align:center;
 }
+
+.pagination {
+    padding-left: 20px;
+}
+
+.bio-photo {
+    max-width: 150px;
+    border-radius: 150px;
+}
+
+@media (min-width: 768px) {
+    .small-title {
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h1,.h1 {font-size: 36px;}
+    h2,.h2 {font-size: 30px;}
+    h3,.h3 {font-size: 24px;}
+    h4,.h4 {font-size: 20px;}
+    h5,.h5 {font-size: 18px;}
+    h6,.h6 {font-size: 16px;}
+    
+  .navbar-brand {
+    font-size:28px;
+    color:#FFF;
+  }
+
+  .blog-header {
+/*      display:none;*/
+  }
+  .left {
+      padding-left: 15px;
+  }
+  .sidebar {
+/*      display:none;*/
+  }
+    
+  .bottom-banner {
+      display: none;
+  }
+}
+
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/

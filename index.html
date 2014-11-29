@@ -11,27 +11,28 @@ layout: default
         <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }} • {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
 {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span>
         <p>{{post.excerpt | strip_html | remove: '<p>' | remove: '</p>'}}
-        <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading →</a></p>
+        <p class="text-right"><a class="btn btn-sm btn-primary" href="{{ post.url | prepend: site.baseurl }}">Read more »</a></p>
       </li>
     {% endfor %}
   </ul>
 
-  <nav class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page !=1 %}
-        <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-      {% else %}
-        <a href="/" class="previous">Previous</a>
-      {% endif %}
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <div class="pagination">
+    <ul>
     {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+        <li class="previous"><a href="/page{{paginator.next_page}}" class="btn btn-block btn-lg btn-primary">Previous</a></li>
     {% else %}
-      <span class="next ">Next</span>
+        <li class="previous"><a class="btn btn-block btn-lg">Previous</a></li>
     {% endif %}
-  </nav>
-
-  <p class="rss-subscribe">Subscribe <a href="http://feeds.feedburner.com/JeroenReijn" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”>via RSS</a></p>
+    {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+        <li class="next"><a href="/" class="btn btn-block btn-lg btn-primary">Next</a></li>
+        {% else %}
+        <li class="next"><a href="/page{{paginator.previous_page}}" class="btn btn-block btn-lg btn-primary">Next</a></li>
+        {% endif %}
+    {% else %}
+        <li class="next"><a class="btn btn-block btn-lg btn-primary">Next</a></li>
+    {% endif %}
+    </ul>
+</div>
 
 </div>

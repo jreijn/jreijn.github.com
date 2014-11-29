@@ -1,25 +1,29 @@
 <div id="sidebar">
-    <h1 class="blog-title">
-        <a href="/">Jeroen Reijn</a>
-    </h1>
-    <h4>
-        {{ site.subtitle }}
-    </h4>
-    <div class="sidebar-links">
-        <ul id="subscribe">
-            <li><a href="http://feeds.feedburner.com/JeroenReijn" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”><i class="fa fa-rss"></i>Subscribe</a></li>
+    <div>
+<!--
+        <img class="bio-photo" src="/assets/profile.jpg"/>
+        <h4>Jeroen Reijn</h4>
+-->
+        <h4>Recent posts</h4>
+        <ul class="sidebar-links">
+            {% for post in site.posts limit:5 %}
+               <li>
+                   <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+               </li>
+            {% endfor %}
         </ul>
-        <ul id="social">
-            <li><a href="http://twitter.com/jreijn"><i class="fa fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jeroenreijn"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><a href="http://github.com/jreijn"><i class="fa fa-github fa-2x"></i></a></li>
-            <li><a href="{{ "/about.html" | prepend: site.baseurl }}"><i class="fa fa-info-circle fa-2x"></i></a></li>
-        </ul>
+        <h4>Connect with me:</h4>
+            <div class="social-icons">
+	<a href="http://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	<a href="http://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    <a href="http://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”><i class="fa fa-rss-square fa-2x"></i></a>
     </div>
-    <div id="disclaimer">
-        <small>
-            {{ site.disclaimer }}
-        </small>
+        <div id="disclaimer">
+            <h4>Disclaimer</h4>
+            <small>
+                {{ site.disclaimer }}
+            </small>
+        </div>
     </div>
-    
 </div>
