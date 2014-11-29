@@ -94,7 +94,9 @@ ul.sidebar-links li:first-child {
 }
 
 .pagination {
-    padding-left: 20px;
+    float: left;
+    width: 100%;
+    text-align: center;
 }
 
 .bio-photo {
