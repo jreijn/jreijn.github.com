@@ -16,23 +16,25 @@ layout: default
     {% endfor %}
   </ul>
 
-  <div class="pagination">
-    <ul>
+  <div class="container-fluid" id="pager">
+    <div class="shift-left">
     {% if paginator.next_page %}
-        <li class="previous"><a href="/page{{paginator.next_page}}" class="btn btn-block btn-lg btn-primary">Previous</a></li>
+        <a href="/page{{paginator.next_page}}" class="btn btn-inverse">← Older Posts</a>
     {% else %}
-        <li class="previous"><a class="btn btn-block btn-lg">Previous</a></li>
+        <a class="btn btn-inverse">← Older Posts</a>
     {% endif %}
+    </div>
+    <div class="shift-right">
     {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-        <li class="next"><a href="/" class="btn btn-block btn-lg btn-primary">Next</a></li>
+        <a href="/" class="btn btn-inverse">Newer Posts →</a>
         {% else %}
-        <li class="next"><a href="/page{{paginator.previous_page}}" class="btn btn-block btn-lg btn-primary">Next</a></li>
+        <a href="/page{{paginator.previous_page}}" class="btn btn-inverse">Newer Posts →</a>
         {% endif %}
     {% else %}
-        <li class="next"><a class="btn btn-block btn-lg btn-primary">Next</a></li>
+
     {% endif %}
-    </ul>
+    </div>
 </div>
 
 </div>
