@@ -28,6 +28,7 @@ The API only exposes JSON based endpoints, because I think JSON is developer fri
 
 Now let's see some examples of the usage of the API. To communicate with the RESTful API we will need to use Basic authentication. For these examples we'll use ``curl`` to communicate with the endpoints. I personally prefer HTTPie more, because it saves you some additional headers.
 
+### Working with JCR nodes
 Let's start out with a simple fetch of the root JCR node.
 
 ``` bash
@@ -68,6 +69,8 @@ $ curl -H "Content-Type: application/json" -X POST -u admin:admin http://localho
 
 Which will create a new node called _test_ of type 'nt:unstructured' directly under the root node.
 
+### Working with JCR properties
+
 Now in case we want to just add a property to the newly created test node we can use the _/properties_ endpoint like this:
 
 ``` bash
@@ -78,6 +81,8 @@ $ curl -H "Content-Type: application/json" -X POST -u admin:admin http://localho
   "values":["test value"] 
 }'
 ```
+
+### Querying the JCR repository
 
 Querying the repository is just as straight forward. The /_query endpoint allows you to use both GET and POST, but for larger request bodies I usually tend to use the POST method.
 
