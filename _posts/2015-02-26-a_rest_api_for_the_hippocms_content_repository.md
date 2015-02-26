@@ -133,4 +133,8 @@ The nice thing about [Swagger](http://swagger.io/) is that it allows you to easi
 
 ## Final thoughts
 
-In this post we've discussed the low-level JCR RESTful API. This can be useful in several scenarios, but the goal of the add-on is also to provide more high level resource APIs. The first two are already added to the add-on; endpoints for managing Users and Groups. Next up will be a resource endpoint for adding assets to the system. Now if you have other ideas, make sure to create an issue in the [github project](https://github.com/jreijn/hippo-addon-restful-webservices/) or in case you want to contribute be sure to send in a pull request or request to become a team member of the project.
+In this post we've discussed the low-level JCR RESTful API. This can be useful in several scenarios, but the goal of the add-on is also to provide more high level resource APIs. The first two are already added to the add-on; endpoints for managing Users and Groups. Next up will be a resource endpoint for adding assets to the system. 
+
+Having such an API also allows for the development of some lightweight tools that can interact with the API. I've already created a bulk asset import tool, which I will be open sourcing soon. In case you are interested be sure to follow me on github.
+
+Now if you have other ideas, make sure to create an issue in the [github project](https://github.com/jreijn/hippo-addon-restful-webservices/) or in case you want to contribute be sure to send in a pull request or request to become a team member of the project.
