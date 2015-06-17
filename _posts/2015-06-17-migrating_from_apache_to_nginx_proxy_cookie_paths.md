@@ -80,9 +80,9 @@ Now let's see what Nginx's proxy_cookie_path documentation says:
 > will rewrite this attribute to “path=/some/uri/”.
 
 
-So in our case it will only replace that part of the entire path, which contains /site/ with a /.
+So in our case it will only replace that part of the entire path, which contains '/site/' with a '/'.
 
-So as a result our Apache vhost configuration actually made '/site/forms/myform.html' into *'/'*, where as nginx made it into *'/forms/myform.html'*, which is actually what it should have been in the first place. Now you might wonder what's wrong with that, but in our case our application also did some url processing on the server-side. Our forms are stored in an alphabetical folder structure, because of the amount of forms, so typically a form called 'myform' would be stored in '/forms/m/myform.html'. The application would then remove the /m/ for nice looking URLs and SEO purposes. Because of the difference we now had a cookie path set to '/forms/m/myform.html', instead of '/forms/myform.html', which was what the browser uses to visit the page.
+So as a result our Apache vhost configuration actually made *'/site/forms/myform.html'* into *'/'*, where as nginx made it into *'/forms/myform.html'*, which is actually what it should have been in the first place. Now you might wonder what's wrong with that, but in our case our application also did some url processing on the server-side. Our forms are stored in an alphabetical folder structure, because of the amount of forms, so typically a form called 'myform' would be stored in '/forms/m/myform.html'. The application would then remove the /m/ for nice looking URLs and SEO purposes. Because of the difference we now had a cookie path set to '/forms/m/myform.html', instead of '/forms/myform.html', which was what the browser uses to visit the page.
 
 ##'A' solution
 
