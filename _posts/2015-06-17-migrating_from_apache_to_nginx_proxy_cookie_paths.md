@@ -9,7 +9,7 @@ At work, I'm involved in a project which recently moved entirely to https. Durin
 
 After the migration process al seemed fine and dandy. Everything got tested properly (we thought) and no issues were found, untill we recently discovered a bug in production (yeah I know... ouch!). A large section of the forms on the site had stopped working. Initial investigation showed it had to do with an incorrect path, set in the cookie that was created for those forms. Because the path was incorrect the form never made it to the second step.
 
-It actually turned out, we had a bug in our application for over a year, but the way we had set Apache mod_proxy's ```ProxyPassReverseCookiePath``` directive, had hidden the problem. So with this post I'll try to explain a bit what we had and what the difference is between Apache mod_proxy and Nginx proxy capabilities with regards to cookies.
+It actually turned out, we had a bug in our application for over a year, but the way we had set Apache mod\_proxy's ```ProxyPassReverseCookiePath``` directive, had hidden the problem. So with this post I'll try to explain a bit what we had and what the difference is between Apache mod\_proxy and Nginx proxy capabilities with regards to cookies.
 
 ##The problem
 
@@ -29,7 +29,7 @@ This creates a secure cookie, with a max age of 30 seconds and marks the cookie 
 /site/forms/myform.html
 ```
 
-Because we proxy our site application, we wanted to get rid of the /site/ from the cookie path and this is where mod_proxy ```ProxyPassReverseCookiePath``` comes to help out. Our virtual host configuration in Apache looks (simplified) similar to:
+Because we proxy our site application, we wanted to get rid of the /site/ from the cookie path and this is where mod\_proxy ```ProxyPassReverseCookiePath``` comes to help out. Our virtual host configuration in Apache looks (simplified) similar to:
 
 ```
 <VirtualHost *:80>
@@ -66,17 +66,17 @@ server {
 
 ```
 
-So far so good, but even though they look sort of the same, the culprit lies in how ```ProxyPassReverseCookiePath``` and ```proxy_cookie_path``` differ. Let's see what the mod_proxy documentation says about ```ProxyPassReverseCookiePath```.
+So far so good, but even though they look sort of the same, the culprit lies in how ```ProxyPassReverseCookiePath``` and ```proxy_cookie_path``` differ. Let's see what the mod\_proxy documentation says about ```ProxyPassReverseCookiePath```.
 
 > Useful in conjunction with ProxyPassReverse in situations where backend URL paths are mapped to public paths on the reverse proxy. This directive rewrites the path string in Set-Cookie headers. If the beginning of the cookie path matches internal-path, the cookie path will be replaced with public-path.
 
 So in essence our configuration above with ``/site/ /`` means that if the cookie path contains */site/* it will replace the entire path with */*.
 
-Now let's see what Nginx's proxy_cookie_path documentation says:
+Now let's see what Nginx's proxy\_cookie\_path documentation says:
 
 > Sets a text that should be changed in the path attribute of the “Set-Cookie” header fields of a proxied server response. Suppose a proxied server returned the “Set-Cookie” header field with the attribute “path=/two/some/uri/”. The directive
 >
-> proxy_cookie_path /two/ /;
+> proxy\_cookie\_path /two/ /;
 > will rewrite this attribute to “path=/some/uri/”.
 
 
@@ -86,7 +86,7 @@ So as a result our Apache vhost configuration actually made *'/site/forms/myform
 
 ##'A' solution
 
-I personally like and prefer the way ```proxy_cookie_path``` works. Having the ability to only change a small segment of the cookie path, is much nicer and keeps inline with what a developer intended to do with the cookie. The quickest solution for us was to just use a regexp to mimic Apache mod_proxy behaviour in Nginx:
+I personally like and prefer the way ```proxy_cookie_path``` works. Having the ability to only change a small segment of the cookie path, is much nicer and keeps inline with what a developer intended to do with the cookie. The quickest solution for us was to just use a regexp to mimic Apache mod\_proxy behaviour in Nginx:
 
 ```
 proxy_cookie_path ~^/site/.*$ /;
