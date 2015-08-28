@@ -7,7 +7,7 @@ description: "Jeroen Reijn on Tech, Open Source and software development"
 disclaimer: "The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation."
 copyright: "© Jeroen Reijn • All rights reserved."
 baseurl: ""
-url: "http://blog.jeroenreijn.com"
+url: "http://www.jeroenreijn.com"
 atom_path: "atom.xml"
 
 # Build settings
