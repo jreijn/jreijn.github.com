@@ -141,7 +141,7 @@ Now that we have everything in place, we need to let requests flow to the applic
 
 The guys over at [Tutum](https://www.tutum.co/), The Docker Platform for Dev and Ops, have created a really interesting [HAProxy image](https://github.com/tutumcloud/haproxy) which we can use for our application with minimal configuration effort. The Tutum HAProxy image balances between linked containers and, if launched in Tutum, reconfigures itself when a linked cluster member redeploys, joins or leaves. Even though we are running this locally, it sounds exactly what we need.
 
-![Request flow with different components](/assets/docker-spring-session/request-flow.png)
+![Request flow with different components](/assets/docker-spring-session/request-flow_1.png)
 
 ## Connecting containers with Docker Compose
 
