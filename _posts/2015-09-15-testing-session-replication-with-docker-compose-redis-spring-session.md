@@ -196,17 +196,17 @@ As you can see we have 3 different types of applications:
 + haproxy (the load balancer)
 + db (our Redis DB)
 
-By using "links", within the docker-compose file you can link the  applications to each other. For ease of use and since we can't use the auto-discovery feature of Tutums HAProxy, I've just defined the app 3 times.
+By using "links", within the docker-compose file you can link the  applications to each other. For ease of use and since we can't use the auto-discovery feature of Tutums HAProxy, I've just defined the app 3 times. An alternative would have been to use ``docker-compose scale app=3``, but that would require us to restart the haproxy container to see if that would work.
 
-Now if we want to run the final setup we need to tell docker-compose to build the containers:
+To test the final setup we need to tell docker-compose to build the containers:
 
 ```
 docker-compose build
 ```
 
-What this will do is create the docker container image(s) if required. In our case, it will download the redis and haproxy image and build our app image.
+This will create docker container image(s) if required. In our case, it will download the redis and haproxy image and build our app image.
 
-Now let's start up the containers:
+Now let's start the containers:
 
 ```
 docker-compose up
@@ -222,7 +222,7 @@ app_3
 haproxy_1
 ```
 
-To figure out if everything is working, we can test this in our local environment. By using docker-machine, we can get the local ip of vm with the running containers.
+To figure out if everything is working, we can test this in our local environment. By using docker-machine, we can get the local ip of the vm running the containers. If you're running an a Mac, like me, the containers are exposed to the (Virtualbox) VM and not to your local machine, therefor we need to get the ip of the VM to actually see HAProxy running on port 80.
 
 ```
 docker-machine ip dev
@@ -232,10 +232,12 @@ Now that we have the ip all we need to do is open up our browser and see the hom
 
 ![Homescreen](/assets/docker-spring-session/welcome-screen.png)
 
-Now if you would request the URL with curl or an anonymous browser you should see the server/node id shift. Now after we login we should still see the welcome message, but now also with the node name an server id.
+If you would request the URL with curl or an anonymous browser a couple of times, you should see the server/container id shift. After the login we should still see the welcome message, but now also with the username and server id. By refreshing the page a couple of times you will see we shift to the application running on a different container, but are still logged in.
 
 ![Hello screen](/assets/docker-spring-session/hello-user.png)
 
 
 ## Summary
-As you can see it's pretty straight-forward to set up session replication with Docker, Spring Session and Redis. It's really easy to test with Docker Compose. The source code for this project can be found on [Github](https://github.com/jreijn/spring-session-docker-demo).
+As you can see it's pretty straight-forward to test session replication with Docker, Spring Session and Redis. It's easy to setup the environment with Docker and Docker Compose. The amount of existing container images can drastically reduce the time required to do a proper setup.
+
+For those of you interested in the source code of this project, it can be found on [Github](https://github.com/jreijn/spring-session-docker-demo).

@@ -1,12 +1,16 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
-h1,.h1 {font-size: 42px;}  
-h2,.h2 {font-size: 36px;}  
+h1,.h1 {font-size: 42px;}
+h2,.h2 {font-size: 36px;}
 h3,.h3 {font-size: 30px;}
 h4,.h4 {font-size: 24px;}
 h5,.h5 {font-size: 20px;}
 h6,.h6 {font-size: 18px;}
+
+img {
+  width:100%;
+}
 
 .left {
     padding-top: 10px;
@@ -102,7 +106,7 @@ ul.sidebar-links li:first-child {
     padding-top: 20px;
 }
 
-.posts { 
+.posts {
     list-style-type: none;
     padding-left: 10px;
     padding-right: 20px;
@@ -144,7 +148,7 @@ ul.sidebar-links li:first-child {
     h4,.h4 {font-size: 20px;}
     h5,.h5 {font-size: 18px;}
     h6,.h6 {font-size: 16px;}
-    
+
   .navbar-brand {
     font-size:28px;
     color:#FFF;
@@ -159,7 +163,7 @@ ul.sidebar-links li:first-child {
   .sidebar {
       padding-left: 20px;
   }
-    
+
   .bottom-banner {
       display: none;
   }
