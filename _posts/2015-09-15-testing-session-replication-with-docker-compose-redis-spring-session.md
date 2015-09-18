@@ -61,7 +61,7 @@ For storing user credentials we use a simple user account in an in-memory authen
 
 ### Handling session based logins
 
-Now that we have our user store available, let's move on to handling the HTTP sessions used for maintaining the logged in state of users. There are several approaches to this problem, either use an application container specific handling of sessions or use [Spring Session](projects.spring.io/spring-session/). For this application I went with Spring Session because it has two interesting aspects that do exactly what I need:
+Now that we have our user store available, let's move on to handling the HTTP sessions used for maintaining the logged in state of users. There are several approaches to this problem, either use an application container specific handling of sessions or use [Spring Session](http://projects.spring.io/spring-session/). For this application I went with Spring Session because it has two interesting aspects that do exactly what I need:
 
 + Spring Session makes it easy to replace the HttpSession in an application container (i.e. Tomcat) neutral way
 + Spring Session makes it trivial to support clustered sessions without being tied to an application container specific solution.
