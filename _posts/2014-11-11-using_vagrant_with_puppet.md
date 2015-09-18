@@ -6,11 +6,11 @@ date: 2014-11-11 10:29
 
 ---
 
-I still remember my early days with [Vagrant](vagrantup.com). I was amazed with how easy it was to create a new virtual machine from scratch. Remember those days when you had to mount an ISO or DVD before installing Linux in a VM? I'm happy that that belongs to the past now. 
+I still remember my early days with [Vagrant](http://vagrantup.com). I was amazed with how easy it was to create a new virtual machine from scratch. Remember those days when you had to mount an ISO or DVD before installing Linux in a VM? I'm happy that that belongs to the past now. 
 
 I've been using Vagrant on and off over the last years and most of the time for 'simple' things, like creating bunch of VM's running a Couchbase or Elasticsearch cluster to use in combination with [Hippo CMS](http://www.onehippo.org). I think Vagrant is an ideal tool to test and run new software without having to pollute your own machine. Also clustering the machines is a breeze. By destroying the VM all the stuff that came along with a certain application is gone instantly. No more messy Macbook!
 
-When I started out with Vagrant I usually created a Vagrant configuration based on a configuration written by somebody else. Most of the time I searched for what I needed on Github and when I found something I just cloned the project. There are so many Vagrant based projects available on Github, that you will probably find what you need quite easily. 
+When I started out with Vagrant I usually created a Vagrant configuration based on a configuration written by somebody else. Most of the time I searched for what I needed on Github and when I found something I just cloned the project. There are so many Vagrant based projects available on Github, that you will probably find what you need quite easily.
 
 The only problem I encountered with these projects in general was that every project had a different setup and used a different kind of provisioning system. The type of provisioning probably depended upon the personal or company preference of the user that maintained the repo. I quickly learned that it made sense to learn how these provisioning systems work.
 
@@ -32,11 +32,11 @@ Where the install-system-libraries.sh would be just a simple bash file with some
 /usr/bin/apt-get -y install libimage-exiftool-perl
 ```
 
-As you can see the script is quite easy and it allows you to instruct the package manager of the OS to install some additional applications. 
+As you can see the script is quite easy and it allows you to instruct the package manager of the OS to install some additional applications.
 
 Using shell based provisioning is fine at first, but it does not allow you to re-use existing definitions, validations, utility method like checking distributions, application configurations, etc. You will have to write everything yourself in bash. For some cases this might be fine, but I really got the feeling quickly that the shell based provisioning was not something I would prefer even while using it just for local development.
 
-I'm no expert when it comes to picking a provisioning tool. I chose to learn Puppet, since I had some talks with our Ops guys about it. Usually these provisioning tools are used to provision a large numbers of (virtual) machines. In my case I usually want to provision just one or a couple of machines. In case you are looking for inspiration on which provisioning tool you should learn first, you might get inspired by reading: [Community Metrics: Comparing Ansible, Chef, Puppet and Salt](http://redmonk.com/sogrady/2013/12/06/configuration-management-2013/). 
+I'm no expert when it comes to picking a provisioning tool. I chose to learn Puppet, since I had some talks with our Ops guys about it. Usually these provisioning tools are used to provision a large numbers of (virtual) machines. In my case I usually want to provision just one or a couple of machines. In case you are looking for inspiration on which provisioning tool you should learn first, you might get inspired by reading: [Community Metrics: Comparing Ansible, Chef, Puppet and Salt](http://redmonk.com/sogrady/2013/12/06/configuration-management-2013/).
 
 ## Getting started with Puppet in Vagrant
 
@@ -58,7 +58,7 @@ $ tree
 |   |-- default.pp
 ```
 
-Puppet programs are called “manifests,” and they use the .pp file extension. Puppet uses its own configuration language, which was designed to be accessible to sysadmins. The Puppet language does not require much formal programming experience and the [documentation](https://docs.puppetlabs.com/) is excellent. 
+Puppet programs are called “manifests,” and they use the .pp file extension. Puppet uses its own configuration language, which was designed to be accessible to sysadmins. The Puppet language does not require much formal programming experience and the [documentation](https://docs.puppetlabs.com/) is excellent.
 
 Vagrant supports provisioning with [Puppet modules](https://docs.puppetlabs.com/guides/modules.html). Modules are reusable, sharable units of Puppet code. You can use modules to extend Puppet across your infrastructure by automating tasks such as setting up a database, web server, or mail server. Using modules can be done by specifying the path to a modules folder. The Puppet manifest file (default.pp) will always be used as the main entry-point for provisioning your VM's.
 
@@ -74,7 +74,7 @@ These modules will then have to live locally within your project and will be loc
 
 It feels like back in the days when you had to copy your jar files into some lib folder while developing a Java app. These days we have things like Maven, Gradle and Ivy to handle this kind of dependency management for us.
 
-## Using the Puppet Module Tool with a shell based provisioner 
+## Using the Puppet Module Tool with a shell based provisioner
 
 Now after some digging I found an interesting approach by using a combination of a shell script together with the Puppet Module Tool (PMT) and let the PMT first install the required Puppet modules before actually provisioning the VM with Puppet. This is an easy to adopt workflow if you just use Puppet to provision your development boxes. The Puppet configuration which I use right now looks close to this:
 
@@ -83,7 +83,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
-  
+
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--cpus", "2"]
     v.customize ["modifyvm", :id, "--memory", "1280"]
