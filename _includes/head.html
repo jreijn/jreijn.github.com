@@ -31,11 +31,11 @@
     {% else %}
       <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
     {% endif %}
-    <!-- {% if page.image %}
+    {% if page.image %}
       <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
     {% else %}
-      <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/logo.png">
-    {% endif %} -->
+      <meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">
+    {% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
