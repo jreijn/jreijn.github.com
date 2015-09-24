@@ -9,11 +9,33 @@
     <link rel="publisher" href="https://plus.google.com/101111641807482638731" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="http://feeds.feedburner.com/JeroenReijn" />
     <!-- Custom CSS -->
-    
+
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/flat-ui.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jreijn">
+    <meta name="twitter:creator" content="@jreijn">
+    {% if page.title %}
+      <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+      <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    {% if page.url %}
+      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.description %}
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+    {% endif %}
+    <!-- {% if page.image %}
+      <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+    {% else %}
+      <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/logo.png">
+    {% endif %} -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
