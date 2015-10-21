@@ -1,29 +1,39 @@
 <div id="sidebar">
     <div>
-<!--
-        <img class="bio-photo" src="/assets/profile.jpg"/>
-        <h4>Jeroen Reijn</h4>
--->
-        <h4>Recent posts</h4>
-        <ul class="sidebar-links">
+        <!-- <img class="bio-photo" src="/assets/profile.jpg"/>
+        <h4>Jeroen Reijn</h4> -->
+        <div class="box sidebox latest-articles">
+          <div class="sidebox-title">Recent posts</div>
+          <div class="sidebox-content">
             {% for post in site.posts limit:5 %}
-               <li>
-                   <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-               </li>
+            <a href="{{ BASE_PATH }}{{ post.url }}">
+              <div class="date">{{ post.date | date_to_string }}</div>
+              <div>{{ post.title }}</div>
+            </a>
             {% endfor %}
-        </ul>
-        <h4>Connect with me:</h4>
+          </div>
+        </div>
+
+        <div class="box sidebox social">
+          <div class="sidebox-title">Connect with me:</div>
+          <div class="sidebox-content">
             <div class="social-icons">
-	<a href="http://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-	<a href="http://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
-	<a href="http://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-    <a href="http://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”><i class="fa fa-rss-square fa-2x"></i></a>
-    </div>
-        <div id="disclaimer">
-            <h4>Disclaimer</h4>
+            	<a href="http://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            	<a href="http://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            	<a href="http://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+              <a href="http://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”><i class="fa fa-rss-square fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box sidebox disclaimer">
+          <div class="sidebox-title">Disclaimer</div>
+          <div class="sidebox-content">
             <small>
                 {{ site.disclaimer }}
             </small>
         </div>
+      </div>
+
     </div>
 </div>
