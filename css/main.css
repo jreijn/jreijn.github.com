@@ -53,10 +53,6 @@ body {
     padding: 1em;
 }
 
-img {
-  width:100%;
-}
-
 .left {
     padding-top: 20px;
     padding-left: 30px;
@@ -220,6 +216,14 @@ ul.sidebar-links li:first-child {
 
   .sidebox.latest-articles a .date {
       display: none;
+  }
+
+  img {
+    width:100%;
+  }
+
+  .posts .post-link {
+    font-size: 24px;
   }
 }
 
