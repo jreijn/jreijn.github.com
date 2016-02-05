@@ -11,7 +11,6 @@ url: "http://www.jeroenreijn.com"
 atom_path: "atom.xml"
 
 # Build settings
-markdown: redcarpet
 permalink: :year/:month/:title.html
 
 paginate: 5
