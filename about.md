@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about.html
 ---
-Hello, my name is Jeroen Reijn and I’m a software engineer @ [Hippo](http://www.onehippo.com), committer at the Apache Software Foundation and Open Source enthusiast.
+Hello, my name is Jeroen Reijn and I’m a software engineer @ [Luminis Amsterdam](http://amsterdam.luminis.eu/), committer at the Apache Software Foundation and Open Source enthusiast.
 
 Most of what I write here is about Open Source, Tech and Java based software development.
 
