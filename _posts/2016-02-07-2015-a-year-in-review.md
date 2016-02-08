@@ -44,7 +44,7 @@ In 2015, I took the time to reflect upon what I was doing and what I wanted to d
 
 I can still remember the day I first started at the Hippo office on the Grasweg in the north of Amsterdam. At that time, Hippo consisted of only 7 people and we weren’t an established product vendor back then. Over the last 13 years Hippo has grown into the successful company it is today. We have a great product, recently entered the [Gartner Magic Quadrant](http://go.onehippo.com/GartnerMQ) and I think organisations worldwide are just starting to see the real potential.
 
-During the last 13 years, Hippo provided me with many great opportunities. I’ve seen some of the greatest cities around the world, had the privilege to work with amazing, smart and highly motivated people, speak at conferences and grow my skills. It has been one amazing journey. I'm definitely going to miss everybody at Hippo!
+During all those years, Hippo provided me with many great opportunities. I’ve seen some of the greatest cities around the world, had the privilege to work with amazing, smart and highly motivated people, speak at conferences and grow my skills. It has been one amazing journey. I'm definitely going to miss everybody at Hippo!
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thank you <a href="https://twitter.com/jreijn">@jreijn</a> for 13 incredible years. Best wishes for you and your family. Stay in touch! All Hippos love you man.</p>&mdash; Arje Cahn (@arjecahn) <a href="https://twitter.com/arjecahn/status/692833000107675648">January 28, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
