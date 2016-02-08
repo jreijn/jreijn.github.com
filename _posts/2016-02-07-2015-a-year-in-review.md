@@ -7,11 +7,11 @@ comments: true
 
 Well this post is long overdue again. February is quite on it's way and it's time to look back at 2015. It was an interesting year for sure and there are more interesting things to come.
 
-##Personally
+## Personally
 
 In January, our baby girl Noëlle Reijn was born. She looks just as pretty as her mom and we're thankful to have her in our lives. With the four or us it became a bit crowded in our house, so in 2014 we bought a house to which we got the keys in March and moved in in June of last year. Both kids now have their own rooms and enjoy playing outside in the backyard. Between March and June we had quite some work to do on the house. Eventhough these month were really busy and exhausting (combining work, with a baby and a new house) I have to say I really enjoyed working in the house and doing physical labour. It also gave me some time to think about where I'm now and what I would like to experience next in my life. Keep reading to hear more about that.
 
-##Professionally
+## Professionally
 
 The year started off with some interesting [Hippo](http://www.onehippo.com) projects. I worked on a PoC for one of Hippo's larger Dutch customers who were rethinking their existing online architecture. The PoC was focussed both on some new Hippo features, but the bigger challenge was to help out designing their new online architecture. The customer has a wide variety of applications that all make up their unified web presence. From a visitor perspective this is hardly visible, but from a company perspective, this is not an ideal solution. The plan for the new architecture is now to move all those applications into (RESTful) services and move the application logic into the browser by means of Javascript driven applications. I think this is a very good move going forward.
 
@@ -38,7 +38,7 @@ In November, we had the Hippo.Connect Amsterdam at the Westergasfabriek. The loc
 
 The last couple of month I've mostly worked on stuff that will be coming in the next Hippo CMS version(s). I won't give away too much, so you'll just have to wait and see ;-) .
 
-##Looking ahead
+## Looking ahead
 
 In 2015, I took the time to reflect upon what I was doing and what I wanted to do next. After much thought and consideration, I decided that I was going to have to leave Hippo and embark on a new adventure to gain new experiences and start a new chapter in my professional career. Being with the company for almost 13 years, this was a very tough decision to make. For those of you that know me well, to me, Hippo has always been more than just an employer. Hippo has been the starting point of my professional career, a group of friends that shared my passion for technology and the web, and an organisation that encouraged me to reach my full potential and challenged me to rise beyond that.
 
