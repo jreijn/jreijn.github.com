@@ -15,7 +15,7 @@ Knowledge and skills are a software engineer biggest assets, so standing still i
 
 Our industry is rapidly evolving and it might not always be easy to keep up with all the changes and newly introduced technologies and practices. In this post, I'll share some of the ways, sources, and tools I use to stay up to date. It might not be directly applicable to you, but I hope you might find some useful.
 
-Now that I think of it, there is a large variety of sources that I use to stay up to date. Just a name a few:
+Now that I think of it, there is a large variety of sources that I use to stay up to date. Just to name a few:
 
 + Twitter
 + Google+
@@ -96,4 +96,4 @@ Just to name a few of the channel subscriptions I have on YouTube:
 
 ## Summary
 
-I hope you have a little inspiration now. My advice would be to digest at your own pace. Select topics that interest you or broaden your horizon and try to explore areas out of your comfort zone. Let me know if you have other valuable resources that a really need to see, read or listen too!
+I hope you have a little inspiration now. My advice would be to digest at your own pace. Select topics that interest you or broaden your horizon and try to explore areas out of your comfort zone. Let me know if you have other valuable resources that I really need to see, read or listen too!
