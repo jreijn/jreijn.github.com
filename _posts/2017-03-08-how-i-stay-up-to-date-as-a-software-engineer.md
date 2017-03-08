@@ -10,7 +10,8 @@ As a software engineer it's important to keep learning and with learning, I don'
 
 How much time you can spend on this really depends on your own situation. I'm a parent of two, with a 4 and a half year old son and a daughter that just turned 2. I love spending time with them and my wife, but I'm also really passionate about work and software engineering in general, so finding a balance is very important.
 
-As you will probably spend a large part of your day time at work, I think it's important to have an employer that encourages you to spend time to stay up to date and grow yourself. I'm happy to have found this culture at both [Luminis](https://www.luminis.eu) and [Hippo](https://onehippo.com), so I'm quite blessed in that sense. Knowledge and skills are a software engineer biggest assets, so standing still is not an option.
+As you will probably spend a large part of your day time at work, I think it's important to have an employer that encourages you to spend time to stay up to date and grow yourself. I'm happy to have found this culture at both [Luminis](https://www.luminis.eu) and [Hippo](https://onehippo.com), so I'm quite blessed in that sense. At Luminis we have our own developer conference and we also have tech days every couple of weeks where the entire team is busy exploring new technologies, sharing experiences and learning new concepts and ideas.
+Knowledge and skills are a software engineer biggest assets, so standing still is not an option.
 
 Our industry is rapidly evolving and it might not always be easy to keep up with all the changes and newly introduced technologies and practices. In this post, I'll share some of the ways, sources, and tools I use to stay up to date. It might not be directly applicable to you, but I hope you might find some useful.
 
