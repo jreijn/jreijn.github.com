@@ -15,7 +15,7 @@ In this post we will go through all the necessary steps to setup Couchbase, Elas
 
 If you are familiar with <a href="http://logstash.net/" target="_blank">LogStash</a> you might wonder why we use Couchbase as an additional storage for our request data. Well it's because  with Hippo CMS we store more than just the request log information. We  also store information about a visitor over multiple requests with  regards to (content) characteristics and persona based matching. We need  a cluster-wide high performance database for that and that's why we use  Couchbase as a first layer of storage.
 
-###Setting up Couchbase
+### Setting up Couchbase
 
 As I've said before at Hippo we use Couchbase as our storage solution. For installation instructions please see the <a href="http://www.couchbase.com/download" target="_blank">official Couchbase download page</a>. Couchbase uses data buckets for storage.
 There are two kind of buckets available; 'couchbase' buckets and 'memcached' buckets. For this specific use-case you will need to create a bucket of type 'couchbase'  called '<i>targeting</i>'.
@@ -51,7 +51,7 @@ In this bucket we will be storing request data. An example of a request document
 
 The above snippet is taken from the requestlog of our documentation website. As you can see our relevance/targeting module is collecting data about visitors (like geo data, type of channel a user is visiting, etc) and this data is stored in Couchbase as a JSON document.<br />Now that we have this data inside our database we would like to slice this data and see what our visitors are doing over time.
 
-##Elasticsearch
+## Elasticsearch
 <img align="left" style="margin-left:0px;margin-right:5px;" border="0" height="180" src="http://2.bp.blogspot.com/-muk5Z516b1k/Uew4gXj3XeI/AAAAAAAAAl0/EycyB05UTMM/s200/bonsai1.png" width="200" />
 Elasticsearch is probably one of the most rapidly adopted technologies. It has adoption by companies like Github, StackOverflow and Foursquare. For those of you not yet familiar with Elasticsearch; it's a distributed (JSON based) document storage solution with advanced query capabilities and often used for distributed search and analytics.
 
@@ -66,7 +66,7 @@ This will download Elasticsearch 0.90.2 to your local directory. Now let's unzip
 ```
 $ tar xzvf elasticsearch-0.90.2.tar.gz
 ```
-###Adding the Couchbase transport plugin
+### Adding the Couchbase transport plugin
 Since we're using the latest version of Elasticsearch we need to manually build the Couchbase transport plugin from Github. This part is a little more tricky, but still quite easy to do. Let's first do a checkout of the transport plugin from Github.
 
 ```
@@ -207,7 +207,7 @@ One of the nice features of Kibana is that it can load a dashboard  configuratio
 
 Well that's it. In this post we've seen how to setup Couchbase, Elasticsearch and Kibana to perform real-time visitor analysis for your website / web application. Last month at the Hippo GetTogether 2013 I gave a live demonstration of what I've written here. When the video becomes available I'll do a short update or new post, so you can hear more about our relevance module and the integration with Couchbase.
 
-###References
+### References
 
 + <a href="http://www.couchbase.com/" target="_blank">Couchbase server</a>
 + <a href="http://www.elasticsearch.org/" target="_blank">Elasticsearch</a>

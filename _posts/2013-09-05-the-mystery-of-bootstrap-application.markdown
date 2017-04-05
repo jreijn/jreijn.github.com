@@ -13,7 +13,7 @@ In my day to day job I'm a Java coder working on a MacBook Pro running OS X (Mou
 
 I asked around a little if any of my fellow coders experienced this as well and it seems so, but nobody took the time to figure out what was going on. The answers are out there on the web, but you really need to know what to search for before finding a proper answer.
 
-###ForkedBooter
+### ForkedBooter
 
 If you see the <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ForkedBooter</span> application pop up in your dock this is most likely due to the <a href="http://maven.apache.org/surefire/maven-surefire-plugin/index.html" target="_blank">maven-surefire-plugin</a> which is being executed during the test phase of the Maven build lifecycle.
 
@@ -26,7 +26,7 @@ By adding the headless directive it will tell Maven and the plugins (which embra
 
 This should resolve the <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ForkedBooter</span> popping up in the OS X dock.
 
-###Bootstrap
+### Bootstrap
 The <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">Bootstrap</span> application showing up in the dock is actually quite specific and originates from starting up Apache Tomcat somewhere during the Maven build. In my specific case this was because at <a href="http://www.onehippo.com/" target="_blank">Hippo</a> we use the <a href="http://cargo.codehaus.org/Maven2+plugin" target="_blank">cargo-maven2-plugin</a> to fire up Apache Tomcat to run the CMS and site web application inside a Tomcat instance.
 
 There are several ways of solving this. One of the possible options I found was to change Tomcats&nbsp; <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">conf/catalina.properties</span> file and add the following line at the end of the file.
@@ -87,7 +87,7 @@ This way the system property is added to the Java run-time when starting up Tomc
 
 I hope this post will help those of you in search for the same answers and could not find it.
 
-###References
+### References
 
 + <a href="http://stackoverflow.com/questions/8189635/any-idea-why-org-apache-catalina-startup-bootstrap-pops-up-in-dock-on-mac" target="_blank">Stack overflow: Any idea why org.apache.catalina.startup.Bootstrap pops up in dock on Mac?</a>
 + <a href="https://issues.jenkins-ci.org/browse/JENKINS-9785" target="_blank">Jenkins JIRA: on OSX a java icon jump on dock for all starting maven build and takes focus</a>

@@ -15,7 +15,7 @@ The rest of this post will be about how I experienced the conference.
 
 
 
-###The venue
+### The venue
 
 dotJS was held in the beautiful <a href="http://en.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_des_Vari%C3%A9t%C3%A9s" target="_blank">Théâtre des Variétés</a> in the hart of Paris. The venue really looked amazing and the conference covered all floors and rooms of the building. With a sharp looking screen it was really easy to read any code that presented itself on-screen.
 The seats however were quite small for people like me (or people above 1.70m in general). For those of you that ever flew with EasyJet it was sort of a similar experience. The conference attracted about 500-600 people and the room was packed.
@@ -23,7 +23,7 @@ The seats however were quite small for people like me (or people above 1.70m in 
 The lunch in the middle of the day was good and there was some real tasty quality food, but making fresh food with about 250-300 people waiting can become quite a logistical problem.
 Even though the total amount of attendees were divided in groups the lines were long and everybody had to be in the same room to be able to get some food. I liked the freshly cooked food, but I guess this could be a bit improved with prepackaged lunch boxes or serving food in multiple rooms.
 
-###Talks and speakers
+### Talks and speakers
 These days Javascript is not only used on the client/browser, but also on the server side with for instance <a href="http://nodejs.org/" target="_blank">Node.js</a>.
 Therefor the list of speakers was a mix of both and in my opinion contained a lot of knowledgeable individuals.
 To name a few:
@@ -42,6 +42,6 @@ I thought that was a shame, since there was so much knowledge on stage.
 
 The highlights for me were: Jeremy Ashkenas ("Symbiotic languages") , Brian Leroux ("How the Javascript language can lead to unexpected results") and Jacob Thornton ("The history of Open Source").
 
-###Summary
+### Summary
 
 The conference was nice and had attracted quality speakers. <a href="https://twitter.com/sylvinus" target="_blank">Sylvain Zimmer</a> and <a href="https://twitter.com/tbassetto" target="_blank">Thomas Bassetto</a> did a really good job in making dotJS happen. Unfortunately the conference had just a couple of in-depth Javascript talks and therefor did not really meet my expectations. Even though there was no real schedule up front my advice to the organizers would be to make a good balance between general talks and in-depth talks next year. I personally would have expected a lot more in depth Javascript talk at at Javascript conference.

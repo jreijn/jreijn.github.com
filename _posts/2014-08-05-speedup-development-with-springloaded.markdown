@@ -6,15 +6,15 @@ categories:
  - hippo
 ---
 
-At [Hippo](http://www.onehippo.com) we use [JRebel](http://zeroturnaround.com/software/jrebel/) a lot during the development of our CMS product. JRebel is a great tool and allows us to do live reloading of source code and enables us to develop the CMS product in a lot less time. The main reason that we use JRebel is that the the CMS suite itself is build from several multi-module Maven projects. JRebel helps limiting the amount of build, aggregate, package and redeploy cycles needed to test the changes and new features which we add to the CMS. For this specific scenario JRebel is excellent and it works really well, but most of the developers I meet are spending time on developing websites with Hippo CMS, which are usually less complex projects. For developers on those kinds of projects getting a JRebel license is usually a thougher challange, but don't worry there are alternatives besides using JRebel that can also help you speed up development. 
+At [Hippo](http://www.onehippo.com) we use [JRebel](http://zeroturnaround.com/software/jrebel/) a lot during the development of our CMS product. JRebel is a great tool and allows us to do live reloading of source code and enables us to develop the CMS product in a lot less time. The main reason that we use JRebel is that the the CMS suite itself is build from several multi-module Maven projects. JRebel helps limiting the amount of build, aggregate, package and redeploy cycles needed to test the changes and new features which we add to the CMS. For this specific scenario JRebel is excellent and it works really well, but most of the developers I meet are spending time on developing websites with Hippo CMS, which are usually less complex projects. For developers on those kinds of projects getting a JRebel license is usually a thougher challange, but don't worry there are alternatives besides using JRebel that can also help you speed up development.
 
 One of these alternatives is [Spring Loaded](https://github.com/spring-projects/spring-loaded). Spring Loaded is used as the reloading system in [Grails 2](https://grails.org/) based projects. It's battle tested, open source and free to use. In this post I will explain how you can leverage Spring Loaded to implement your Hippo CMS project in less time.
 
-##Some background information
+## Some background information
 
-Building a Hippo CMS driven website is usually done with the ``cargo-maven2-plugin`` to deploy the CMS and Site (delivery-tier) application into a by [Cargo](http://cargo.codehaus.org/Home) created Tomcat instance. This makes it simple to use for new users, because you don't have to install an application container first and you only need Java and Maven. Most Hippo CMS projects start from our archetype (i.e. the Essentials or plain archetype). By default this archetype comes with a JRebel profile, which you can leverage if you (or your employer) already have a license. If you don't have a license you will have to build, re-package and run a cargo:redeploy to get the latest changes into the running Tomcat instance. IDE tooling can also help, but has it's limits. Setting it up with your IDE can be less straightforward and time-consuming. 
+Building a Hippo CMS driven website is usually done with the ``cargo-maven2-plugin`` to deploy the CMS and Site (delivery-tier) application into a by [Cargo](http://cargo.codehaus.org/Home) created Tomcat instance. This makes it simple to use for new users, because you don't have to install an application container first and you only need Java and Maven. Most Hippo CMS projects start from our archetype (i.e. the Essentials or plain archetype). By default this archetype comes with a JRebel profile, which you can leverage if you (or your employer) already have a license. If you don't have a license you will have to build, re-package and run a cargo:redeploy to get the latest changes into the running Tomcat instance. IDE tooling can also help, but has it's limits. Setting it up with your IDE can be less straightforward and time-consuming.
 
-##Getting Spring Loaded
+## Getting Spring Loaded
 
 Before we start with adding Spring loaded let's take a look at what Spring Loaded can help us with.
 
@@ -67,7 +67,7 @@ site-context.xml
 
   <Loader className="org.apache.catalina.loader.VirtualWebappLoader" searchVirtualFirst="true"
           virtualClasspath="${project.basedir}/site/target/classes" />
-          
+
   <!-- In case you want to reload other files as well you can uncomment the following section -->
   <!--  <Resources className="org.apache.naming.resources.VirtualDirContext"
              extraResourcePaths="/=${project.basedir}/site/src/main/webapp" />

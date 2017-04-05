@@ -11,13 +11,13 @@ At Hippo we have a concept we call 'Hippo Fridays'. Hippo Fridays are monthly Fr
 
 The other day while leaving the office I overheard one of my colleagues ask questions about the actual outcome of these Hippo Fridays. Does something end up in the product? Well let me share what has come out of the more recent Hippo Fridays and will end up in the upcoming Hippo CMS 7.8 release.
 
-##HTML5 History API in the CMS and Console
+## HTML5 History API in the CMS and Console
 
 With the upcoming Hippo CMS 7.8 release both CMS and Console will make use of the <a href="https://developer.mozilla.org/en-US/docs/DOM/Manipulating_the_browser_history" target="_blank">HTML5 history API</a>. This might sounds a bit vague and technical, but it means that the CMS and Console will store the URLs to the documents that you visited in your browsers history. By doing that it will allow you to reach them by using your browsers history or by using a direct URL in the browsers address bar. See the address bar in the picture below.
 
 <img border="0" height="361" src="http://2.bp.blogspot.com/-eC3km9I8f1I/UQZADyyTZJI/AAAAAAAAAkE/_tYPm2OiDg0/s640/CapturFiles-20130128_1001.png" width="640" />
 
-##Multiple Console improvements
+## Multiple Console improvements
 
 The more experienced Hippo users will probably notice some new options in the Console menu bar.
 The Console UI was improved with some new features to benefit the user experience:
@@ -25,7 +25,7 @@ The Console UI was improved with some new features to benefit the user experienc
 + deletion of multiple nodes
 + keyboard shortcuts
 + open a node by path or UUID
-+ use the arrow keys to navigate the tree 
++ use the arrow keys to navigate the tree
 
 The next image shows you all the keyboard-shortcuts that are available in the Console.
 
@@ -37,7 +37,7 @@ With the upcoming 7.8 release we will also have scripting support straight from 
 
 <img border="0" height="450" src="http://4.bp.blogspot.com/-2Mj6xmhuZlg/UQZC3NQqxCI/AAAAAAAAAkU/UDvcv67VHGU/s640/CapturFiles-20130128_1001_1.png" width="640" />
 
-##SNEAK PREVIEW: Settings management
+## SNEAK PREVIEW: Settings management
 
 This next feature is one of my own pet projects. Those of you who are experienced with Hippo CMS know that Hippo CMS is very flexible and you can configure all most everything. However most of the configuration options are done through the CMS Console.
 

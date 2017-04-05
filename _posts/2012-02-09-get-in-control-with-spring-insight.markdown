@@ -30,7 +30,7 @@ By default Spring Insight comes with a default set of plugins/inspections for di
 
 There are <a href="https://github.com/SpringSource/spring-insight-plugins/tree/master/collection-plugins" target="_blank">more plugins available</a> and it's even quite easy to create some of your own and that's what the rest of this post is about.
 
-###Writing your own Spring Insight plugin
+### Writing your own Spring Insight plugin
 
 Working with Hippo CMS driven web applications every day I had the idea of creating a Spring Insight plugin for the Hippo Site Toolkit (HST in short). The HST consists of a set of components that interact with the Hippo content repository.
 During a single request multiple components can be called and for each component there are multiple processing phases.
@@ -43,7 +43,7 @@ So my initial idea for the Spring Insight plugin was to show:
 Because the default Spring Insight plugins are open source I was able to write my first plugin in about 30 minutes or so.
 A large part of those 30 minutes were taken up with learning <a href="http://eclipse.org/aspectj/">AspectsJ</a>, because I'd never used that before.
 
-###Getting started
+### Getting started
 
 For this post we will now focus on creating an inspection on performing HST queries.
 From the Insight web application view I would like to see the information of an <i>HstQuery</i> and time it took to perform the actual query.
@@ -137,7 +137,7 @@ For each component you can now see the class, the window name (as you can also s
 You can also expand an HST component when it contains an <i>HstQuery</i>.
 The advantage of having such a plugin might help us identify some slow pages that might have slow JCR queries or components that do extensive (unnecessary) processing.
 
-###Summary
+### Summary
 
 Spring Insight is a very interesting project. Doing a quick scan for troublesome code is relatively fast, but can for now only be done with the VMware vFabric TM  tc Server, so you cannot run it in your personal preferred application container like Tomcat, Jetty or JBoss.
 I've personally added Spring Insight to my default set of tools for figuring out performance issues when I need to do a review of a project.

@@ -8,7 +8,7 @@ comments: true
 
 Over the last 2-3 years I've seen many moments during a project implementation where having an out of the box JCR RESTful API could have helped. Key areas where having such an API were deployment automation and data imports/exports. As a starting point having an API for managing JCR nodes and properties would have been a first step in the right direction. By default Apache Jackrabbit 2.X does not have this out of the box. However Apache Jackrabbit 3.0 (Oak) and current versions of JBoss Modeshape do support this, so in case Hippo CMS switches over to Apache Oak we might need to revise this add-on.
 
-A few months ago I decided that it was long due to have this kind of support for Hippo CMS, so I decided to start a new project on Github. I’ve named it the "Hippo RESTful web services add-on” and the project focusses on providing a RESTful API directly on top of the content repository, so in that sense it takes a different approach from the [RESTful API support Hippo CMS offers in it's delivery tier](http://www.onehippo.org/library/concepts/rest/restful-jax-rs-component-support-in-hst-2.html). The main focus for now is on data export/import and deployment automation. 
+A few months ago I decided that it was long due to have this kind of support for Hippo CMS, so I decided to start a new project on Github. I’ve named it the "Hippo RESTful web services add-on” and the project focusses on providing a RESTful API directly on top of the content repository, so in that sense it takes a different approach from the [RESTful API support Hippo CMS offers in it's delivery tier](http://www.onehippo.org/library/concepts/rest/restful-jax-rs-component-support-in-hst-2.html). The main focus for now is on data export/import and deployment automation.
 
 While developing the add-on I’ve read many different opinions on REST api design and what REST truly means. If you would ask people what they think REST stands for you might be quite surprised. Last year I attended a talk by Stefan Tilkov on ["REST: I don't Think it Means What You Think it Does”](https://www.youtube.com/watch?v=pspy1H6A3FM). While he asked the audience what REST meant to them there were quite some different answers. If you haven’t seen the talk you should take a look. For now I took the most pragmatic approach and we'll need to see how you guys are working with the API before we can improve it.
 
@@ -77,10 +77,10 @@ Now in case we want to just add a property to the newly created test node we can
 
 ``` bash
 $ curl -H "Content-Type: application/json" -X POST -u admin:admin http://localhost:8080/cms/rest/api/properties/test -d '
-{ "name": "test", 
-  "type": "String", 
-  "multiple":"false", 
-  "values":["test value"] 
+{ "name": "test",
+  "type": "String",
+  "multiple":"false",
+  "values":["test value"]
 }'
 ```
 
@@ -135,7 +135,7 @@ The nice thing about [Swagger](http://swagger.io/) is that it allows you to easi
 
 ## Final thoughts
 
-In this post we've discussed the low-level JCR RESTful API. This can be useful in several scenarios, but the goal of the add-on is also to provide more high level resource APIs. The first two are already added to the add-on; endpoints for managing Users and Groups. Next up will be a resource endpoint for adding assets to the system. 
+In this post we've discussed the low-level JCR RESTful API. This can be useful in several scenarios, but the goal of the add-on is also to provide more high level resource APIs. The first two are already added to the add-on; endpoints for managing Users and Groups. Next up will be a resource endpoint for adding assets to the system.
 
 Having such an API also allows for the development of some lightweight tools that can interact with the API. I've already created a bulk asset import tool, which I will be open sourcing soon. In case you are interested be sure to follow me on github.
 

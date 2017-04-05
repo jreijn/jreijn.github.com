@@ -11,7 +11,7 @@ After the migration process al seemed fine and dandy. Everything got tested prop
 
 It actually turned out, we had a bug in our application for over a year, but the way we had set Apache mod\_proxy's ```ProxyPassReverseCookiePath``` directive, had hidden the problem. So with this post I'll try to explain a bit what we had and what the difference is between Apache mod\_proxy and Nginx proxy capabilities with regards to cookies.
 
-##The problem
+## The problem
 
 If you use cookies on your site, which you create from your Java based application you usually use something like:
 
@@ -34,9 +34,9 @@ Because we proxy our site application, we wanted to get rid of the /site/ from t
 ```
 <VirtualHost *:80>
   ServerName www.example.com
- 
+
   ProxyPreserveHost  On
- 
+
   ProxyPass         / http://127.0.0.1:8080/site/
   ProxyPassReverse  / http://127.0.0.1:8080/site/
   ProxyPassReverseCookiePath  /site/ /
@@ -84,7 +84,7 @@ So in our case it will only replace that part of the entire path, which contains
 
 So as a result our Apache vhost configuration actually made *'/site/forms/myform.html'* into *'/'*, where as nginx made it into *'/forms/myform.html'*, which is actually what it should have been in the first place. Now you might wonder what's wrong with that, but in our case our application also did some url processing on the server-side. Our forms are stored in an alphabetical folder structure, because of the amount of forms, so typically a form called 'myform' would be stored in '/forms/m/myform.html'. The application would then remove the /m/ for nice looking URLs and SEO purposes. Because of the difference we now had a cookie path set to '/forms/m/myform.html', instead of '/forms/myform.html', which was what the browser uses to visit the page.
 
-##'A' solution
+## 'A' solution
 
 I personally like and prefer the way ```proxy_cookie_path``` works. Having the ability to only change a small segment of the cookie path, is much nicer and keeps inline with what a developer intended to do with the cookie. The quickest solution for us was to just use a regexp to mimic Apache mod\_proxy behaviour in Nginx:
 

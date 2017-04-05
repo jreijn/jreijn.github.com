@@ -10,11 +10,11 @@ My personal opinion about the forge is that it feels outdated, hard to navigate 
 Sure the Hippo Forge gives us one central place to go to, but that can be solved by other solutions as well.
 For this particular project I chose to see how far I would come by combining different free for open source SaaS products and see how much value they could give me.
 
-##Source control
+## Source control
 
 Well first things first. To be able to open source your project you need to be able to store the source code somewhere, so a publicly available source control management system was my number one priority. I chose to put my code on [GitHub](http://github.com). Other services like [Bitbucket](http://bitbucket.org), [Google code](http://code.google.com) or [SourceForge](http://sourceforge.net) would do fine as well, but I really like how Github works, navigates and looks. Also it seems to be the most adopted SCM out there at the moment. I'm not sure if there are any numbers available, but my guess is that GitHub also has the most (active) users, so Github gives your project the best exposure and largest possible community. Github also gives your project a Wiki, Issue management and a documentation website which can be automatically generated from markdown files. This is a huge amount of infrastructure which you get all at once. For me this replaces most of the tools I need and use for projects on the Hippo Forge.
 
-##Continuous integration
+## Continuous integration
 
 Having a place to store the source code is one thing, but modern software developers are used to having more tools at their disposal.
 To make sure the project always builds successfully we need to have a Continuous Integration server.
@@ -45,7 +45,7 @@ Now the last step is to sign into Travis and enable the build for your project. 
 
 Easy right? It took me less than 5 minutes to set this up and get the project going.
 
-##Code coverage
+## Code coverage
 
 I personally care about the quality of the code I write. Even more if the project is open source. Now at the office we use [SonarQube](http://www.sonarqube.org/) for measuring the quality of our code over time, but unfortunately there is no free instance available for open source projects or you need to host it yourself. However there are some really nice alternatives available. While exploring the market I came across [CodeClimate](https://codeclimate.com) (unfortunately no Java yet) and the really awesome [Coveralls](https://coveralls.io/). Coveralls integrates really nice with the Github API and is also able to show you the result of a pull request.
 
@@ -67,11 +67,11 @@ To use Coveralls in my project I had to set up the ```coveralls-maven-plugin```.
 
 Same as Travis, Coveralls also has these nice little badges which you can embed within your project documentation to share the code coverage of the project.
 
-##Storing artifacts
+## Storing artifacts
 
 Now my last outstanding question is where do I store my release artifacts? I guess this really depends on the programming language being used, but in my case it's Java and I've seen several approaches. You could store it in a separate
 repository on Github which acts as a maven repository, but this is not really recommended and is not a long-term solution. A better approach is to use the [Sonatype Open Source Repository](http://central.sonatype.org/pages/ossrh-guide.html), which is publicly available to open source projects. There are some limitations like all your project dependencies should be available in Maven Central, but in general this is a really good way to have your release artifacts available for others to use. In case you store your maven artifacts in the OSSRH you can promote release binaries and let them sync to the Central Maven Repository, which is a really nice bonus.
 
-##Summary
+## Summary
 
 If I look at the available services there is some really amazing stuff out there. It's easy to decentralizing the required infrastructure these days and you can even get more value from choosing the right combination. I've seen some interesting services like Snap, which also offer build pipelines and more and I will definitely take a look at how I can use these services more effectively.

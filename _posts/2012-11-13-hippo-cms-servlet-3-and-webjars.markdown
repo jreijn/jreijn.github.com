@@ -13,7 +13,7 @@ Because of this I attended a talk at Devoxx by <a href="http://www.jamesward.com
 I've been following James on Twitter since that day because he was playing around with quite some interesting technologies.
 Recently I noticed James <a href="http://www.jamesward.com/2012/10/31/webjars-officially-launched" target="_blank">introduced</a> an interesting project called <a href="http://www.webjars.org/" target="_blank">WebJars</a>.
 
-###What are WebJars?
+### What are WebJars?
 
 In most Java projects a dependency management system is used like <a href="http://maven.apache.org/" target="_blank">Maven</a>, <a href="http://ant.apache.org/ivy/" target="_blank">Ivy</a> or <a href="http://www.gradle.org/" target="_blank">Gradle</a>.
 Having dependency management setup for server-side dependencies is quite natural, but what about client-side dependencies? This is where WebJars can help out.
@@ -28,7 +28,7 @@ That's really helpful!
 
 So let's see what we need to do if we want to use WebJars in for instance a Hippo CMS project.
 
-###Getting started with&nbsp; Hippo CMS and WebJars.
+### Getting started with&nbsp; Hippo CMS and WebJars.
 
 Let's first <a href="http://www.onehippo.org/7_7/trails/developer-trail/hippo-baby-steps" target="_blank">generate a new Hippo project</a>. The following maven command will generate a Hippo CMS 7.7.6 project from the Hippo Archetype.
 
