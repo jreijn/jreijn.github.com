@@ -1,7 +1,7 @@
 ---
 title: Fixing the long startup time of my Java application running on macOS Sierra
 layout: post
-date: '2017-03-08'
+date: '2017-05-10'
 comments: true
 ---
 
