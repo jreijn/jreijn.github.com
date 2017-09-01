@@ -5,7 +5,7 @@
 
     <body>
         <div class="container-fluid navigation-bar">
-        <nav class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -15,11 +15,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">{{ site.title }}</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-left left-header">
                         <li>
                             <a href="/">Home</a>
                         </li>
@@ -32,7 +31,13 @@
                         <li>
                             <a href="/presentations.html">Presentations</a>
                         </li>
-                        <li><a href="http://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick=”javascript:pageTracker._trackPageview(‘feedburner’);”><i class="fa fa-rss-square"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right right-header" id="social-header">
+                      <li><a href="https://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank" onclick="javascript:pageTracker._trackPageview('twitter');"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/jeroenreijn/" title="Jeroen Reijn on LinkedIn" target="_blank" onclick="javascript:pageTracker._trackPageview('linkedin');"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                      <li><a href="https://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank" onclick="javascript:pageTracker._trackPageview('github');"><i class="fa fa-github-square fa-lg"></i></a></li>
+                      <li><a href="https://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank" onclick="javascript:pageTracker._trackPageview('googleplus');"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
+                      <li><a href="https://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick="javascript:pageTracker._trackPageview('feedburner');"><i class="fa fa-rss-square fa-lg"></i></a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -40,7 +45,7 @@
             <!-- /.container -->
         </nav>
         </div>
-        <div class="container-fluid" id="main">
+        <div class="container-fluid" id="main" >
           <div class="row">
               <div class="col-md-9 left">
                   {{ content }}
