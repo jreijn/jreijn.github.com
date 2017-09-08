@@ -10,12 +10,12 @@ Now that the first two weeks of 2015 have passed it's time to look back at what 
 
 ## Professionally
 
-The year started well with a trip to the wonderful city of Paris in January, to which I was invited by [OCTO Technologies](http://www.octo.com/en) to explain why [Hippo CMS](http://www.onehippo.org) is different from other Java based CMS's and under which scenarios it's a good fit when you are looking for a new Content Management System. I really enjoyed meeting new people and the great talks and discussions I had afterwards.
+The year started well with a trip to the wonderful city of Paris in January, to which I was invited by [OCTO Technologies](http://www.octo.com/en) to explain why [Hippo CMS](https://www.onehippo.org) is different from other Java based CMS's and under which scenarios it's a good fit when you are looking for a new Content Management System. I really enjoyed meeting new people and the great talks and discussions I had afterwards.
 
-The first few months of 2014 were mainly focussed on getting the [Hippo CMS Feature and Component library](http://www.onehippo.org/library/about/release-notes/hippo-setup-and-feature-library.html) (a.k.a code name Hippo Essentials) ready for it's first BETA release. We've been working quite hard on this with the Hippo Professional Services team. We were really happy to announce the first beta around the same period of the Hippo GetTogether. I've you haven't heard about the setup and feature library I would strongly advise you to watch this video. It will help you kickstart your project.
+The first few months of 2014 were mainly focussed on getting the [Hippo CMS Feature and Component library](https://www.onehippo.org/library/about/release-notes/hippo-setup-and-feature-library.html) (a.k.a code name Hippo Essentials) ready for it's first BETA release. We've been working quite hard on this with the Hippo Professional Services team. We were really happy to announce the first beta around the same period of the Hippo GetTogether. I've you haven't heard about the setup and feature library I would strongly advise you to watch this video. It will help you kickstart your project.
 
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//player.vimeo.com/video/105642248" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105642248">Hippo's setup and feature library</a> from <a href="http://vimeo.com/hippocms">Hippo CMS</a> on <a href="https://vimeo.com">Vimeo</a>.
+    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/105642248" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/105642248">Hippo's setup and feature library</a> from <a href="https://vimeo.com/hippocms">Hippo CMS</a> on <a href="https://vimeo.com">Vimeo</a>.
     </p>
 </div>
 
@@ -36,5 +36,5 @@ November was a conference month in which I visited Jfall. JFall is the largest J
 ## Personal
 As you might have read in [last years review](http://blog.jeroenreijn.com/2014/03/looking-back-at-2013.html) I had quite some health issues, which turned out to be stomach related. Since than I have quit caffeine, stopped drinking soda and all is back to normal again. Not sure why my body reacted like that. I'm not really a heavy coffee drinker or soda drinker, but cutting it down to zero seems to have helped. Other then that Soraya and I bought a new house, which we hope to move into somewhere around April 2015, so we've some busy times ahead. Blogging wise it was a little bit quiet on my personal blog, but I've started to write the more Hippo CMS specific blogs on [www.onehippo.com](http://www.onehippo.com/en/resources/blogs). You can find the blogs written by me  [here](http://www.onehippo.com/en/resources/blogs/facet/Author/Jeroen+Reijn).
 
-## Looking ahead 
+## Looking ahead
 2015 will be an exciting year because we're expecting our second child mid January. In March we're also planning on moving, so we'll be quite busy. I also hope I can keep my new years resolution by posting at least once a month on this blog. Programming wise I'm looking forward to learning a new language. I've been thinking about Scala or Go, but have not made up my mind yet. Any suggestions? Further I've decided to follow some online courses on functional and reactive programming. 2014 was a little bit slow with regards to learning new things, so I hope to catch up in 2015.
