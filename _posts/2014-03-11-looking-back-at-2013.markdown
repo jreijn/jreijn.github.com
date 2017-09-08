@@ -22,7 +22,11 @@ One of my personal goals for the second half of 2013 was to give Hippo more visi
 
 Here are two of the talks I gave:
 <br />
-<ul><li><a href="http://www.slideshare.net/jreijn/nosql13-bcnhippocouchbaseesfinal" target="_blank">Real-time visitor analyses with CouchBase and Elasticsearch</a> (<a href="http://gotocon.com/amsterdam-2013/" target="_blank">GOTO Amsterdam</a>, <a href="http://2013.nosql-matters.org/bcn/" target="_blank">Nosql Matters Barcelona</a>, <a href="http://www.meetup.com/HippoGetTogether/events/109032332/" target="_blank">Hippo GetTogether</a>)</li><li><a href="http://www.slideshare.net/jreijn/comparing-templateenginesjvm" target="_blank">Shootout - Comparing Template engines for the JVM</a> ( <a href="http://www.nljug.org/jfall/" target="_blank">J-Fall</a> )</li></ul>Here you can see the recording of my talk about how we use Couchbase and Elasticsearch for real-time visitor analysis.<br /><iframe allowfullscreen="" frameborder="0" height="360" src="//www.youtube.com/embed/vmUNtiq8uR0" width="640"></iframe><br /><br />
+<ul><li><a href="http://www.slideshare.net/jreijn/nosql13-bcnhippocouchbaseesfinal" target="_blank">Real-time visitor analyses with CouchBase and Elasticsearch</a> (<a href="http://gotocon.com/amsterdam-2013/" target="_blank">GOTO Amsterdam</a>, <a href="http://2013.nosql-matters.org/bcn/" target="_blank">Nosql Matters Barcelona</a>, <a href="http://www.meetup.com/HippoGetTogether/events/109032332/" target="_blank">Hippo GetTogether</a>)</li><li><a href="http://www.slideshare.net/jreijn/comparing-templateenginesjvm" target="_blank">Shootout - Comparing Template engines for the JVM</a> ( <a href="http://www.nljug.org/jfall/" target="_blank">J-Fall</a> )</li></ul>
+
+Here you can see the recording of my talk about how we use Couchbase and Elasticsearch for real-time visitor analysis.
+
+<iframe allowfullscreen="" frameborder="0" height="360" src="//www.youtube.com/embed/vmUNtiq8uR0" width="640"></iframe>
 
 ### Personal
 
