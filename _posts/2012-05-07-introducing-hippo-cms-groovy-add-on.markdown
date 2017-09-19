@@ -43,8 +43,10 @@ The features implemented right now are:<br /><ul><li>Script execution from the C
 
 ### Future plans
 
-For the next couple of releases I have a few plans like:<br /><ul><li><strike>Groovy script storing inside the repository&nbsp;</strike> (done)</li><li>Scheduled execution of stored scripts</li><li>Perhaps support Groovy syntax in HST (GSP) templates (like for instance <a href="http://www.playframework.org/" target="_blank">Play framework </a>does with Play version 1.2.x)</li></ul>
+For the next couple of releases I have a few plans like:
+<ul><li><strike>Groovy script storing inside the repository&nbsp;</strike> (done)</li><li>Scheduled execution of stored scripts</li><li>Perhaps support Groovy syntax in HST (GSP) templates (like for instance <a href="http://www.playframework.org/" target="_blank">Play framework </a>does with Play version 1.2.x)</li>
+</ul>
 
-###Contribute
+### Contribute
 
 If you like the concept then please fork the project on Github and send in pull requests.
