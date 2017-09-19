@@ -11,7 +11,7 @@ categories:
 
 Last month I finally found some time to play around with a NoSQL database. Getting hands on experience with a NoSQL database has been on my list for quite some time, but due to busy times at work I was unable to find the energy to get things going.
 
-##A little background information
+## A little background information
 
 Most of you have probably have heard the term <a href="http://en.wikipedia.org/wiki/Nosql">NoSQL</a> before.
 The term is used in situations where you do not have a traditional relation database for storing information.
@@ -35,7 +35,7 @@ MongoDB is as they describe it on their website:
 
 The document-oriented aspect was one of the reasons why I chose MongoDB to start with. It allows you to store rich content with data structures inside your datastore.
 
-##Getting started with MongoDB
+## Getting started with MongoDB
 
 <a href="http://1.bp.blogspot.com/-W_1zs60Kzao/TjAAw6azBtI/AAAAAAAAAfM/GGS2KPkykAs/s1600/MongoDB-Logo-300x100.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="66" src="http://1.bp.blogspot.com/-W_1zs60Kzao/TjAAw6azBtI/AAAAAAAAAfM/GGS2KPkykAs/s200/MongoDB-Logo-300x100.png" width="200" /></a>
 To begin with, I looked at the <a href="http://www.mongodb.org/display/DOCS/Quickstart+OS+X">Quick start page</a> for Mac OS X and I recommend you to do that too (unless you use a different OS).
@@ -57,7 +57,7 @@ Mon Jul 18 22:19:58 [websvr] web admin interface listening on port 28017
 
 At this point MongoDB is running and we can proceed to the next step: using Spring Data to interact with MongoDB.
 
-##Getting started with Spring Data
+## Getting started with Spring Data
 
 The primary goal of the <a href="http://www.springsource.org/spring-data">Spring Data</a> project is to make it easier for developers to work with (No)SQL databases.
 The Spring Data project already has support for a number of the above mentioned NoSQL type of databases.
@@ -272,5 +272,5 @@ public class MongoDBApp {
 All this application does for now is setup a connection with MongoDB, insert 20 persons (documents), fetch them all and write the information to the log.
 As a first experiment this was quite fun to do.
 
-##Summary
+## Summary
 As you can see with Spring Data it's quite easy to get some basic functionality within only a couple of minutes. All the sources mentioned above and a working project can be found on <a href="https://github.com/jreijn/spring-mongo-demo">GitHub</a>. It was a fun first experiment and I already started working on a bit more advanced project, which combines Spring Data, MongoDB, HTML5 and CSS3. It will be on GitHub shortly together with another blog post here so be sure to come back.</div>
