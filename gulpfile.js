@@ -5,6 +5,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -88,8 +89,21 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/font-awesome'))
 })
 
+var concat = require('gulp-concat');
+
+gulp.task('scripts', function() {
+  return gulp.src([
+    './vendor/jquery/jquery.min.js',
+    './vendor/popper/popper.min.js',
+    './vendor/bootstrap/js/bootstrap.min.js',
+    './js/clean-blog.min.js',
+  ])
+    .pipe(concat('all.min.js'))
+    .pipe(gulp.dest('./js/'));
+});
+
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy','scripts']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
