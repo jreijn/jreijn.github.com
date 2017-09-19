@@ -10,10 +10,17 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="http://feeds.feedburner.com/JeroenReijn" />
     <!-- Custom CSS -->
 
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/flat-ui.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ "/vendor/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ "/css/clean-blog.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@jreijn">
@@ -37,13 +44,6 @@
       <meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">
     {% endif %}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="{{ "/js/html5shiv.js" | prepend: site.baseurl }}"></script>
-      <script src="{{ "/js/respond.min.js" | prepend: site.baseurl }}"></script>
-    <![endif]-->
-    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">
         window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"http://www.jeroenreijn.com/privacy.html","theme":"light-top"};
     </script>

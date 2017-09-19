@@ -4,75 +4,21 @@
   {% include head.html %}
 
     <body>
-        <div class="container-fluid navigation-bar">
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-left left-header">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="/archive.html">Archive</a>
-                        </li>
-                        <li>
-                            <a href="/presentations.html">Presentations</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right right-header" id="social-header">
-                      <li><a href="https://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank" onclick="javascript:pageTracker._trackPageview('twitter');"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/jeroenreijn/" title="Jeroen Reijn on LinkedIn" target="_blank" onclick="javascript:pageTracker._trackPageview('linkedin');"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-                      <li><a href="https://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank" onclick="javascript:pageTracker._trackPageview('github');"><i class="fa fa-github-square fa-lg"></i></a></li>
-                      <li><a href="https://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank" onclick="javascript:pageTracker._trackPageview('googleplus');"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
-                      <li><a href="https://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick="javascript:pageTracker._trackPageview('feedburner');"><i class="fa fa-rss-square fa-lg"></i></a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-        </div>
-        <div class="container-fluid" id="main" >
-          <div class="row">
-              <div class="col-md-9 left">
-                  {{ content }}
-              </div>
-              <div class="col-md-3 sidebar">
-                  {% include sidebar.html %}
-              </div>
-          </div>
-        </div>
+        {% include nav.html %}
+
+        {{ content }}
+
         {% include footer.html %}
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-516609-4', 'auto');
-          ga('send', 'pageview');
+        {% include ga.html %}
 
-        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/popper/popper.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-       <!-- <script type="text/javascript">var switchTo5x=true;</script>
-       <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-       <script type="text/javascript">stLight.options({publisher: "85947d63-9402-4fba-8021-319cf94a57da", doNotHash: false, doNotCopy: false, hashAddressBar: false, publisherGA:"UA-516609-4"});</script> -->
-       <script src="/js/jquery.min.js"></script>
-       <script src="/js/bootstrap.min.js"></script>
-       <script src="/js/flat-ui.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="/js/clean-blog.min.js"></script>
 
     </body>
 </html>

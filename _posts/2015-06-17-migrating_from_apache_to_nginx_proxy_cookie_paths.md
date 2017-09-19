@@ -16,11 +16,11 @@ It actually turned out, we had a bug in our application for over a year, but the
 If you use cookies on your site, which you create from your Java based application you usually use something like:
 
 ``` java
-    Cookie cookie = new Cookie(COOKIE_NAME, value);
-    cookie.setSecure(true);
-    cookie.setMaxAge(30);
-    cookie.setPath(pathOnSite);
-    return cookie;
+Cookie cookie = new Cookie(COOKIE_NAME, value);
+cookie.setSecure(true);
+cookie.setMaxAge(30);
+cookie.setPath(pathOnSite);
+return cookie;
 ```
 
 This creates a secure cookie, with a max age of 30 seconds and marks the cookie to be valid for a certain location on the site. The way our cookie was used, was only specific to one form, so on one URL. Hence the pathOnSite value was something like
@@ -77,6 +77,7 @@ Now let's see what Nginx's proxy\_cookie\_path documentation says:
 > Sets a text that should be changed in the path attribute of the “Set-Cookie” header fields of a proxied server response. Suppose a proxied server returned the “Set-Cookie” header field with the attribute “path=/two/some/uri/”. The directive
 >
 > proxy\_cookie\_path /two/ /;
+>
 > will rewrite this attribute to “path=/some/uri/”.
 
 

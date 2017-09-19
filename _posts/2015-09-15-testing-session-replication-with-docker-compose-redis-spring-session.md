@@ -2,7 +2,7 @@
 title: Testing session replication with Docker, Spring Session and Redis
 layout: post
 date: 2015-09-15 00:07
-description: In this post we'll take a look at how we can test session replication with Docker, Redis and Spring Session. 
+description: In this post we'll take a look at how we can test session replication with Docker, Redis and Spring Session.
 comments: true
 ---
 
