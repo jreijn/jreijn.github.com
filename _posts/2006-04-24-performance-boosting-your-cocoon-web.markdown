@@ -18,4 +18,4 @@ Here are a few tips:
 <li>Try to keep the number of pipelines for a request as small as possible. All pipelines will have to be checked for their validity when a request comes in.</li>
 </ul>
 
-I hope you'll find these tips usefull. Always try to get as much out of you web application as possible!
+I hope you'll find these tips useful. Always try to get as much out of you web application as possible!

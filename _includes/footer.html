@@ -1,17 +1,51 @@
-<footer class="blog-footer">
-    <div class="social-icons container col-md-12 col-md-offset-4 col-xs-12 col-xs-offset-1">
-      <ul class="nav nav-pills">
-        <li><a href="http://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank" onclick="javascript:pageTracker._trackPageview('twitter');"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/jeroenreijn/" title="Jeroen Reijn on LinkedIn" target="_blank" onclick="javascript:pageTracker._trackPageview('linkedin');"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-        <li><a href="http://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank" onclick="javascript:pageTracker._trackPageview('googleplus');"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-        <li><a href="http://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank" onclick="javascript:pageTracker._trackPageview('github');"><i class="fa fa-github-square fa-2x"></i></a></li>
-        <li><a href="http://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick="javascript:pageTracker._trackPageview('feedburner');"><i class="fa fa-rss-square fa-2x"></i></a></li>
-      </ul>
+<footer>
+  <div class="container" id="footer">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="h6"><strong>Recent posts</strong></p>
+            <ul class="recent">
+            {% for post in site.posts limit:3 %}
+            <li>
+              <a href="{{ BASE_PATH }}{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <p class="h6"><strong>Disclaimer</strong></p>
+            <small>
+                {{ site.disclaimer }}
+            </small>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-Built with <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a>, <a href="http://glyphicons.com/">GLYPHICONS</a> and <a href="http://www.jekyllrb.com">Jekyll</a>. Powered by <a href="http://github.com">Github</a>.
+  </div>
+  <div class="container social">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="copyright">{{ site.copyright }}</div>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-inline social">
+              <li class="list-inline-item"><a href="http://twitter.com/jreijn" title="Jeroen Reijn on Twitter" target="_blank" onclick="javascript:pageTracker._trackPageview('twitter');"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/jeroenreijn/" title="Jeroen Reijn on LinkedIn" target="_blank" onclick="javascript:pageTracker._trackPageview('linkedin');"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://plus.google.com/+JeroenReijn" title="Jeroen Reijn on Google+" target="_blank" onclick="javascript:pageTracker._trackPageview('googleplus');"><i class="fa fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a href="https://github.com/jreijn" title="Jeroen Reijn on Github" target="_blank" onclick="javascript:pageTracker._trackPageview('github');"><i class="fa fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://instagram.com/jreijn" title="Jeroen Reijn on Instagram" target="_blank" onclick="javascript:pageTracker._trackPageview('instagram');"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="https://youtube.com/jreijn" title="Jeroen Reijn on Youtube" target="_blank" onclick="javascript:pageTracker._trackPageview('youtube');"><i class="fa fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a href="https://stackoverflow.com/users/571007/jeroen" title="Jeroen Reijn on StackOverflow" target="_blank" onclick="javascript:pageTracker._trackPageview('stackoverflow');"><i class="fa fa-stack-overflow"></i></a></li>
+              <li class="list-inline-item"><a href="https://feeds.feedburner.com/JeroenReijn" title="Atom/RSS feed" onclick="javascript:pageTracker._trackPageview('feedburner');"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="copyright">
-        <small>{{ site.copyright }}</small>
-    </div>
+  </div>
 </footer>
