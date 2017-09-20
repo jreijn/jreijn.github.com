@@ -21,7 +21,11 @@ In short an UpdaterModule allows you to run a piece of Java code at start-up tim
 This is quite a nice concept, but when you run these updaters the CMS is not usable for users and if you have a large updater it can be down for quite a while.
 There is a good reason why this is so and it's very useful for a couple of use-cases.
 
-Next to the UpdaterModules Hippo CMS also has the concept of <a href="https://forge.onehippo.org/gf/project/jcr-runner/" target="_blank">JCR runners</a>. These runners connect through RMI and can be run from the same server to perform large batch operations against a running CMS/Repository. They are really handy, but the downside is that you need to have physical access or SSH access to the machine itself, which you sometimes/mostly do not have.<br /><br /><h4>  The reason for creating the Hippo Groovy plugin</h4><br />First of all I like Groovy as a language. It's simple, intuitive for Java developers, reduces scaffolding code and you can easily integrate it with your current framework.
+Next to the UpdaterModules Hippo CMS also has the concept of <a href="https://forge.onehippo.org/gf/project/jcr-runner/" target="_blank">JCR runners</a>. These runners connect through RMI and can be run from the same server to perform large batch operations against a running CMS/Repository. They are really handy, but the downside is that you need to have physical access or SSH access to the machine itself, which you sometimes/mostly do not have.
+
+### The reason for creating the Hippo Groovy plugin
+
+First of all I like Groovy as a language. It's simple, intuitive for Java developers, reduces scaffolding code and you can easily integrate it with your current framework.
 
 My primary objective with creating the Hippo Groovy add-on was creating a CMS plugin that allowed you as a Hippo 'admin' user to for instance:
 
@@ -37,7 +41,8 @@ And I wanted to be able to do it all from <b>within</b> the CMS interface.
 ### Current status
 
 The Hippo CMS Groovy add-on is now <a href="https://github.com/jreijn/hippo-groovy-addon" target="_blank">a project on Github</a> and is almost ready for it's first release. The first release will contain a CMS add-on that is only shown to users that have the 'admin' role within the CMS.
-The features implemented right now are:<br /><ul><li>Script execution from the CMS UI</li><li>Uploading a script before execution</li><li>Feedback of the script by providing a CMS Wicket model as the 'output' for the script</li><li>Exposing the entire JCR api to scripts based on the current user session</li><li>Syntax highlighting for the Groovy scripts with the <a href="http://codemirror.net/" target="_blank">CodeMirror</a> javascript library</li></ul>
+The features implemented right now are:
+<ul><li>Script execution from the CMS UI</li><li>Uploading a script before execution</li><li>Feedback of the script by providing a CMS Wicket model as the 'output' for the script</li><li>Exposing the entire JCR api to scripts based on the current user session</li><li>Syntax highlighting for the Groovy scripts with the <a href="http://codemirror.net/" target="_blank">CodeMirror</a> javascript library</li></ul>
 
 <div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/jreijn/hippo-groovy-addon/raw/master/src/main/resources/scripting.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://github.com/jreijn/hippo-groovy-addon/raw/master/src/main/resources/scripting.png" width="619" /></a></div>
 

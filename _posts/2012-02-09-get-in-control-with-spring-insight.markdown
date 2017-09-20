@@ -28,7 +28,7 @@ By default Spring Insight comes with a default set of plugins/inspections for di
 <li>Grails</li>
 </ul>
 
-There are <a href="https://github.com/SpringSource/spring-insight-plugins/tree/master/collection-plugins" target="_blank">more plugins available</a> and it's even quite easy to create some of your own and that's what the rest of this post is about.
+There are [more plugins available](https://github.com/SpringSource/spring-insight-plugins/tree/master/collection-plugins) and it's even quite easy to create some of your own and that's what the rest of this post is about.
 
 ### Writing your own Spring Insight plugin
 
