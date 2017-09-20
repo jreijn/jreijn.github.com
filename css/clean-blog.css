@@ -440,6 +440,14 @@ small,
   font-size: 70%;
   font-weight: normal; }
 
+img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%; }
+
+iframe {
+  max-width: 100%; }
+
 .highlight {
   background: #fffff;
   border: 2px solid #e7e9ec;
