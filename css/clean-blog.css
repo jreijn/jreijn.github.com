@@ -255,37 +255,43 @@ header.masthead {
   text-transform: none;
   background-color: #55acee;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .sharing .btn-facebook {
   text-transform: none;
   background-color: #3b5998;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .sharing .btn-google {
   text-transform: none;
   background-color: #d94734;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .sharing .btn-linkedin {
   text-transform: none;
   background-color: #3b5998;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .sharing .btn-email {
   text-transform: none;
   background-color: #97908F;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .sharing .btn-feed {
   text-transform: none;
   background-color: #dd7346;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .floating-label-form-group {
   font-size: 14px;

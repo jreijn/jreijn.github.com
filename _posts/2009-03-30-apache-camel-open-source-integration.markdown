@@ -9,14 +9,16 @@ categories:
 
 I'm currently working on a project where we are looking at creating an integration layer for external applications to connect to our back-end applications. In our case, one of the back-end applications is <a href="http://docs.onehippo.org/">Hippo CMS 7's</a> repository.
 I've been reading up on <a href="http://en.wikipedia.org/wiki/Enterprise_service_bus">ESB</a>'s like <a href="http://servicemix.apache.org/">Apache ServiceMix</a> and <a href="http://synapse.apache.org/">Synapse</a>, but even though both projects look very interesting, they actually are a bit too much for what I want to do.
-There was one project though that seems to be exactly what I want: <a href="http://camel.apache.org/">Apache Camel</a>.<br />
+There was one project though that seems to be exactly what I want: <a href="http://camel.apache.org/">Apache Camel</a>.
 
-###About Apache Camel
 
-Apache Camel is an open source Java framework that focuses on making integration easier. One of the great things is that Camel comes with a lot of default components and connectors.<br />Even though I was quite new to the integration concept, I was able to get my first Camel project up and running within 30 minutes or so, which I think is quite fast.
+### About Apache Camel
+
+Apache Camel is an open source Java framework that focuses on making integration easier. One of the great things is that Camel comes with a lot of default components and connectors.
+Even though I was quite new to the integration concept, I was able to get my first Camel project up and running within 30 minutes or so, which I think is quite fast.
 You only need is a bit of Java/Spring knowledge to get going.
 
-###The basic concepts
+### The basic concepts
 
 While using an integration framework like Camel, you will have to keep four key terms in mind:
 + **Endpoint**: where the message comes in or leaves the integration layer
@@ -125,7 +127,8 @@ Once the file is created you should be able to define your routes like this:
   </camelContext>
 </beans>
 ```
-In this example I'm using my own RSS feed, but you can of course use any feed url you like.<br />For testing purposes you can add a **log4j.properties** file in **src/main/resources/**, so you can see the output of the Camel RSS component in your console.
+In this example I'm using my own RSS feed, but you can of course use any feed url you like.
+For testing purposes you can add a **log4j.properties** file in **src/main/resources/**, so you can see the output of the Camel RSS component in your console.
 Here is the configuration I used writing this blogpost.
 
 ```
@@ -138,7 +141,8 @@ log4j.logger.org.apache.camel=DEBUG
 # CONSOLE appender not used by default
 log4j.appender.out=org.apache.log4j.ConsoleAppender
 log4j.appender.out.layout=org.apache.log4j.PatternLayout
-log4j.appender.out.layout.ConversionPattern=[%30.30t] %-30.30c{1} %-5p %m%n<br />
+log4j.appender.out.layout.ConversionPattern=[%30.30t] %-30.30c{1} %-5p %m%n
+
 ```
 Well that's it. Now the only thing you will need to do is fire up an application container, like Jetty and see what's going on in the console.
 
@@ -162,11 +166,14 @@ As you will see the RSS feed is parsed and converted into a SyndFeed object.
 From there on you can make use of this object and perform any operation on it.
 
 I must admit that while playing around with Camel and RSS feeds, I noticed that the RSS (and Atom) component did not handle extra request parameters correctly, so I added a patch in the Camel JIRA, hoping it wil be included in the next release of Camel.
-If you have issues with the RSS component and request parameters, you might want to try to build the Camel SVN trunk and apply my patch (<a href="https://issues.apache.org/activemq/browse/CAMEL-1496">CAMEL-1496</a>).<br />This is only necessary if you want to parse a feed that has for instance a unique id as request parameter added to the feed URL.
+If you have issues with the RSS component and request parameters, you might want to try to build the Camel SVN trunk and apply my patch (<a href="https://issues.apache.org/activemq/browse/CAMEL-1496">CAMEL-1496</a>).
+This is only necessary if you want to parse a feed that has for instance a unique id as request parameter added to the feed URL.
 
 We'll that's it! This post will get a follow-up, where I will show you have to use Camel to actually store the RSS feed entries into a JCR repository.
 
 Here are a couple of good articles too read before starting with Camel:
-<ul><li><a href="http://camel.apache.org/">Apache Camel (official website)<br /></a></li><li><a href="http://architects.dzone.com/articles/apache-camel-integration">Apache Camel: Integration Nirvana</a> (@<a href="http://www.dzone.com/">dzone</a>)<br /></li><li><a href="http://refcardz.dzone.com/refcardz/enterprise-integration">Camel Reference card (@dzone)</a></li></ul>
+<ul><li><a href="http://camel.apache.org/">Apache Camel (official website)
+</a></li><li><a href="http://architects.dzone.com/articles/apache-camel-integration">Apache Camel: Integration Nirvana</a> (@<a href="http://www.dzone.com/">dzone</a>)
+</li><li><a href="http://refcardz.dzone.com/refcardz/enterprise-integration">Camel Reference card (@dzone)</a></li></ul>
 
 This blogpost was inspired by an article over at <a href="http://www.gridshore.nl/">Gridshore</a>, where Jettro  wrote a post on using <a href="http://www.gridshore.nl/2009/03/29/using-spring-integration-for-rss-reading/">Spring Integrations</a> as integration framework. Since I'm pretty much Apache minded, I have been looking around for other open source integration frameworks within the ASF, which brought me to Apache Camel.

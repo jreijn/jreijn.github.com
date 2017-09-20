@@ -10,11 +10,11 @@ It seems this is caused by an inappropriate *markerWidth/Height* and *viewbox*. 
 
 A quick fix for this problem setting the overflow to visible on the marker.
 
-{% highlight xml %}
+```xml
 <marker id="mrkr1-7" class="st2"
         v:arrowType="1" v:arrowSize="2"
         orient="auto" overflow="visible"
         markerUnits="strokeWidth" />
-{% endhighlight %}
+```
 
 <a href="http://marc2.theaimsgroup.com/?l=batik-dev&m=111045831900017&w=2" target="_blank">Thanks to Google and  Thomas DeWeese! </a>

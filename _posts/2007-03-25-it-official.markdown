@@ -9,5 +9,7 @@ categories:
  - cocoon
 ---
 
-<div class='post'>
-It's official now.<br/>Saturday morning I got an email from the <a href="http://www.apache.org" target="_blank">ASF</a> that said my account had been created.<br/><br/>Hurray!<br/><br/></div>
+It's official now.
+Saturday morning I got an email from the <a href="http://www.apache.org" target="_blank">ASF</a> that said my account had been created.
+
+Hurray!
