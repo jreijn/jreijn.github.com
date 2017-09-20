@@ -31,7 +31,7 @@ The next image shows you all the keyboard-shortcuts that are available in the Co
 
 <img border="0" height="444" src="http://3.bp.blogspot.com/-PnfTVdMy4PA/UQZEv3uTtQI/AAAAAAAAAkk/eh6T3t8pVRg/s640/CapturFiles-20130128_1001_2.png" width="640" />
 
-##Scripting support
+## Scripting support
 
 With the upcoming 7.8 release we will also have scripting support straight from the CMS UI. This feature will be for 'admin' users only. Scripting support is focused on supporting JCR runner / visitors from the CMS UI and helps you do bulk updates of document or just plain JCR nodes. The scripting support in CMS 7.8 was inspired by the introduction of the <a href="http://blog.jeroenreijn.com/2012/05/introducing-hippo-cms-groovy-add-on.html" target="_blank">Hippo CMS Groovy add-on</a>, which started out as a prototype on a Hippo Friday.
 
