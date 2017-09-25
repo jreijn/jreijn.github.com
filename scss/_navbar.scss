@@ -26,6 +26,15 @@
       }
     }
   }
+  @media only screen and (max-width: 992px) {
+    .navbar-nav {
+      > li.nav-item {
+        > a.nav-social {
+          display: none;
+        }
+      }
+    }
+  }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
     background: transparent;
@@ -41,6 +50,20 @@
       > li.nav-item {
         > a {
           padding: 15px 20px;
+          color: white;
+          text-decoration: none;
+          &:focus,
+          &:hover {
+            color: fade-out(white, .2);
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      > li.nav-item {
+        > a.nav-social {
+          padding-right: .5rem;
+          padding-left: .5rem;
           color: white;
           text-decoration: none;
           &:focus,

@@ -102,6 +102,9 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none; }
+  @media only screen and (max-width: 992px) {
+    #mainNav .navbar-nav > li.nav-item > a.nav-social {
+      display: none; } }
   @media only screen and (min-width: 992px) {
     #mainNav {
       border-bottom: 1px solid transparent;
@@ -116,6 +119,13 @@ body {
         color: white;
         text-decoration: none; }
         #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+          color: rgba(255, 255, 255, 0.8); }
+      #mainNav .navbar-nav > li.nav-item > a.nav-social {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        color: white;
+        text-decoration: none; }
+        #mainNav .navbar-nav > li.nav-item > a.nav-social:focus, #mainNav .navbar-nav > li.nav-item > a.nav-social:hover {
           color: rgba(255, 255, 255, 0.8); } }
   @media only screen and (min-width: 1170px) {
     #mainNav {
