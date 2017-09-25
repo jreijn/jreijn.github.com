@@ -18,9 +18,11 @@ The add-on does not just focus on providing JCR REST endpoints, so the project c
 
 The add-on contains 3 JCR based API endpoints:
 
-``/nodes{path:.*}``  
-``/properties{path:.*}``  
-``/_query``  
+```
+/nodes{path:.*}
+/properties{path:.*}
+/_query
+```  
 
 As you can see they are pretty self explaining. Using them is quite easy and straight forward. For interaction with the system all you need is a command line utility like [curl](http://en.wikipedia.org/wiki/CURL) or [HTTPie](http://httpie.org). If you don't know HTTPie (an alternative command line client to talk to JSON based REST APIs) it's really worth checking out. Talking to REST endpoints most of the time happens from a piece of code, so in that case all you need is a http client library, which is available in many different frameworks and programming languages.
 
