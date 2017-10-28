@@ -17,6 +17,9 @@ p {
 li a {
   text-decoration: underline; }
 
+td a, th a {
+  text-decoration: underline; }
+
 h1,
 h2,
 h3,
