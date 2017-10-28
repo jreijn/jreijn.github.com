@@ -31,7 +31,7 @@ In case you don't have homebrew installed or are not running OSX you can use ``c
 $ curl -O --progress-bar http://search.maven.org/remotecontent?filepath=org/springframework/springloaded/1.2.0.RELEASE/springloaded-1.2.0.RELEASE.jar
 ```
 
-##Adding Spring Loaded to your Hippo CMS project.
+## Adding Spring Loaded to your Hippo CMS project.
 
 Add a new profile to the root **pom.xml** file, which adds Spring Loaded as the javaagent.
 
