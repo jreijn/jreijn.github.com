@@ -65,12 +65,12 @@ You can implement missing steps with the snippets below:
 
 This means it can't find the step definitions, hooks, etc that correspond to your feature file.
 
-Let's add the glue code required for running the tests. In the below example I'll use my maven projects target directory, which contains my step definitions in the test-classes directory. You can do that by adding the directory to your classpath and with `--glue com.sitture.definitions` provide the package the step definition class files are in. 
+Let's add the glue code required for running the tests. In the below example I'll use my maven projects target directory, which contains my step definitions in the test-classes directory. You can do that by adding the directory to your classpath and with `--glue com.sitture.definitions` provide the package the step definition class files are in.
 
 ```
 $ java -cp "/Users/jreijn/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/jreijn/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/jreijn/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/jreijn/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/jreijn/Developer/sources/github/cucumber-jvm-extentreport/target/test-classes/" cucumber.api.cli.Main --glue com.sitture.definitions Developer/sources/github/cucumber-jvm-extentreport/src/test/resources/cucumber/feature_one.feature
 ```
- 
+
 This should result in something similar to:
 
 ```
