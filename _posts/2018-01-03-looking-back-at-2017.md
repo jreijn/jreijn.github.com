@@ -2,6 +2,7 @@
 title: Looking back at 2017
 layout: post
 comments: true
+header-img: "/img/2017-background.jpg"
 ---
 
 I've been trying to make this a tradition, but last year I had too much going on in my personal life, which resulted in skipping my 'year in review' post. 2016 was really hectic, but everything seems to be back on track now. To shed some light on what happened professionally let's take a very quick run through 2016.
