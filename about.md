@@ -16,7 +16,7 @@ In 2003 I started my 'real' professional career as a software engineer at Hippo 
 
 Having seen Hippo grow from 7 to about 110 people and being a very well established product company, with a spot on all major WCM Quadrants, I noticed I was up for a change.
 
-This led to the decision to leave Hippo in February of 2017 and join the team at recently founded Luminis Amsterdam office. At Luminis I currently work as a Software Architect.
+This led to the decision to leave Hippo in February of 2016 and join the team at recently founded Luminis Amsterdam office. At Luminis I currently work as a Software Architect.
 
 If you want to learn more about my professional career do check out my work history on [LinkedIn](https://www.linkedin.com/in/jeroenreijn).
 
