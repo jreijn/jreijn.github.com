@@ -10,6 +10,8 @@ I think it was around 2009 when I started reading a book called [Clean Code](htt
 
 I was quite excited when a few weeks ago I discovered that Robert published another book titled “[Clean Architecture: A Craftsman's Guide to Software Structure and Design](https://www.amazon.com/gp/product/0134494164/ref=as_li_tl?ie=UTF8&tag=jreijnblog-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0134494164&linkId=02cf367dada2ce397e117b47bb0f4963)”. In this third book, Robert focusses on software design and architecture. 
 
+## The first chapters
+
 The book is divided into six main parts:
 
 * Introduction to design and architecture
@@ -33,6 +35,8 @@ The first few chapters also contain some thought-provoking questions. Robert sha
 
 I think this depends on a lot of factors, but *what do you think*?
 
+## Clean architecture
+
 The part about Architecture leads us to the concept of a Clean Architecture which is clearly the main advice of the book. Robert describes the Clean Architecture as an architecture that pushes us to separate stable business rules (higher-level abstractions) from volatile technical details (lower-level details), defining clear boundaries. The main building block is the dependency rule: source code dependencies must point only inward, toward higher-level policies.
 
 A clean architecture should have the following characteristics:
@@ -48,5 +52,7 @@ The last chapter in the architecture part is about clean embedded architecture a
 Throughout the book, Robert sometimes calls certain choices an architectural detail. He mentions things like a database, GUI or framework. He says that those details don't matter much when it comes to software architecture and that you should postpone the choice for a particular database or framework as much as possible. Even though this makes sense, in theory, it contradicts what I've seen in practice. Most of the time a project starts, high-level concepts are designed and an engineering team selects a framework and database when they begin the project. What I think is important though that you make sure you decouple as much as possible from your framework and database choices, so your actual business logic is not tightly coupled with either of them. This way you can always choose an alternative solution without having to change your actual business logic too much.
 
 The last chapter of the book (The missing chapter) is a bit different. It’s also written by another guest author (Simon Brown) and carries in my perspective a different view on how to organize or structure code. Simon is putting Clean Architecture a little on the side and goes through several different ways of structuring code: package by layer, package by feature, ports and adapters, and package by component. It's nice to see some practical examples of these different structures. I've used some of them in recent projects, but it made me think about the decisions we made.
+
+## Summary
 
 I liked the book overall. It’s well written and offers some practical advice. I did miss a comparison with some other more modern architectures like C4, hexagonal, or the onion architecture. If you want to read up on software design and read about an opinionated architecture it’s a book to put on your reading list.
