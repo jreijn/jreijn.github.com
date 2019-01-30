@@ -30,7 +30,12 @@ End of June we had a great social weekend with the team in which we went flyboar
 ![Flyboarding during the Luminis Amsterdam Social](/assets/2018/flyboarding.jpg)
 
 
-In July we started the [Luminis Amsterdam Meetup](https://www.meetup.com/Luminis-Amsterdam-Meetup/). After the success of the internal knowledge exchange sessions, we asked if anybody wanted to also present their talk publicly. We used the same concept as the internal sessions, but we just opened up our sessions and put them on the Meetup website, so that others were able to find them and join the sessions. The internal feedback was very positive and we already had some first candidates that wanted to present and host a meetup. Now at the end of the year, we've had 3 public meetups, which is really awesome. We already have some plans for this year and our [next meetup about "Mastering Two-way TLS"](https://www.meetup.com/Luminis-Amsterdam-Meetup/events/256968048/) is already scheduled for January, so if you're interested don't forget to sign up.
+In July we started the [Luminis Amsterdam Meetup](https://www.meetup.com/Luminis-Amsterdam-Meetup/). After the success of the internal knowledge exchange sessions, we asked if anybody wanted to also present their talk publicly. We used the same concept as the internal sessions, but we just opened up our sessions and put them on the Meetup website, so that others were able to find them and join the sessions. Our first meetup was about [React](https://reactjs.org) and it was a great success. 
+
+![Photo of our first meetup](/assets/2018/first-meetup.jpeg)
+
+We did order too much food and learned that about 2/3 of the actual people that register actually shows up. 
+The internal feedback was also very positive and we already had some first candidates that wanted to present and host a meetup. Now at the end of the year, we've had 3 public meetups, which is really awesome. We already have some plans for this year and our [next meetup about "Mastering Two-way TLS"](https://www.meetup.com/Luminis-Amsterdam-Meetup/events/256968048/) is already scheduled for January, so if you're interested don't forget to sign up.
 
 
 
