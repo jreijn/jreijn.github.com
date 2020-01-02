@@ -50,7 +50,7 @@ Jeroens-MacBook-Pro.local
 In the end, the entries in your host file should look something like:
 
 ```
-128.127.0.0.1   localhost Jeroens-MacBook-Pro.local
+127.0.0.1   localhost Jeroens-MacBook-Pro.local
 ::1             localhost Jeroens-MacBook-Pro.local
 ```
 
