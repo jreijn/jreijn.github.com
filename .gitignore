@@ -1,3 +1,5 @@
 _site
 /_drafts/
 /node_modules/
+.jekyll-cache/
+.gitignore
