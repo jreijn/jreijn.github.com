@@ -5,25 +5,23 @@ layout: post
 header-img: "/assets/2020/heap-dump-header.jpg"
 ---
 
-Yesterday I was doing a heap dump analysis after one of our services threw the famous
-
-> java.lang.OutOfMemoryError: Java heap space
-> 
+If you're familair with Java as a programming language you might have come across the following message: *java.lang.OutOfMemoryError: Java heap space*. We recently got that message in of of our services that we're currently working on. 
+To better understand why this happens, it's good to get a Java memory heapdump for furher analysis.
 
 After parsing the heapdump in both [Eclipse MAT](https://www.eclipse.org/mat/) and [Visual VM](https://visualvm.github.io/) I noticed something strange. My heapdump felt obfuscated and show lots of objects named **'Unresolved Name 0x'**. 
 
 ![](/assets/2020/unresolved-name-heapdump.jpg)
 *Image describing a similar problem. Not actual heapdump of our project*
 
-I had never seen that before so I tried both memory analyzer applications to see if it had to do with the nightly build of MAT that I needed to use (because of Big Sur). MAT is usually my goto tool for analysing heapdumps, so I was quite surprised as I had not seen this before. Once I noticed both analyzers where showing this I had to look elsewhere for the cause.
+I had never seen that before so I tried both memory analyzer applications to see if it had to do with the nightly build of MAT that I needed to use (because of Big Sur). MAT is usually my goto tool for analysing heapdumps, so I was quite surprised as I had not seen this before. Once I noticed both analyzers were showing this I had to look elsewhere for the cause.
 
-First thing to do of course is search the great internet, but there were only one or two results that showed something similar. On of the results was [this](https://github.com/elastic/elasticsearch/issues/49699) elasticsearch issue. I noticed I was not the only one that had the issue, but it did not show a solution and they were able to guess what the underlying issue was.
+The first thing to do of course is to search the great internet, but there were only one or two results that showed something similar. On of the results was [this](https://github.com/elastic/elasticsearch/issues/49699) elasticsearch issue. I noticed I was not the only one that had the issue, but it did not show a solution and they were able to guess what the underlying issue was.
 
 After pondering about it a bit more I had the feeling it had to do something with the JDK and some incompatible export. The project uses Java 12.0.2 and I was also running Java 12.0.2 on my MacBook.
 
-After some further analysis it showed that the service used **AdoptOpenJDK 12.0.2** and when double checking sdkman I noticed that I was also running Java 12.0.2, but I was running **OpenJDK 12.0.2**. After installing AdoptOpenJDK 12.0.2 and reparsing the heapdump the information was correct and I was able to see which classes and packages were actually taking up heap space.
+After some further analysis it showed that the service used **AdoptOpenJDK 12.0.2** and when double-checking sdkman I noticed that I was also running Java 12.0.2, but I was running **OpenJDK 12.0.2**. After installing AdoptOpenJDK 12.0.2 and reparsing the heapdump the information was correct and I was able to see which classes and packages were actually taking up heap space.
 
-So, long story short. If you encounter lots 'Unresolved Name' entities **check your JDK version** on the machine you're trying to analyze the heapdump.
+So, long story short. If you encounter lots of 'Unresolved Name' entities **check your JDK version** on the machine you're trying to analyze the heapdump.
 
 ### Notes
 
