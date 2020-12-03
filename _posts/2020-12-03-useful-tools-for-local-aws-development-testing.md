@@ -15,13 +15,13 @@ As a user, it's quite simple to use as it's a key-value store. Most of the other
 
 Running DynanoDB local is as simple as executing:
 
-```
-$  docker run -p 8000:8000 amazon/dynamodb-local 
+```bash
+$ docker run -p 8000:8000 amazon/dynamodb-local 
 ```
 
 Or if it's part of a bigger set of dependencies you could leverage `docker-compose`.
 
-```
+```yaml
 version: '3'
 
 services:
@@ -34,13 +34,13 @@ services:
 
 With that it's a matter of running:
 
-```
+```bash
 $ docker-compose up
 ```
 
 And you should see something like:
 
-```
+```bash
 Starting dynamodb_dynamodb_1 ... done
 Attaching to dynamodb_dynamodb_1
 dynamodb_1  | Initializing DynamoDB Local with the following configuration:
@@ -54,12 +54,12 @@ dynamodb_1  | CorsParams:       *
 
 With the AWS CLI you can easily query for available tables:
 
-```
+```bash
 $ aws dynamodb list-tables --endpoint-url http://localhost:8000 
 ```
 
 Which should result in something like:
-```
+```javascript
 {
     "TableNames": []
 }
@@ -90,7 +90,7 @@ On my Mac, I found that installing LocalStack as a python package was a bit of a
 
 Using LocalStack with docker-compose is as simple as creating a docker-compose.yml file with the content:
 
-```
+```yaml
 version: '3'
 
 services:
@@ -115,13 +115,13 @@ services:
 
 If you're running on a Mac be sure to prepend `TMPDIR=/private$TMPDIR` before running.
 
-``` 
+```bash
 $ TMPDIR=/private$TMPDIR docker-compose up 
 ```
 
 Afterwards, you should see something similar to the following output.
 
-```
+```bash
 Recreating localstack_localstack_1 ... done
 Attaching to localstack_localstack_1
 localstack_1  | Waiting for all LocalStack services to be ready
@@ -173,13 +173,13 @@ localstack_1  | Ready.
 
 As you can see it starts a whole bunch of services out of the box. If you don't use all those services you can also provide a list of services required when starting localstack by providing a SERVICES variable like:
 
-```
+```bash
 $ TMPDIR=/private$TMPDIR SERVICES=s3,sqs docker-compose up
 ```
 
 Now you should see in the startup output that it only started S3 and SQS.
 
-```
+```bash
 Recreating localstack_localstack_1 ... done
 Attaching to localstack_localstack_1
 localstack_1  | Waiting for all LocalStack services to be ready
@@ -206,13 +206,13 @@ localstack_1  | Ready.
 ```
 
 Update: I just learned that [homebrew](https://formulae.brew.sh/formula/localstack) also supports installing LocalStack. I've not used it, so can't say if it's any good, but it looks pretty simple :-) 
-```
+```bash
 $ brew install localstack
 ```
 
 If you don't want to manually start LocalStack via docker-compose, but want to start it for instance during your build/test phase, you can also leverage [testcontainers](https://www.testcontainers.org/) and just add a localstack rule to your Unit test:
 
-```
+```java
 DockerImageName localstackImage = DockerImageName.parse("localstack/localstack:0.11.3");
 
 @Rule
@@ -226,7 +226,7 @@ If you're already using LocalStack, it's worthwhile to also install `awslocal`. 
 
 You can install it by running
 
-```
+```bash
 $ pip install awscli-local
 ```
 
