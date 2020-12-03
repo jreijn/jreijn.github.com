@@ -1,5 +1,5 @@
 ---
-title: Useful tools for local AWS development / testing
+title: Useful tools for local development with AWS services
 layout: post
 comments: true
 header-img: "/assets/2020/localstack-header.jpg"
