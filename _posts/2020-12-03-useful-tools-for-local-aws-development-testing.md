@@ -83,7 +83,7 @@ LocalStack is a project open-sourced by Atlassian that provides an easy way to d
 
 <img src="/assets/2020/localstack-diagram.jpg"/>
 
-Local stack focuses primarily on providing a local AWS cloud environment that adheres to the AWS APIs and offers a free and pro version, which you can leverage depending on your requirements. In my experience, the free/community version offers a lot of value and supports a whole range of services. 
+Localstack focuses primarily on providing a local AWS cloud environment that adheres to the AWS APIs and offers a free and pro version, which you can leverage depending on your requirements. In my experience, the free/community version offers a lot of value and supports a whole range of services. 
 
 You can install LocalStack via `pip` if you're familiar with python and its package system or you can use it via docker(compose). 
 On my Mac, I found that installing LocalStack as a python package was a bit of a hassle, so I always prefer to use it via docker-compose.
@@ -238,4 +238,4 @@ Localstack used to come with a Web UI, which is now marked as deprecated. As an 
 
 
 
-If you know of other usefull tools that help you in your day to day work feel free to leave a comment!
+If you know of other usefull tools that help you in your day to day work working with and developing on the AWS platform, feel free to leave a comment!
