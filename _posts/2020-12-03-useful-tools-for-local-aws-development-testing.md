@@ -5,7 +5,7 @@ comments: true
 header-img: "/assets/2020/localstack-header.jpg"
 ---
 
-Over the last 2.5 years, I've been working with AWS and a wide range of its services regularly. During this time I noticed that for most projects it's useful to be able to test your application against AWS services without having to deploy or move your code into the cloud. 
+Over the last 2.5 years, I've been working with AWS and a wide range of its services. During this time I noticed that for most projects it's useful to be able to test your application against AWS services without having to deploy or move your code into the cloud. 
 There are several free solutions available for you to use depending on the services required by your project. In this post, I'll describe some of the tools that I use. 
  
 ## DynamoDB local
@@ -13,7 +13,7 @@ There are several free solutions available for you to use depending on the servi
 
 As a user, it's quite simple to use as it's a key-value store. Most of the other AWS databases are managed instances of existing services, however, DynamoDB is an AWS specific service which you can't really download and install locally. Luckily back in 2018 AWS [introduced](https://aws.amazon.com/about-aws/whats-new/2018/08/use-amazon-dynamodb-local-more-easily-with-the-new-docker-image/) a simpler way to work with DynamoDB utilizing [DynamoDB local](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html#docker), a dockerized version of DynamoDB which you can simply run as a docker container to develop and test against.
 
-Running DynanoDB local is as simple as executing:
+Running DynamoDB local is as simple as executing:
 
 ```bash
 $ docker run -p 8000:8000 amazon/dynamodb-local 
@@ -67,10 +67,10 @@ Which should result in something like:
 
 And of course, you can use the AWS SDK with your preferred language as well.
 
-I hear you thinking: are there no limitations? Yes of course there are some limitations with using DynamoDB local compared to the managed service. For instance, parallel scans are not supported (they will happen sequentially). Most limitations are nicely outlined in the [DynmoDB Developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.UsageNotes.html).
+I hear you thinking: are there no limitations? Yes of course there are some limitations with using DynamoDB local compared to the managed service. For instance, parallel scans are not supported (they will happen sequentially). Most limitations are nicely outlined in the [DynamoDB Developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.UsageNotes.html).
 
 Amazon also provides docker images for other services as well like [AWS Step functions Local](https://hub.docker.com/r/amazon/aws-stepfunctions-local) and [OpenDistro for Elasticsearch](https://hub.docker.com/r/amazon/opendistro-for-elasticsearch). 
-Be sure to check out [Amazons repo](https://hub.docker.com/r/amazon/) on DockerHub for other usefull images.
+Be sure to check out the [Amazon repo](https://hub.docker.com/r/amazon/) on DockerHub for other usefull images.
 
 ## LocalStack
 
@@ -171,7 +171,7 @@ localstack_1  | Ready.
 
 ```
 
-As you can see it starts a whole bunch of services out of the box. If you don't use all those services you can also provide a list of services required when starting localstack by providing a SERVICES variable like:
+As you can see, it starts a whole bunch of services out of the box. If you don't use all those services you can also provide a list of services required when starting localstack by providing a SERVICES variable like:
 
 ```bash
 $ TMPDIR=/private$TMPDIR SERVICES=s3,sqs docker-compose up
@@ -238,4 +238,4 @@ Localstack used to come with a Web UI, which is now marked as deprecated. As an 
 
 
 
-If you know of other usefull tools that help you in your day to day work working with and developing on the AWS platform, feel free to leave a comment!
+If you know of other useful tools that help you in your day to day work working with and developing on the AWS platform, feel free to leave a comment!
