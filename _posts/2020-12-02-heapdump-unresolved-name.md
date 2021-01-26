@@ -5,8 +5,8 @@ layout: post
 header-img: "/assets/2020/heap-dump-header.jpg"
 ---
 
-If you're familiar with Java as a programming language you might have come across the following message: *java.lang.OutOfMemoryError: Java heap space*. We recently got that message in of of our services that we're currently working on. 
-To better understand why this happens, it's good to get a Java memory heap dump for furher analysis.
+If you're familiar with Java as a programming language you might have come across the following message: *java.lang.OutOfMemoryError: Java heap space*. We recently got that message in of the services that we're currently working on. 
+To better understand why this happens, it's good to get a Java memory heap dump for further analysis.
 
 After parsing the heap dump in both [Eclipse MAT](https://www.eclipse.org/mat/) and [Visual VM](https://visualvm.github.io/) I noticed something strange. My heap dump felt obfuscated and show lots of objects named **'Unresolved Name 0x'**. 
 
