@@ -9,6 +9,10 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="publisher" href="https://plus.google.com/101111641807482638731" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="http://feeds.feedburner.com/JeroenReijn" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.url }}/site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
