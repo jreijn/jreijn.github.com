@@ -5,7 +5,7 @@ layout: post
 header-img: "/assets/2021/blue-containers-banner.jpg"
 ---
 
-About three months ago AWS released a new service named [AWS App Runner](https://aws.amazon.com/apprunner/). After reading the [introduction blog post](https://aws.amazon.com/blogs/containers/introducing-aws-app-runner/), I got pretty excited to check it out. AWS App Runner is a new service that provides organizations with a fast, simple, and secure way to deploy containerized applications on the AWS platform without managing any infrastructure. AWS already offers a wide range of container based services like AWS Fargate, ECS, Elastic BeanStalk, and AWS EKS, so why did it come up with App Runner?
+About three months ago AWS released a new service named [AWS App Runner](https://aws.amazon.com/apprunner/). After reading the [introduction blog post](https://aws.amazon.com/blogs/containers/introducing-aws-app-runner/), I got pretty excited to check it out. AWS App Runner is a new service that provides organizations with a fast, simple, and secure way to deploy containerized applications on the AWS platform without managing any infrastructure. AWS already offers a wide range of container based services like AWS Fargate, ECS, Elastic BeanStalk, and AWS EKS, so why did they come up with App Runner?
 
 ## What makes App Runner different from the other services?
 
