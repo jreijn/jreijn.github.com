@@ -3,3 +3,4 @@ _site
 /node_modules/
 .jekyll-cache/
 .gitignore
+.DS_STORE
