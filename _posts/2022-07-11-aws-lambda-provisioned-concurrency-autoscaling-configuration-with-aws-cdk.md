@@ -59,6 +59,11 @@ Now that we have everything in place for our Lambda function we will need to reg
 
 Through the AWS CDK, there are two ways of configuring autoscaling for the provisioned concurrency configuration of our function.
 
+1. Configuring scaling options directly on the alias
+2. Configuring scaling options via application autoscaling
+
+So let's explore both options.
+
 ### Configuring scaling options directly on the alias
 
 The Function Alias has a short-hand method for configuring provisioned concurrency scaling. You can do this by calling the `.addAutoScaling` method on the Alias.  
@@ -80,6 +85,8 @@ iScalableFunctionAttribute.scaleOnUtilization(
               .build()
 );
 ```
+
+Adding a scaling strategy on the alias is pretty straight forward. You can use both scaling on utilization and scale by schedule. However, it does not seem to allow for scaling by a custom metric configuration.
 
 ### Configuring scaling options via application autoscaling
 
