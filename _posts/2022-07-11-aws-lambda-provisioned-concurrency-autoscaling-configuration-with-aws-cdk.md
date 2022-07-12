@@ -197,7 +197,7 @@ triggered policy AwsApigatewayLambdaStackhelloworldlambdaasgPCU388B92B5",
 }
 ```
 
-If everything is working as expected you should see the currency value change based on the increase or decrease of utilization.
+If everything is working as expected you should see the current value change based on the increase or decrease of utilization.
 
 ```json
 {
