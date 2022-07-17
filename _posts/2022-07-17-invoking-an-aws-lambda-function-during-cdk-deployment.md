@@ -1,5 +1,5 @@
 ---
-title: Triggering an AWS Lambda function during CDK deployment
+title: Invoking an AWS Lambda function during CDK deployment
 subtitle: An introduction to AWS CDK Custom Resources
 comments: true
 layout: post
@@ -56,9 +56,9 @@ Provider myProvider = Provider.Builder.create(this, "MyProvider")
 CustomResource.Builder.create(this, "Resource1").serviceToken(myProvider.getServiceToken()).build(); 
 ```
 
-When writing such an eventHandler you can lever the [AWS Lambda PowerTools for Java Custom Resources utility library](https://awslabs.github.io/aws-lambda-powertools-java/utilities/custom_resources/).
+When writing such an eventHandler you can use the [AWS Lambda PowerTools for Java Custom Resources utility library](https://awslabs.github.io/aws-lambda-powertools-java/utilities/custom_resources/).
 
-A skeleton of such a function will look like:
+A skeleton of such a function when used with Lambda PowerTools will look like:
 
 ```java
 import com.amazonaws.services.lambda.runtime.Context;
