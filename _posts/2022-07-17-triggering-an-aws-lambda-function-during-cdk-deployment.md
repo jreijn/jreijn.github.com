@@ -3,7 +3,7 @@ title: Triggering an AWS Lambda function during CDK deployment
 subtitle: An introduction to AWS CDK Custom Resources
 comments: true
 layout: post
-header-img: "/assets/2022/spacex--p-KCm6xB9I-unsplash.jpg"
+header-img: "/assets/2022/mehmet-ali-peker-hfiym43qBpk-unsplash.jpg"
 ---
 
 
