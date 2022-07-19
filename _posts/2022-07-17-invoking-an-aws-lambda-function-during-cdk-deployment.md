@@ -40,6 +40,7 @@ AWS CDK supports Custom Resources and gives you two options to implement them:
 So what is a custom resource provider in CDK / CloudFormation? 
 
 > When CloudFormation needs to create, update or delete a custom resource, it sends a lifecycle event notification to a custom resource provider. The provider handles the event (e.g. creates a resource) and sends back a response to CloudFormation. Providers are implemented through AWS Lambda functions that are triggered by the provider framework in response to lifecycle events. 
+
 The [CDK documentation on Custom Resources](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.custom_resources-readme.html) has some extensive documentation on implementing such a Lambda function as a custom provider. At the minimum, you will need to define the onEvent handler, which is invoked by the provider framework for all resource lifecycle events (*create, update *and *delete*) and you need to return a result which is then submitted to CloudFormation. 
 
 The framework offers a high-level API which makes it easier to implement robust and powerful custom resources and includes the following capabilities:
