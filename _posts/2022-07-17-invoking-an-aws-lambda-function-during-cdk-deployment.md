@@ -168,6 +168,8 @@ lambdaTriggerResource.getNode().addDependency(function);
 
 When you deploy the above solution AWS CDK / CloudFormation will actually create a second Lambda function for us containing the SDK call to the function that holds our actual business logic. That was exactly what I was trying to do and CDK seems to make it really simple to implement this.
 
+![Image showing the process from CDK deploy to the actual invocation](/assets/2022/custom-resource-cdk.jpg)
+
 ## Summary
 
 As you can see Custom Resources in AWS CDK are quite powerful. It gives you a lot of flexibility and when you need more than a single API call you can leverage the Provider framework. For single API calls using the `AwsCustomResource` is quite straightforward and it allowed me to invoke my lambda function on deployment.
