@@ -10,7 +10,7 @@ header-img: /img/about-bg.jpg
   Previously Lead Solution Architect at Hippo (CMS) before they were acquired by Bloomreach.
 </h4>
 
-Born and raised in Amsterdam, The Netherlands I always had a passion for computers and technology. Since then I've moved to Hoofddorp a small town close to Amsterdam where I live together with my girlfriend and two kids.
+Born and raised in Amsterdam, The Netherlands I always had a passion for computers and technology. Since then I've moved to Hoofddorp a small town close to Amsterdam where I live together with my wife and two kids.
 
 In 2003 I started my 'real' professional career as a software engineer at Hippo Webworks, which later became Hippo (CMS). Over the years I performed several roles at Hippo. I've acted as a consultant, trainer, software engineer and solution architect. Since 2012 I worked as the Lead Architect within Hippo's international Professional Services department.
 
