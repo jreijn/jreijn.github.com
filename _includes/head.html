@@ -7,7 +7,6 @@
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="publisher" href="https://plus.google.com/101111641807482638731" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="http://feeds.feedburner.com/JeroenReijn" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
@@ -23,8 +22,8 @@
 
     <!-- Custom fonts for this template -->
     <link href="{{ "/vendor/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="preload" as="font" href='https://fonts.googleapis.com/css?display=swap&family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="preload" as="font" href='https://fonts.googleapis.com/css?display=swap&family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="{{ "/css/clean-blog.min.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet" type="text/css">
