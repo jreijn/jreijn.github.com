@@ -3,7 +3,6 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -13,8 +12,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
     <link rel="manifest" href="{{ site.url }}/site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
+    <meta name="robots" content="index, archive">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+
+    <meta rel="preconnect" href="https://fonts.googleapis.com">
+    <meta rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
     <!-- Custom CSS -->
 
     <!-- Bootstrap core CSS -->
@@ -31,23 +34,16 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@jreijn">
     <meta name="twitter:creator" content="@jreijn">
-    {% if page.title %}
-      <meta name="twitter:title" content="{{ page.title }}">
-    {% else %}
-      <meta name="twitter:title" content="{{ site.title }}">
+    {% if page.title %}<meta name="twitter:title" content="{{ page.title }}">
+    {% else %}<meta name="twitter:title" content="{{ site.title }}">
     {% endif %}
-    {% if page.url %}
-      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% if page.url %}<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
-    {% if page.description %}
-      <meta name="twitter:description" content="{{ page.description }}">
-    {% else %}
-      <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
+    {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">
+    {% else %}<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
     {% endif %}
-    {% if page.image %}
-      <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
-    {% else %}
-      <meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">
+    {% if page.image %}<meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+    {% else %}<meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">
     {% endif %}
 
 </head>
