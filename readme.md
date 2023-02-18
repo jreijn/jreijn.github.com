@@ -1,4 +1,4 @@
-blog.jeroenreijn.com
+https://www.jeroenreijn.com
 ======
 
 Random thoughts and updates as I go through the journey of creating and deploying web things. I can be contacted at [@jreijn](http://twitter.com/jreijn).
