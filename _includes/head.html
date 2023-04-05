@@ -15,6 +15,8 @@
     <meta name="robots" content="index, archive">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+    {% if page.header-img %}<meta property="og:image" content="{{ site.url }}{{ page.header-img }}">
+    {% endif %}
 
     <meta rel="preconnect" href="https://fonts.googleapis.com">
     <meta rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
@@ -42,7 +44,7 @@
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">
     {% else %}<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
     {% endif %}
-    {% if page.image %}<meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+    {% if page.header-img %}<meta name="twitter:image:src" content="{{ site.url }}{{ page.header-img }}">
     {% else %}<meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">
     {% endif %}
 
