@@ -3,7 +3,7 @@ title: Lessons learned from picking a Java driver for Amazon ElastiCache for Red
 subtitle: Exploring failover scenarios with Lettuce
 comments: true
 layout: post
-header-img: "/assets/2023/photo-by-jainath- ponnala-unsplash.jpg"
+header-img: "/assets/2023/photo-by-jainath-ponnala-unsplash.jpg"
 tags:
 - aws
 - lambda
