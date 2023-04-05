@@ -1,9 +1,9 @@
 # Site settings
 title: Jeroen Reijn
-subtitle: "on Tech, Open Source and software development"
+subtitle: "on Cloud, Open Source and software development"
 author: Jeroen Reijn
 email:
-description: "Jeroen Reijn on Tech, Open Source and software development"
+description: "Jeroen Reijn on Cloud, Open Source and software development"
 disclaimer: "The opinions expressed here are entirely my own and do not reflect the opinion of my employer or that of the Apache Software Foundation."
 copyright: "Copyright © 2006-2023, Jeroen Reijn. All rights reserved."
 baseurl: ""
