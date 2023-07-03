@@ -79,7 +79,7 @@ Your GitHub actions workflow usually consists of one or more jobs that separate 
 
 ![](/assets/2023/ga-event-workflow.jpg)
 
-Usually, you build your application in the build job and use the resulting artifact in the deploy job. Jobs can run on different runners, so in a GitHub Actions environment, you will probably be using the up/download artifact action which will use centralized storage for sharing the artifacts between different runners. When using "act" and sharing artifacts you will need to be specific about where the artifacts need to be stored. You can do so by providing a specific parameter named `--artifact-server-path`.
+Usually, you build your application in the build job and use the resulting artifact in the deploy job. Jobs can run on different runners, so in a GitHub Actions environment, you will probably be using the [upload](https://github.com/actions/upload-artifact)/[download](https://github.com/actions/download-artifact) artifact action which will use centralized storage for sharing the artifacts between different runners. When using "act" and sharing artifacts you will need to be specific about where the artifacts need to be stored. You can do so by providing a specific parameter named `--artifact-server-path`.
 
 ```plaintext
 $ act -P ubuntu-latest=quay.io/jamezp/act-maven \
