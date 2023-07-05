@@ -2,6 +2,7 @@
 title: Develop and Test your Github Actions workflow locally with "act"
 comments: true
 layout: post
+canonical: https://www.luminis.eu/blog/develop-and-test-your-github-actions-workflow-locally-with-act/
 header-img: "/assets/2023/helio-dilolwa-jFbhhadKV5g-unsplash.jpg"
 tags:
 - github
@@ -65,7 +66,7 @@ The large docker image is around **18GB!!**, so I initially picked the medium-si
 [CI/Build] exitcode '127': command not found, please refer to https://github.com/nektos/act/issues/107 for more information
 ```
 
-I didn't want to switch to an 18GB docker image to be able to just run Maven, so I ended up finding a great image by [Jamez Perkins](https://github.com/jamezp). It simply takes the original "act" image [ghcr.io/catthehacker/ubuntu:act-latest](http://ghcr.io/catthehacker/ubuntu:act-latest) and adds Maven version 3.x to it. You can easily specify running your workflow with custom images by providing the platform parameter.
+I didn't want to switch to an 18GB docker image to be able to just run Maven, so I ended up finding an existing image by [Jamez Perkins](https://github.com/jamezp). It simply takes the original "act" image [ghcr.io/catthehacker/ubuntu:act-latest](http://ghcr.io/catthehacker/ubuntu:act-latest) and adds Maven version 3.x to it. You can easily specify running your workflow with custom images by providing the platform parameter.
 
 ```plaintext
 $ act -P ubuntu-latest=quay.io/jamezp/act-maven
@@ -92,6 +93,7 @@ It's a good practice to always separate your secrets from your workflow definiti
 
 To provide an action with a secret, you can use the `secrets` context to access secrets you've created in your repository.
 
+{% raw %}
 ```yaml
 jobs:
   staticanalysis:
@@ -107,7 +109,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 ```
-
+{% endraw %}
 "act" does not have a UI in which you can specify secrets, so you will need to provide those values explicitly from the command line or store them in a .env formatted file when testing your workflow. If you only have a few secrets you can easily add them by just providing the secret from the command line by using the `-s` option.
 
 ```plaintext
