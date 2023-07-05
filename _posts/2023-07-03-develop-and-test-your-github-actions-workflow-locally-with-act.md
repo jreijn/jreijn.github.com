@@ -35,7 +35,7 @@ $ act
 
 ## Runners
 
-When defining your workflow can specify a runner based on a specific virtual machine/environment when performing your steps.
+When defining your workflow you can specify a runner based on a specific virtual machine/environment when performing your steps.
 
 ```yaml
 jobs:
