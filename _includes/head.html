@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
+    {% if page.canonical %}
+    <link rel="canonical" href="{{ page.canonical }}">
+    {% else %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+    
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="http://feeds.feedburner.com/JeroenReijn" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
