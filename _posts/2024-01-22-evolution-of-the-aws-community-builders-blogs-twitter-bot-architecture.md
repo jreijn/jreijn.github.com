@@ -56,6 +56,6 @@ This architecture has been running fine for quite some time now and I’ve even 
 1. Replacing the SQS queue for the posts by DynamoDB Streams. The author enrichment function would only have react to events in the stream. That would remove a bit of complexity and responsibility from the feed parser function.
 2. If I look at the flow it looks a bit like a workflow. I'm considering to replace the entire thing and with a step functions workflow.
 3. Integrate with Amazon Bedrock for generating summaries of the posts the bot is posting to Twitter. It would improve the Twitter posts a bit instead of just mentioning the author and the title of the post. 
-4. Extend the bot to also publish to other platforms. I’ve been looking into Threads, but it does not seem to have a public API yet. Not sure how big the AWS community is on other social platforms. Feel free to reach out if your prefer to follow all the great content on your social media platform of choice.
+4. Extend the bot to also publish to other platforms. I’ve been looking into Threads, but it does not seem to have a public API yet. Not sure how big the AWS community is on other social platforms. Feel free to reach out if you prefer to follow all the great content on your social media platform of choice.
 
 In a follow up post I will dive into the technical details of how the functions work and will take a look at some of the best practices for building Lambda functions. If you have some comments/ideas/feedback, feel free to reach out!
