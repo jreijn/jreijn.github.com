@@ -14,7 +14,7 @@ comments: true
 
 Serverless architectures have emerged as a paradigm-shifting approach to building, fast, scalable and cost efficient applications. While Serverless architectures provide unparalleled flexibility, they also introduce new challenges in terms of monitoring and troubleshooting.
 
-In this blog post, we'll explore how Quarkus integrates with AWS X-Ray and how using a Jakarta CDI Interceptor can keep your code clean while adding custom instrumentation.
+In this blog post, we'll explore how Quarkus integrates with [AWS X-Ray](https://aws.amazon.com/xray/) and how using a Jakarta CDI Interceptor can keep your code clean while adding custom instrumentation.
 
 ## Quarkus and AWS Lambda
 
