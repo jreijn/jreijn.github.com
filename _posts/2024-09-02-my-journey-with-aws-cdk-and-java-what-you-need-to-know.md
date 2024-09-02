@@ -7,7 +7,7 @@ tags:
 - aws
 - aws-cdk
 - java
-comments: true
+comments: false
 ---
 
 One of the first decisions you’ll need to make when working with the [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) is choosing the language for writing your Infrastructure as Code (IaC). The CDK currently supports TypeScript, JavaScript, Python, Java, C#, and Go. Over the past few years I’ve worked with the CDK in Typescript, Python and Java. While there is ample information available online for TypeScript and Python, this post aims to share my experience using Java as the language of choice for the AWS CDK.
