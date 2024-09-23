@@ -5,9 +5,12 @@ permalink: "/presentations.html"
 header-img: "/img/presentations2-bg.jpg"
 ---
 
+
+
 {:.table .table-bordered}
 | Title        | Venue           | Year  |  |
 | ------------- |:-------------:| -----:| |
+| Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed | [AWS Summit Amsterdam](https://aws.amazon.com/events/summits/emea/amsterdam) | 2024 | <a href="https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a> |
 | Accelerating Your AWS Journey: Open Source Tools for getting teams up to speed | [AWS Community Day NL](https://awscommunityday.nl) | 2023 | <a href="https://speakerdeck.com/jreijn/accelerating-your-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a>
 | Ten things that improve the performance of your Java based AWS Lambda functions | [JFall](https://2022.jfall.nl/) | 2022 | <a href="https://speakerdeck.com/jreijn/j-fall-2022-ten-performance-improvements-for-your-java-based-aws-lambda-functions">Slides</a>, <a href="https://www.youtube.com/watch?v=2xGsmAwFs60">Video</a>
 | What’s a Service Mesh and why do I need one? | [JFall](https://jfall.nl) | 2019 | <a href="https://www.slideshare.net/jreijn/whats-a-service-mesh-and-why-do-i-need-one">Slides</a>, <a href="https://youtu.be/NiQ57yOmzOE">Video</a>
