@@ -3,10 +3,12 @@ title: 'My Journey with AWS CDK and Java: What You Need to Know'
 layout: post
 date: '2024-09-02 11:00:00'
 header-img: "/assets/2024/scott-rodgerson-PSpf_XgOM5w-unsplash_layered.jpg"
+canonical: https://www.luminis.eu/blog/my-journey-with-aws-cdk-and-java-what-you-need-to-know/
 tags:
 - aws
 - aws-cdk
 - java
+- iac
 comments: false
 ---
 
