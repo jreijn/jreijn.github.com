@@ -28,6 +28,16 @@ sitemap:
         - "/feed.xml"
         - "/feeds/posts/default"
 
+# twitter:
+#   username: jreijn
+
+# social:
+#   name: Jeroen Reijn
+#   links:
+#     - https://twitter.com/jreijn
+#     - https://www.linkedin.com/in/jeroenreijn
+#     - https://github.com/jreijn
+
 plugins:
  - jekyll-coffeescript
  - jekyll-gist
@@ -45,5 +55,5 @@ plugins:
  - jekyll-avatar
  - jemoji
  - jekyll-mentions
-# - jekyll-admin
+ # - jekyll-admin
  - jekyll-include-cache
