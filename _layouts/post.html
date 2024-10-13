@@ -14,8 +14,7 @@ layout: default
           <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }} - {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
             {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span>
             {% for tag in page.tags %}
-            {% assign tag_slug = tag | slugify: "raw" %}
-            <a href="{{ site.baseurl | append: '/tags/' | append: tag_slug | append: '/' }}" class="badge badge-light">{{- tag -}}</a>
+            <a href="{{ site.baseurl | append: '/tags'}}/{{- tag -}}.html" class="badge badge-light">{{- tag -}}</a>
             <!-- <a href="{{ '/tags' | relative_url }}/{{- tag -}}">{{- tag -}}</a> -->
             {% endfor %}
           </div>
