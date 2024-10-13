@@ -4,7 +4,8 @@ title: "Eclipse plugins"
 date: 2009-04-30
 comments: false
 categories:
- - Tools
+ - tools
+ - java
 ---
 
 I've been using <a href="http://www.eclipse.org/">Eclipse</a> as my main IDE the past couple of years. Eclipse by itself is great for Java development, but you can do so much more with it then just that. One of the biggest advantages I think Eclipse has, is that there are so many plugins available for it.

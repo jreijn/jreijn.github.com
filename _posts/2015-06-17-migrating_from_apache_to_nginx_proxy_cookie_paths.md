@@ -3,6 +3,9 @@ title: Migrating From Apache to Nginx and proxying cookie paths
 layout: post
 date: 2015-06-16 23:17
 comments: true
+tags:
+- nginx
+- apache
 ---
 
 At work, I'm involved in a project which recently moved entirely to https. During the transition the project moved from Apache httpd as the proxy/web server to Nginx.

@@ -5,6 +5,7 @@ date: 2010-06-10
 comments: true
 categories:
  - hippo
+ - java
 ---
 
 Once your <a href="http://www.onehippo.org/">Hippo CMS</a> project is in production, there is always the case that you or your customer wants to add extra features to the website or portal. This might mean that the data model has to change The data model for a piece of content in Hippo CMS is stored based on a JCR nodetype definition.

@@ -7,6 +7,7 @@ summary: "I find that generating Maven project documentation is always a bit cum
 categories:
  - hippo
  - maven
+ - java
 ---
 
 

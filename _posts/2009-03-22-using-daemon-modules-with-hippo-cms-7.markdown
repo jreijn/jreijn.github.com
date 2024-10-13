@@ -5,6 +5,7 @@ date: 2009-03-22
 comments: true
 categories:
  - hippo
+ - java
 ---
 
 Recently I was working on a new <a href="http://www.onehippo.org/cms7/">Hippo CMS 7</a> based project, where I was in need of a repository component that could run in the background and perform some scheduled tasks.

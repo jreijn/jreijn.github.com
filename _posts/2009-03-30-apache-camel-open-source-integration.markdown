@@ -5,6 +5,8 @@ date: 2009-03-30
 comments: true
 categories:
  - Open Source
+ - java
+ - apache-camel
 ---
 
 I'm currently working on a project where we are looking at creating an integration layer for external applications to connect to our back-end applications. In our case, one of the back-end applications is <a href="http://docs.onehippo.org/">Hippo CMS 7's</a> repository.

@@ -4,7 +4,9 @@ title: "JCR: Sorting on child node properties"
 date: 2009-06-10
 comments: true
 categories:
- - Open Source
+ - open-source
+ - java
+ - jcr
 ---
 
 

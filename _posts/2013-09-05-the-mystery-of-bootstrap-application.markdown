@@ -7,6 +7,7 @@ summary: "While developing Java based web application with Tomcat I always get n
 categories:
  - hippo
  - maven
+ - java
 ---
 
 In my day to day job I'm a Java coder working on a MacBook Pro running OS X (Mountain Lion) and recently one thing started to really annoy me. While performing an <a href="http://maven.apache.org/" target="_blank">Apache Maven</a> build cycle occasionally an application pops up in my OS X dock and while browsing the web or composing an e-mail the focus is lost and moves to the just started application. In my case these applications are most of the time called <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">Bootstrap</span> or <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ForkedBooter</span>.
