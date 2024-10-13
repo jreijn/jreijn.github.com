@@ -1,8 +1,15 @@
 ---
 title: Deploying Spring Boot applications to AWS App Runner with AWS CodePipeline
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2021/blue-containers-banner.jpg"
+tags:
+- aws
+- aws-cdk
+- aws-apprunner
+- java
+- iac
+
 ---
 
 In a [previous post](/2021/08/a-first-impression-of-aws-app-runner.html), we looked at [AWS App Runner](https://aws.amazon.com/apprunner/). AWS App Runner is a container service that lets you focus on your application and allows you to deploy your application in minutes without setting up any infrastructure.

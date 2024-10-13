@@ -1,8 +1,10 @@
 ---
 title: Useful tools for local development with AWS services
 layout: post
-comments: true
+comments: false
 header-img: "/assets/2020/localstack-header.jpg"
+tags:
+- aws
 ---
 
 Over the last 2.5 years, I've been working with AWS and a wide range of its services. During this time I noticed that for most projects it's useful to be able to test your application against AWS services without having to deploy or move your code into the cloud. 

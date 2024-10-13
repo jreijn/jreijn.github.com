@@ -3,6 +3,9 @@ title: Monitoring Spring Boot applications with Prometheus and Grafana
 comments: true
 layout: post
 header-img: "/img/monitoring.jpg"
+tags:
+- java
+- spring-boot
 ---
 
 At my current project we've been building three different applications. All three applications are based on Spring Boot, but have very different workloads. They've all reached their way to the production environment and have been running steadily for quite some time now. We do regular (weekly basis) deployments of our applications to production with bug fixes, new features and technical improvements. The organisation has a traditional infrastructure workflow in the sense that deployments to the VM instances on acceptance and production happen via the (remote hosting) provider.

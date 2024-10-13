@@ -14,7 +14,7 @@ layout: null
     {% for post in site.posts limit:20 %}
     <entry>
       <id>{{ site.url }}{{ post.url }}</id>
-      <link type="text/html" rel="alternate" href="http://blog.jeroenreijn.com{{ post.url }}"/>
+      <link type="text/html" rel="alternate" href="https://www.jeroenreijn.com{{ post.url }}"/>
       <title>{{ post.title | xml_escape }}</title>
       <published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.date | date_to_xmlschema }}</updated>

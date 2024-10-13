@@ -2,7 +2,10 @@
 title: Fixing the long startup time of my Java application running on macOS Sierra
 layout: post
 date: '2017-05-10'
-comments: true
+comments: false
+tags:
+- java
+- spring-boot
 ---
 
 At my current project, we're developing an application based on [Spring Boot](https://projects.spring.io/spring-boot/). During my normal development cycle, I always start the application from within IntelliJ by means of a run configuration that deploys the application to a local Tomcat container.  Spring boot applications can run perfectly fine with an embedded container, but since we deploy the application within a Tomcat container in our acceptance and production environments, I always stick to the same deployment manner on my local machine.

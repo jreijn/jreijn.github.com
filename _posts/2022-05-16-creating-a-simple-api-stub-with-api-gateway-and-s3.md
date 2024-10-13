@@ -1,8 +1,14 @@
 ---
 title: Creating a simple API stub with API Gateway and S3
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2022/apigateway-to-s3-header.jpg"
+tags:
+- aws
+- lambda
+- apigateway
+- java
+- iac
 ---
 
 

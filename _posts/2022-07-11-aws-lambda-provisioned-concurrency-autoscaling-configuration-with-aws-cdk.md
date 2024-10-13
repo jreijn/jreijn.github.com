@@ -4,6 +4,13 @@ subtitle: A quick intro to Provisioned Concurrency Scaling and strategies
 comments: true
 layout: post
 header-img: "/assets/2022/spacex--p-KCm6xB9I-unsplash.jpg"
+tags:
+- aws
+- aws-cdk
+- serverless
+- lambda
+- java
+
 ---
 
 

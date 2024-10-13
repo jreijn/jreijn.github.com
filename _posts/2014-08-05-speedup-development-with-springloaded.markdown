@@ -4,6 +4,8 @@ title: "Speeding up your Hippo CMS development with Spring Loaded"
 comments: true
 categories:
  - hippo
+ - java
+ - spring
 ---
 
 At [Hippo](http://www.onehippo.com) we use [JRebel](http://zeroturnaround.com/software/jrebel/) a lot during the development of our CMS product. JRebel is a great tool and allows us to do live reloading of source code and enables us to develop the CMS product in a lot less time. The main reason that we use JRebel is that the the CMS suite itself is build from several multi-module Maven projects. JRebel helps limiting the amount of build, aggregate, package and redeploy cycles needed to test the changes and new features which we add to the CMS. For this specific scenario JRebel is excellent and it works really well, but most of the developers I meet are spending time on developing websites with Hippo CMS, which are usually less complex projects. For developers on those kinds of projects getting a JRebel license is usually a thougher challange, but don't worry there are alternatives besides using JRebel that can also help you speed up development.

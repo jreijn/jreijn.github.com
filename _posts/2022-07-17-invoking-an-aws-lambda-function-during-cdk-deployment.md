@@ -4,6 +4,13 @@ subtitle: An introduction to AWS CDK Custom Resources
 comments: true
 layout: post
 header-img: "/assets/2022/mehmet-ali-peker-hfiym43qBpk-unsplash-grey.jpg"
+tags:
+- aws
+- aws-cdk
+- aws-lambda
+- java
+- iac
+
 ---
 
 

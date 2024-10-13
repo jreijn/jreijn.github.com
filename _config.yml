@@ -27,16 +27,26 @@ sitemap:
         - "/atom.xml"
         - "/feed.xml"
         - "/feeds/posts/default"
+        - "/tags/*"
 
-# twitter:
-#   username: jreijn
+author:
+  name: Jeroen Reijn
+  url: https://www.jeroenreijn.com/
 
-# social:
-#   name: Jeroen Reijn
-#   links:
-#     - https://twitter.com/jreijn
-#     - https://www.linkedin.com/in/jeroenreijn
-#     - https://github.com/jreijn
+twitter:
+  username: jreijn
+
+social:
+  name: Jeroen Reijn
+  links:
+    - https://twitter.com/jreijn
+    - https://www.linkedin.com/in/jeroenreijn
+    - https://github.com/jreijn
+
+collections:
+  tags:
+    permalink: /tags/:path
+    output: true
 
 plugins:
  - jekyll-coffeescript

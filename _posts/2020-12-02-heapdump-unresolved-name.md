@@ -3,6 +3,8 @@ title: Heap dump with lots of 'Unresolved Name' objects
 comments: true
 layout: post
 header-img: "/assets/2020/heap-dump-header.jpg"
+tags:
+- java
 ---
 
 If you're familiar with Java as a programming language you might have come across the following message: *java.lang.OutOfMemoryError: Java heap space*. We recently got that message in of the services that we're currently working on. 

@@ -1,0 +1,14 @@
+{% if page.tags.size > 0 %}
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-md-10 mx-auto">
+            <div class="blog-tags">
+            <span>Tags:</span>
+            {% for tag in page.tags %}
+                <a href="{{ '/tags' | relative_url }}/{{- tag -}}" class="badge badge-light">{{- tag -}}</a>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

@@ -2,6 +2,8 @@
 title: Looking back on AWS Summit Benelux 2018
 comments: true
 date: '2018-06-06 23:32:51'
+tags:
+- aws
 ---
 
 Last week I visited [AWS Summit Benelux][1] together with [Sander][2]. AWS Summit is all about cloud computing and the topics that surround cloud computing. This being my first AWS conference I can say it was a really nice experience. Sure there was room for improvement (no coffee or tea after the opening keynote being one), but other than that it was a very good experience. Getting inside was a breeze with all the different check-in points and after you entered you were directly on the exhibitor floor where a lot of Amazon partners showed their products.

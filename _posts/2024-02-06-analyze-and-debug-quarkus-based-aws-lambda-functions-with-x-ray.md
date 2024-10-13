@@ -8,6 +8,7 @@ header-img: "/assets/2024/mari-lezhava-q65bNe9fW-w-unsplash.jpg"
 tags:
 - aws
 - serverless
+- lambda
 - observability
 - quarkus
 comments: true

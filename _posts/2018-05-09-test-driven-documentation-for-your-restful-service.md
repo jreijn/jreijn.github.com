@@ -3,9 +3,12 @@ title: Test-Driven Documentation for your RESTful service
 comments: true
 layout: post
 header-img: "/img/devcon-bg.png"
+tags:
+- java
+- spring-boot
 ---
 
-Three weeks ago I presented at [Luminis Devcon 2018](https://devcon.luminis.eu) about the challanges of designing and documenting REST APIs. The reason I gave this presentation was that about 8 months ago I started on a new project for which my team had to develop a public facing REST API. Having a good documentation for such an API is very important, since users will read the docs and have an opinion about the usage and correctness of such an API. 
+Three weeks ago I presented at [Luminis Devcon 2018](https://devcon.luminis.eu) about the challenges of designing and documenting REST APIs. The reason I gave this presentation was that about 8 months ago I started on a new project for which my team had to develop a public facing REST API. Having a good documentation for such an API is very important, since users will read the docs and have an opinion about the usage and correctness of such an API. 
 During my presentation I went into the lifecycle of an API and how to maintain the documentation in such a way that it's always in sync with the actual API, since these can easily drift apart.
 
 The presentation was recorded and is now available on Youtube.

@@ -2,7 +2,7 @@
 title: Running Cucumber from the command-line
 layout: post
 date: '2017-10-08'
-comments: true
+comments: false
 header-img: "/img/cucumber-bg.png"
 ---
 

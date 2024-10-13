@@ -3,6 +3,10 @@ title: Migrating a Spring Boot service from Java 11 to Kotlin
 comments: true
 layout: post
 header-img: "/assets/2019/kotlin-spring-boot2.png"
+tags:
+- java
+- spring-boot
+- kotlin
 ---
 
 At my current project we’ve just finished migrating a Spring Boot 2.1.x service from Java 11 to [Kotlin](https://kotlinlang.org/). While doing so we’ve learned quite a few things along the way and I created some notes that I wanted to share in case somebody else runs into the same issues. It was our first Kotlin migration and getting to know the Kotlin language better was/is a lot of fun, but also confusing at times.
