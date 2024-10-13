@@ -5,33 +5,18 @@ permalink: /about.html
 header-img: /img/about-bg.jpg
 ---
 
-<h4>
-  Cloud Solution Architect at Luminis.
-  Previously Lead Solution Architect at Hippo (CMS) before they were acquired by Bloomreach.
-</h4>
+Hi 👋 my name is Jeroen Reijn. I'm a seasoned software engineer, (Cloud) architect, and tech lead. I specialize in Java, AWS, cloud-native development, and open-source technologies.
 
-Born and raised in Amsterdam, The Netherlands I always had a passion for computers and technology. Since then I've moved to Hoofddorp a small town close to Amsterdam where I live together with my wife and two kids.
+Born and raised in Amsterdam, The Netherlands 🇳🇱 I always had a passion for computers and technology. In 2003 I started my professional career as a Java software engineer at Hippo Webworks, which later became Hippo (CMS). Over the years I performed several roles at Hippo. I've acted as a consultant, trainer, software engineer and solution architect. During the last couple of years I worked as the Lead Architect within Hippo's international Professional Services department. Six months after I left Hippo, it got acquired by Bloomreach.
 
-In 2003 I started my 'real' professional career as a software engineer at Hippo Webworks, which later became Hippo (CMS). Over the years I performed several roles at Hippo. I've acted as a consultant, trainer, software engineer and solution architect. Since 2012 I worked as the Lead Architect within Hippo's international Professional Services department.
+In 2016 I joined Luminis as a consultant and over the last 5 years I've been focussing on AWS. In 2022 I got accepted into the [AWS Community Builders program](https://aws.amazon.com/developer/community/community-builders/) in the category Serverless.
 
-Having seen Hippo grow from 7 to about 110 people and being a very well established product company, with a spot on all major WCM Quadrants, I noticed I was up for a change.
+I occasionally publish technical articles, appear in podcasts and recordings, and speak at conferences and meetups. For a full overview see, see [presentations](/presentations.md).
 
-This led to the decision to leave Hippo in February of 2016 and join the team at recently founded Luminis Amsterdam office. At Luminis I currently work as a Cloud Solution Architect.
+## Connect with me
 
-If you want to learn more about my professional career do check out my work history on [LinkedIn](https://www.linkedin.com/in/jeroenreijn).
-
-At work, but also at home I have a huge passion for what I do and I'm always learning and experimenting with new stuff. My main area of expertise lies in backend systems in Java, but I'm also very comfortable with front-end development, in particular with AngularJS and React.
-
-During my period at Hippo I got involved with Open Source software and open source communities at the Apache Software Foundation. Since then I'm a strong believer in open source software and sharing code and knowledge with others. Because of this I try to share as much as I can and you can find my personal open source work on [GitHub](https://github.com/jreijn).
-
-#### About this site
-
-This URL has been my online home for many years, most of the times as a blog. Today it’s a bit of an outlet for my development-related ramblings.
-
-In case you were wondering, this site is:
-
-+ Coded with [Atom](https://atom.io/)
-+ Built on [Jekyll](https://jekyllrb.com/), the open source static site generator
-+ Developed on [Github](https://github.com/)
-+ Hosted on [GitHub Pages](https://pages.github.com/)
-+ Secured and globally distributed by [Cloudflare](https://www.cloudflare.com/).
+- [https://www.linkedin.com/in/jeroenreijn](https://www.linkedin.com/in/jeroenreijn)
+- [https://twitter.com/jreijn](https://twitter.com/jreijn)
+- [https://github.com/jreijn](https://github.com/jreijn)
+- [https://medium.com/@jreijn](https://medium.com/@jreijn)
+- [https://dev.to/jreijn](https://dev.to/jreijn)
