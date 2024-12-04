@@ -35,7 +35,9 @@ Very interesting session which introduced me to Systems Manager Automation for b
 
 ![/assets/2024/reinvent/terraform.jpeg](/assets/2024/reinvent/systems-manager.jpeg)
 
-After this session I took a bit of a breather and went to the AWS Community Hub and met [Johannes Koch](https://aws.amazon.com/developer/community/heroes/johannes-koch/), [Julian Wood](https://x.com/julian_wood), [Ran Isenberg](https://www.ranthebuilder.cloud), [Raphael Manke](https://x.com/raphaelmanke) and [Faye Ellis](https://aws.amazon.com/developer/community/heroes/faye-ellis/) in person. It’s always great to meet people you follow or converse with online.
+### Taking a short break
+
+After this session I took a bit of a breather and went to the AWS Community Hub. The Community Hub is a dedicated spot for AWS Community Builders, AWS Heroes and AWS Community Leaders to take a step back and relax. At the Community Hub I got to meet [Johannes Koch](https://aws.amazon.com/developer/community/heroes/johannes-koch/), [Julian Wood](https://x.com/julian_wood), [Ran Isenberg](https://www.ranthebuilder.cloud), [Raphael Manke](https://x.com/raphaelmanke) and [Faye Ellis](https://aws.amazon.com/developer/community/heroes/faye-ellis/) in person. It's always great to meet people you follow or converse with online.
 
 ### SVS401 - Best practices for Serverless developers with Ran Isenberg and Julian Wood
 
