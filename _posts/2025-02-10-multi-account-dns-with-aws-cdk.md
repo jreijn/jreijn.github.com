@@ -5,7 +5,9 @@ date: 2025-02-10 17:25:21
 header-img: "/assets/2025/levi-frey-x19nNMWeo5A-unsplash.jpg"
 tags:
 - aws
-- reinvent
+- cdk
+- iac
+- dns
 comments: false
 ---
 
