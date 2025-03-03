@@ -1,0 +1,46 @@
+---
+title: About me
+image: "/assets/2024/presenting.jpg"
+menu:
+    main:
+        weight: 4
+        params:
+            icon: user
+comments: false
+---
+
+Hello 👋!
+
+My name is Jeroen Reijn and this is my personal website. I'm a highly experienced Solutions Architect, specializing in AWS, Java, and cloud-native development. With a career spanning over two decades working on resilient, scalable, and mission-critical systems, I've has worn many hats, including software engineer, consultant, trainer and software architect.
+
+When I'm not architecting cloud solutions or sharing my expertise, you’ll find me experimenting with emerging technologies and contributing to open source.
+
+## Public Talks 🎤
+
+I like to share my experience and thoughts through public speaking and below are some of the events I’ve had the privilege to participate as a speaker.
+
+### 2024
+
+- [Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed](https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed) - AWS Summit Amsterdam
+- [Azure vs AWS: Battle of the Clouds](https://www.meetup.com/dutch-azure-meetup/events/300326315/) - Dutch Azure Meetup
+
+### 2023
+- [Accelerating Your AWS Journey: Open Source Tools for getting teams up to speed](https://speakerdeck.com/jreijn/accelerating-your-aws-journey-open-source-tools-for-getting-teams-up-to-speed) - [AWS Community Day NL](https://awscommunityday.nl)
+
+### 2022
+- [Ten ways to improve the performance of your Java based AWS Lambda functions](https://www.youtube.com/watch?v=2xGsmAwFs60) - [JFall](https://2022.jfall.nl/)
+
+### 2019
+- [What’s a Service Mesh and why do I need one?](https://www.slideshare.net/jreijn/whats-a-service-mesh-and-why-do-i-need-one) - [JFall](https://jfall.nl)
+- [What a Service Mesh can do for your Microservices architecture](https://www.youtube.com/watch?v=-d34WQoIeVA) - [Luminis DevCon](https://devcon.luminis.eu)
+
+### 2018
+- [Test Driven Documentation for your REST(ful) service](https://www.slideshare.net/jreijn/testdriven-development-for-your-restful-service) - [Luminis DevCon](https://devcon.luminis.eu)
+
+### 2017
+- [Hoe releasen minder pijnlijk werd bij ANWB Alarmcentrale](https://www.slideshare.net/jreijn/hoe-releasen-minder-pijnlijk-werd-bij-de-anwb-alarmcentrale-79301666) - [Luminis DevCon](https://devcon.luminis.eu)
+
+## Podcasts and videos 🎙️
+
+- Wat is een Technisch geweten bij Luminis (in Dutch) - [Luminis Tech Talks](https://open.spotify.com/show/18c2MuauRakL1do0G06FCY?si=dad910770f3b4f60).
+- [Cloud Engineering panel discussion](https://www.youtube.com/watch?v=nitdepIdhq0) - Club Cloud 2021
