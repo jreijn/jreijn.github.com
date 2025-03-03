@@ -1,0 +1,48 @@
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/jreijn"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "bluesky"
+name = "Bluesky"
+url = "https://bsky.app/profile/jeroenreijn.com"
+
+[social.params]
+icon = "brand-bluesky"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/jeroenrein/"
+
+[social.params]
+icon = "brand-linkedin"
+
+[[social]]
+identifier = "twitter"
+name = "X"
+url = "https://x.com/jreijn"
+
+[social.params]
+icon = "brand-x"
+
+[[social]]
+identifier = "rss"
+name = "RSS"
+url = "/index.xml"
+
+[social.params]
+icon = "rss"
+
+[[social]]
+identifier = "so"
+name = "StackOverflow"
+url = "https://stackoverflow.com/users/571007/jeroen"
+
+[social.params]
+icon = "brand-stackoverflow"
