@@ -1,6 +1,6 @@
 ---
 date: "2024-11-10T15:12:05Z"
-draft = true
+draft: true
 title: How to properly process messages from SQS with Lambda.
 ---
 
