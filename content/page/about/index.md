@@ -23,6 +23,7 @@ I like to share my experience and thoughts through public speaking and below are
 
 - [Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed](https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed) - AWS Summit Amsterdam
 - [Azure vs AWS: Battle of the Clouds](https://www.meetup.com/dutch-azure-meetup/events/300326315/) - Dutch Azure Meetup
+- [Lessons Learned from Running Serverless Java Workloads in AWS Lambda](https://www.meetup.com/apeldoornjug/events/299653572/) - Apeldoorn JUG Meetup
 
 ### 2023
 - [Accelerating Your AWS Journey: Open Source Tools for getting teams up to speed](https://speakerdeck.com/jreijn/accelerating-your-aws-journey-open-source-tools-for-getting-teams-up-to-speed) - [AWS Community Day NL](https://awscommunityday.nl)
