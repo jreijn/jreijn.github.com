@@ -1,6 +1,6 @@
 ---
 title: Test-Driven Documentation for your RESTful service
-comments: true
+comments: false
 layout: post
 header-img: "/img/devcon-bg.png"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 'Book review - Clean Architecture: A Craftsman''s Guide to Software Structure
   and Design'
-comments: true
+comments: false
 layout: post
 header-img: "/img/book-copy.jpg"
 ---

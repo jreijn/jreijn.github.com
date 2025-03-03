@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<!-- Page Header -->
+<!-- <header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-10 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
+          <span class="subheading">{{ page.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+<!-- Main Content -->
+<main>
+  <section class="section hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero-inner">
+
+          <div class="hero-left">
+            <div class="hero-image">
+              <img class="lazy loaded" alt="" src="/assets/2024/me.jpg">
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <h1 class="hero-title">Hi! 👋 My name is Jeroen Reijn</h1>
+            <p class="hero-description">I'm cloud consultant based in Hoofddorp, the Netherlands. 
+              I specialise in AWS and Java. I help companies in building well architected cloud solutions, easy to maintain and fast backend applications.</p>
+            
+            <div class="hero-subscribe">
+              <form class="subscribe-form validate" action="//frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3" method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate="">
+                <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+                <input class="subscribe-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Your email address...">
+                <button class="button button--primary button--small subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Get updates</button>
+              </form>
+            </div>
+            
+          </div>
+
+        </div>
+      </div> 
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+          {{ content }}
+      </div>
+    </div>
+  </section>
+</main>

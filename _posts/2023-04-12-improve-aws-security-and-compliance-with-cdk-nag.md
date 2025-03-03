@@ -1,9 +1,9 @@
 ---
 title: Improve AWS security and compliance with cdk-nag
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2023/niv-singer-LkD_IH8_K8k-unsplash.jpg"
-canonical: https://www.luminis.eu/blog/cloud-en/improve-aws-security-and-compliance-with-cdk-nag/
+canonical_url: https://www.luminis.eu/blog/cloud-en/improve-aws-security-and-compliance-with-cdk-nag/
 tags:
 - aws
 - aws-cdk

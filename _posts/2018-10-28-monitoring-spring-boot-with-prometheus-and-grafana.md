@@ -1,6 +1,6 @@
 ---
 title: Monitoring Spring Boot applications with Prometheus and Grafana
-comments: true
+comments: false
 layout: post
 header-img: "/img/monitoring.jpg"
 tags:

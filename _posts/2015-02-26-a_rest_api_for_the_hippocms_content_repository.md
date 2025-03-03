@@ -2,8 +2,7 @@
 title: A RESTful API for the Hippo CMS content repository
 layout: post
 date: 2015-02-26 13:11
-
-comments: true
+comments: false
 ---
 
 Over the last 2-3 years I've seen many moments during a project implementation where having an out of the box JCR RESTful API could have helped. Key areas where having such an API were deployment automation and data imports/exports. As a starting point having an API for managing JCR nodes and properties would have been a first step in the right direction. By default Apache Jackrabbit 2.X does not have this out of the box. However Apache Jackrabbit 3.0 (Oak) and current versions of JBoss Modeshape do support this, so in case Hippo CMS switches over to Apache Oak we might need to revise this add-on.

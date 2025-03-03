@@ -2,7 +2,7 @@
 title: Migrating From Apache to Nginx and proxying cookie paths
 layout: post
 date: 2015-06-16 23:17
-comments: true
+comments: false
 tags:
 - nginx
 - apache

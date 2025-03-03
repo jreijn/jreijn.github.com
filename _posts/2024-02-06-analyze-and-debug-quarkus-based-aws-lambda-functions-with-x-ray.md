@@ -1,7 +1,7 @@
 ---
 title: Analyze and debug Quarkus based AWS Lambda functions with X-Ray
 subtitle: Using Quarkus and AWS  X-Ray  with Jakarta CDI Interceptors to keep your code clean
-canonical: https://www.luminis.eu/blog/analyze-and-debug-quarkus-based-aws-lambda-functions-with-x-ray/
+canonical_url: https://www.luminis.eu/blog/analyze-and-debug-quarkus-based-aws-lambda-functions-with-x-ray/
 layout: post
 date: '2024-02-06 20:00:00'
 header-img: "/assets/2024/mari-lezhava-q65bNe9fW-w-unsplash.jpg"
@@ -11,7 +11,7 @@ tags:
 - lambda
 - observability
 - quarkus
-comments: true
+comments: false
 ---
 
 Serverless architectures have emerged as a paradigm-shifting approach to building, fast, scalable and cost efficient applications. While Serverless architectures provide unparalleled flexibility, they also introduce new challenges in terms of monitoring and troubleshooting.

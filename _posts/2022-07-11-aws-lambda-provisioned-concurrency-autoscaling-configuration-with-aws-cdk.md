@@ -1,7 +1,7 @@
 ---
 title: AWS Lambda Provisioned Concurrency AutoScaling configuration with AWS CDK
 subtitle: A quick intro to Provisioned Concurrency Scaling and strategies
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2022/spacex--p-KCm6xB9I-unsplash.jpg"
 tags:

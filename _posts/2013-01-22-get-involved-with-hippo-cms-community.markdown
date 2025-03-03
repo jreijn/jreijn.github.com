@@ -2,7 +2,7 @@
 layout: post
 title: "Get involved with the Hippo CMS Community!"
 date: 2013-01-22
-comments: true
+comments: false
 categories:
  - hippo
 ---

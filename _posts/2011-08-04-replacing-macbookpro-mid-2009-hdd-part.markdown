@@ -2,7 +2,7 @@
 layout: post
 title: "Replacing the MacBookPro mid 2009 HDD part 2"
 date: 2011-08-04
-comments: true
+comments: false
 categories:
  - apple
 ---

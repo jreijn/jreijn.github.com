@@ -2,7 +2,8 @@
 title: Looking back at 2015
 layout: post
 date: 2016-02-07
-comments: true
+header-img: "/assets/2015/looking-back.jpg"
+comments: false
 ---
 
 Well this post is long overdue again. February is quite on it's way and it's time to look back at 2015. It was an interesting year for sure and there are more interesting things to come.

@@ -2,7 +2,7 @@
 layout: post
 title: "Looking back at 2013"
 date: 2014-03-11
-comments: true
+comments: false
 summary: "Last year was a great year! 2013 was the year that I celebrated 10 years, spoke at several conferences and run my first 10 mile run."
 categories:
 ---

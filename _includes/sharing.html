@@ -1,14 +1,29 @@
 
 <div class="container sharing">
-	<div class="row">
-		<div class="col-lg-10 col-md-10 mx-auto">
-      <a role="button" class="btn btn-sm btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{site.username}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i> Tweet</a>
-      <a role="button" class="btn btn-sm btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i> Post</a>
-      <a role="button" class="btn btn-sm btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-linkedin"></i> Update</a>
-			<a role="button" class="btn btn-sm btn-hacker-news" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}" onclick="window.open(this.href, 'hacker-news-share','width=580,height=296');return false;"><i class="fa fa-hacker-news"></i> Submit</a>
-      <a role="button" class="btn btn-sm btn-email" href="mailto:?subject={{ page.title | uri_escape }}&amp;body={{ site.url }}{{ page.url }}"><i class="fa fa-envelope"></i> Email</a>
-      <a role="button" class="btn btn-sm btn-feed" href="https://feeds.feedburner.com/JeroenReijn"><i class="fa fa-rss"></i> RSS</a>
-      <hr/>
+  <div class="row">
+    <div class="col-xl-10 col-lg-10 col-md-10 mx-auto">
+      <div class="post_share">
+        <div class="share_head">
+          <div class="share_title">Share this article</div>
+        </div>
+        <ul class="share_list list-reset">
+          <li class="share_item">
+            <a class="share_link share_twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{site.username}}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="share_item">
+            <a class="share_link share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="share_item">
+            <a class="share_link share_linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li class="share_item">
+            <a class="share_link share_hackernews" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}" onclick="window.open(this.href, 'hacker-news-share','width=580,height=296');return false;" title="Share on Hacker News" aria-label="Share on LinkedIn"><i class="fa fa-hacker-news"></i></a>
+          </li>
+          <li class="share_item">
+            <a class="share_link share_mail" href="mailto:?subject={{ page.title | uri_escape }}&amp;body={{ site.url }}{{ page.url }}" title="Share via Email" aria-label="Share via Email"><i class="fa fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

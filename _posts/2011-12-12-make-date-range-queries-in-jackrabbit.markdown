@@ -2,7 +2,7 @@
 layout: post
 title: "Make your date range queries in Jackrabbit go faster!"
 date: 2011-12-12
-comments: true
+comments: false
 categories:
  - jcr
  - hippo

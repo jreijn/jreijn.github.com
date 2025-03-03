@@ -2,28 +2,27 @@
 layout: default
 ---
 
-<header class="masthead" style="background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="masthead">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-md-10 mx-auto">
         <div class="post-heading">
           <h1>{{ page.title }}</h1>
-          {% if page.subtitle %}
+          {% if page.subtitle -%}
           <h2 class="subheading">{{ page.subtitle }}</h2>
-          {% endif %}
+          {%- endif -%}
           <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }} - {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
             {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span>
-            {% for tag in page.tags %}
-            <a href="{{ site.baseurl | append: '/tags'}}/{{- tag -}}.html" class="badge badge-light">{{- tag -}}</a>
-            <!-- <a href="{{ '/tags' | relative_url }}/{{- tag -}}">{{- tag -}}</a> -->
-            {% endfor %}
-          </div>
+            {% for tag in page.tags -%}
+            <a href="{{ site.baseurl | append: '/tags'}}/{{- tag -}}.html" class="tag">{{- tag -}}</a>
+            {% endfor -%}
+        </div>
       </div>
     </div>
   </div>
 </header>
 
-<article>
+<article class="post">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-md-10 mx-auto">

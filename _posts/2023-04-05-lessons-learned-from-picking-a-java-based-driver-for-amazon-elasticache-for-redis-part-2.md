@@ -1,7 +1,7 @@
 ---
 title: Lessons learned from picking a Java driver for Amazon ElastiCache for Redis - Part 2
 subtitle: Exploring failover scenarios with Lettuce
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2023/photo-by-jainath-ponnala-unsplash.jpg"
 tags:

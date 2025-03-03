@@ -1,0 +1,57 @@
+# when using the default proxy server port
+local_backend: true
+
+media_folder: "assets"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "."
+    filter: {field: "layout", value: "page"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Featured Image", name: "header-img", widget: "image", required: false}
+
+    # files:
+    #   - label: "Home"
+    #     name: "home"
+    #     file: "content/home.md"
+    #     fields:
+    #       - {label: "Title", name: "title", widget: "string"}
+    #       - {label: "Publish Date", name: "date", widget: "datetime"}
+    #       - {label: "Body", name: "body", widget: "markdown"}
+    #       - label: "Cats"
+    #         name: "cats"
+    #         widget: list
+    #         fields:
+    #           - {label: "Name", name: "name", widget: "string"}
+    #           - {label: "Description", name: "description", widget: "text"}
+    #   - label: "About"
+    #     name: "about"
+    #     file: "content/about.md"
+    #     fields:
+    #       - {label: "Title", name: "title", widget: "string"}
+    #       - {label: "Publish Date", name: "date", widget: "datetime"}"
+  - name: "posts"
+    label: "Post"
+    folder: "_posts"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Featured Image", name: "header-img", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true} 
+
+
+
+backend:
+  name: git-gateway

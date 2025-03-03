@@ -17,7 +17,7 @@ include:
 # Build settings
 permalink: :year/:month/:title.html
 future: true
-paginate: 5
+paginate: 9
 
 username: jreijn
 disqus_short_name: blogjeroenreijn

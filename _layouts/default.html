@@ -3,10 +3,13 @@
   {% include head.html %}
     {% include ga.html %}
     <body>
-        {% include nav.html %}
+        {%- include nav.html -%}
         {{ content }}
-        {% include footer.html %}
+        {%- include footer.html -%}
 
-        <script src="/js/all.min.js"></script>
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/popper/popper.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/js/clean-blog.js"></script>
     </body>
 </html>

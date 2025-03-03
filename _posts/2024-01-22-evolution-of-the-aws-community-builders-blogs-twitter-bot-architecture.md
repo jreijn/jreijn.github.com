@@ -1,7 +1,7 @@
 ---
 title: The Evolution of the AWS Community Builders Blogs Twitter Bot Architecture
 layout: post
-comments: true
+comments: false
 header-img: "/assets/2023/yucel-moran-F86aF9mLG0M-unsplash-2.jpg"
 tags:
 - aws

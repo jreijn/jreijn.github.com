@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Speeding up your Hippo CMS development with Spring Loaded"
-comments: true
+comments: false
 categories:
  - hippo
  - java

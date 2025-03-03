@@ -1,6 +1,6 @@
 ---
 title: Migrating a Spring Boot service from Java 11 to Kotlin
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2019/kotlin-spring-boot2.png"
 tags:

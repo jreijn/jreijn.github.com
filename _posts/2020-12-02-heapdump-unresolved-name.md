@@ -1,6 +1,6 @@
 ---
 title: Heap dump with lots of 'Unresolved Name' objects
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2020/heap-dump-header.jpg"
 tags:

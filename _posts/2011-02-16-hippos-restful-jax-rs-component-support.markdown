@@ -2,7 +2,7 @@
 layout: post
 title: "HIPPOs RESTful JAX-RS Component Support and Spring Android"
 date: 2011-02-16
-comments: true
+comments: false
 categories:
  - java
  - hippo

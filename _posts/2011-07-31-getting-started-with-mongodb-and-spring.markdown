@@ -2,9 +2,10 @@
 layout: post
 title: "Getting started with MongoDB and Spring Data"
 date: 2011-07-31
-comments: true
+comments: false
 categories:
  - java
+ - spring
  - nosql
 ---
 

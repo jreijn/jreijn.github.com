@@ -10,6 +10,20 @@
     $(this).removeClass("floating-label-form-group-with-focus");
   });
 
+  $(".toggle-theme").on("click", function(e) {
+    if ($('html').hasClass("dark-mode")) {
+      $('html').removeClass("dark-mode");
+      localStorage.removeItem("theme");
+      document.documentElement.removeAttribute("dark");
+    } else {
+      $('html').addClass('dark-mode');
+      $('html').addClass('dark-mode');
+      localStorage.setItem("theme", "dark");
+      document.documentElement.setAttribute("dark", "");
+    }
+  });
+  
+
   // Show the navbar when the page is scrolled up
   var MQL = 1170;
 

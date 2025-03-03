@@ -2,7 +2,7 @@
 layout: post
 title: "Hippo Fridays @ Hippo"
 date: 2013-02-19
-comments: true
+comments: false
 categories:
  - hippo
 ---

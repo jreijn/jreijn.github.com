@@ -1,7 +1,7 @@
 ---
 title: Invoking an AWS Lambda function during CDK deployment
 subtitle: An introduction to AWS CDK Custom Resources
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2022/mehmet-ali-peker-hfiym43qBpk-unsplash-grey.jpg"
 tags:

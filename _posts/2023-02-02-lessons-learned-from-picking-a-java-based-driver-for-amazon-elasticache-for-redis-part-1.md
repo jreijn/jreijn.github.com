@@ -2,7 +2,7 @@
 title: Lessons learned from picking a Java based driver for Amazon ElastiCache for
   Redis - Part 1
 subtitle: Exploring failover scenarios with Jedis
-comments: true
+comments: false
 layout: post
 header-img: "/assets/2023/photo-by-markus-winkler-on-unsplash.jpg"
 tags:

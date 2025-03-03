@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Continuous Integration at Hippo"
-comments: true
+comments: false
 categories:
  - hippo
 ---

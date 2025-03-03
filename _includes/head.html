@@ -12,20 +12,25 @@
 
     <meta rel="preconnect" href="https://fonts.googleapis.com">
     <meta rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
-    <!-- Custom CSS -->
 
     <!-- Bootstrap core CSS -->
     <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet" type="text/css">
 
     <!-- Custom fonts for this template -->
     <link href="{{ "/vendor/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&swap=true' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&swap=true' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <!-- Custom styles for this template -->
     <link href="{{ "/css/clean-blog.min.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" rel="stylesheet" type="text/css">
 
     {% seo %}
     {% if page.header-img %}<meta name="twitter:image:src" content="{{ site.url }}{{ page.header-img }}">{% else %}<meta name="twitter:image:src" content="{{ site.url }}/assets/twitter-image.png">{% endif %} 
     {% if page.header-img %}<meta property="og:image" content="{{ site.url }}{{ page.header-img }}">{% endif %}
+
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.setAttribute("dark", "");
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
 </head>

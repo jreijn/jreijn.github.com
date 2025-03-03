@@ -2,7 +2,7 @@
 layout: post
 title: "MacBook Pro: Replacing the internal HDD"
 date: 2011-06-26
-comments: true
+comments: false
 categories:
 ---
 

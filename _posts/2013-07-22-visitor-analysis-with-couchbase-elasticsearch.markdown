@@ -2,7 +2,7 @@
 layout: post
 title: "Real-time visitor analysis with Couchbase, Elasticsearch and Kibana"
 date: 2013-07-22
-comments: true
+comments: false
 categories:
  - hippo
 ---

@@ -1,32 +1,44 @@
 ---
-layout: page
-description: on Tech, Open Source and software development
+layout: home
 header-img: "/assets/2024/aws-summit.jpg"
 ---
 
-    {% for post in paginator.posts %}
-      <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <h2 class="post-title">{{ post.title }}</h2>
-        </a>
-        <p>{{post.excerpt | strip_html | remove: '<p>' | remove: '</p>'}}</p>
-
-        <!-- <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }} • {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
-{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read</span> -->
-        <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-        <p class="text-right"><a class="btn btn-sm btn-default" href="{{ post.url | prepend: site.baseurl }}">Continue reading »</a></p>
-      </div>
-      <hr>
-    {% endfor %}
-
-    <!-- Pager -->
-    {% if paginator.total_pages > 1 %}
-    <div class="clearfix">
-        {% if paginator.previous_page %}
-        <a class="btn btn-secondary float-right" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &rarr;</a>
-        {% endif %}
-        {% if paginator.next_page %}
-        <a class="btn btn-secondary float-left" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older Posts</a>
-        {% endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <h2>Recent Posts</h2>
     </div>
+  </div>
+</div>
+
+{% assign rows = paginator.posts.size | divided_by: 3.0 | ceil %}
+{% for i in (1..rows) %}
+{% assign offset = forloop.index0 | times: 3 %}
+{% for post in paginator.posts limit:3 offset:offset %}
+  <div class="article col-sm-12 col-md-4">
+    <div class="article-head">
+      <time class="article-date" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+      <a href="" class="article-image">
+      <img src="{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}" alt="...">
+    </a>
+    </div>
+    <div>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link"></a>
+      <h5 class="article-title"><a href="">{{ post.title }}</a></h5>
+      <p class="card-text">{{post.excerpt | strip_html | truncate: 150 | remove: '<p>' | remove: '</p>'}}</p>
+    </div>
+  </div>
+  {% endfor %}
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<div class="clearfix col">
+    {% if paginator.previous_page %}
+    <a class="btn btn-secondary float-right" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts <i class="fa fa-chevron-right"></i></a>
     {% endif %}
+    {% if paginator.next_page %}
+    <a class="btn btn-secondary float-left" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left"></i> Older Posts</a>
+    {% endif %}
+</div>
+{% endif %}

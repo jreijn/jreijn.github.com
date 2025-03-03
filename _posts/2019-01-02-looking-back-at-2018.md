@@ -1,6 +1,6 @@
 ---
 title: Looking back at 2018
-comments: true
+comments: false
 layout: post
 header-img: "/img/alphabet-bg.jpg"
 ---

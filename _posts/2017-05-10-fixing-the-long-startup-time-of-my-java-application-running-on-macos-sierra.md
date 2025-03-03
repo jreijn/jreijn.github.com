@@ -2,6 +2,7 @@
 title: Fixing the long startup time of my Java application running on macOS Sierra
 layout: post
 date: '2017-05-10'
+header-img: "/assets/2023/java-image-snail.jpg"
 comments: false
 tags:
 - java

@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing the Hippo CMS Groovy add-on"
 date: 2012-05-07
-comments: true
+comments: false
 categories:
  - hippo
 ---

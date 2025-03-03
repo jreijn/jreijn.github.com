@@ -2,7 +2,7 @@
 title: "How I stay up to date as a software engineer"
 layout: post
 date: 2017-03-08
-comments: true
+comments: false
 ---
 
 I've been reading [this recent thread](https://news.ycombinator.com/item?id=13816627) on Hacker News with interest. Over the last couple of years (even before being a parent) I gave this a lot of thought and have been asked about how I stay up to date as a software engineer by co-workers quite often.

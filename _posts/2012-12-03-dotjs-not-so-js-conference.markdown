@@ -2,7 +2,7 @@
 layout: post
 title: "dotJS: a 'not' so JS conference?"
 date: 2012-12-03
-comments: true
+comments: false
 categories:
  - hippo
 ---

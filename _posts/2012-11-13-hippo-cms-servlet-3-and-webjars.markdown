@@ -2,7 +2,7 @@
 layout: post
 title: "Hippo CMS, Servlet 3 and WebJars"
 date: 2012-11-13
-comments: true
+comments: false
 categories:
  - hippo
 ---

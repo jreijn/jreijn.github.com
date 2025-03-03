@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Great SaaS products for your Open Source project"
-comments: true
+comments: false
 categories: open source
 ---
 

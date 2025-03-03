@@ -2,7 +2,7 @@
 layout: post
 title: "Get in control with Spring Insight!"
 date: 2011-10-09
-comments: true
+comments: false
 categories:
  - spring
  - hippo

@@ -6,7 +6,7 @@
 body {
   font-size: 18px;
   color: #333333;
-  font-family: 'Lora', 'Times New Roman', serif; }
+  font-family: 'Inter var','Inter', 'Times New Roman', serif; }
 
 p {
   line-height: 1.5;
@@ -179,13 +179,13 @@ header.masthead {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 150px 0px;
+    padding:150px 0 0 0;
     color: white; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading,
       header.masthead .post-heading,
       header.masthead .site-heading {
-        padding: 150px 0px; } }
+        padding:150px 0 0 0; } }
   header.masthead .page-heading,
   header.masthead .site-heading {
     text-align: center; }
@@ -220,7 +220,7 @@ header.masthead {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: 'Inter var','Inter', 'Times New Roman', serif; }
     header.masthead .post-heading .meta a {
       color: white; }
   @media only screen and (min-width: 768px) {
@@ -330,11 +330,11 @@ header.masthead {
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: 'Inter var','Inter', 'Times New Roman', serif; }
     .floating-label-form-group input::-webkit-input-placeholder,
     .floating-label-form-group textarea::-webkit-input-placeholder {
       color: #777777;
-      font-family: 'Lora', 'Times New Roman', serif; }
+      font-family: 'Inter var','Inter', 'Times New Roman', serif; }
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;

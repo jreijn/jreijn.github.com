@@ -1,8 +1,8 @@
 ---
 title: Develop and Test your Github Actions workflow locally with "act"
-comments: true
+comments: false
 layout: post
-canonical: https://www.luminis.eu/blog/develop-and-test-your-github-actions-workflow-locally-with-act/
+canonical_url: https://www.luminis.eu/blog/develop-and-test-your-github-actions-workflow-locally-with-act/
 header-img: "/assets/2023/helio-dilolwa-jFbhhadKV5g-unsplash.jpg"
 tags:
 - github
