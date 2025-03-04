@@ -5,3 +5,4 @@ theme="hugo-theme-stack"
 ignoreLogs = ['warning-goldmark-raw-html']
 titleCaseStyle = 'none'
 uglyURLs = true
+googleAnalytics= 'G-X0632M0DP7'
