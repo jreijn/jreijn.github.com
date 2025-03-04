@@ -6,6 +6,7 @@ menu:
         weight: 4
         params:
             icon: user
+readingTime: false
 comments: false
 ---
 
