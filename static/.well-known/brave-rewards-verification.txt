@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jeroenreijn.com
+Token: 53fea1c679c1da67db33517419ce9aadbd165a7678afabec7a06762391ed7eb5
