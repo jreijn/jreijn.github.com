@@ -4,6 +4,8 @@ date: "2018-07-05T00:00:00Z"
 image: /img/book-copy.jpg
 title: 'Book review - Clean Architecture: A Craftsman''s Guide to Software Structure
   and Design'
+aliases:
+- /2018/07/book-review-clean-architecture
 ---
 
 I think it was around 2009 when I started reading a book called [Clean Code](https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&tag=jreijnblog-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0132350882&linkId=e0fd05eaf523f61ae0fe4fb27b4a4821) by Robert C Martin (a.k.a Uncle Bob). I found the book on a so-called 'top 10 must-reads' for software engineers. I really enjoyed reading that book. It had a pleasant writing style, well structured and provided some valuable insights. A few years later "[The Clean Coder](https://www.amazon.com/gp/product/0137081073/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0137081073&linkCode=as2&tag=jreijnblog-20&linkId=363e18b4bed01edea269dbf0fce16583)" was published and what appealed to me this time was that it was a book about some of the other aspects of our trade: professionalism, handling pressure, clear communication, etc.  If you have not read it yet or are looking to improve some of your softer skills I would recommend reading it.

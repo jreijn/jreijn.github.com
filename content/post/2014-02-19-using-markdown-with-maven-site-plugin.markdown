@@ -7,6 +7,8 @@ summary: I find that generating Maven project documentation is always a bit cumb
   with the default XDOC or APT syntaxes. This probably has to do with getting accustomed
   to using Markdown while doing my thing on GitHub.
 title: Using Markdown with the Maven site plugin
+aliases:
+- /2014/02/using-markdown-with-maven-site-plugin
 ---
 
 

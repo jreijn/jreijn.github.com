@@ -3,6 +3,8 @@ comments: false
 date: "2015-06-17T00:00:00Z"
 categories:
 - Software Engineering
+aliases:
+- /2015/06/migrating_from_apache_to_nginx_proxy_cookie_paths
 tags:
 - nginx
 - apache
@@ -11,7 +13,7 @@ title: Migrating From Apache to Nginx and proxying cookie paths
 
 At work, I'm involved in a project which recently moved entirely to https. During the transition the project moved from Apache httpd as the proxy/web server to Nginx.
 
-After the migration process al seemed fine and dandy. Everything got tested properly (we thought) and no issues were found, untill we recently discovered a bug in production (yeah I know... ouch!). A large section of the forms on the site had stopped working. Initial investigation showed it had to do with an incorrect path, set in the cookie that was created for those forms. Because the path was incorrect the form never made it to the second step.
+After the migration process al seemed fine and dandy. Everything got tested properly (we thought) and no issues were found, until we recently discovered a bug in production (yeah I know... ouch!). A large section of the forms on the site had stopped working. Initial investigation showed it had to do with an incorrect path, set in the cookie that was created for those forms. Because the path was incorrect the form never made it to the second step.
 
 It actually turned out, we had a bug in our application for over a year, but the way we had set Apache mod\_proxy's ```ProxyPassReverseCookiePath``` directive, had hidden the problem. So with this post I'll try to explain a bit what we had and what the difference is between Apache mod\_proxy and Nginx proxy capabilities with regards to cookies.
 

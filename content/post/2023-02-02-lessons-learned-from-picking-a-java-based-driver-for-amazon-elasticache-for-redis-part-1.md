@@ -3,6 +3,8 @@ comments: false
 date: "2023-02-02T00:00:00Z"
 image: /assets/2023/photo-by-markus-winkler-on-unsplash.jpg
 subtitle: Exploring failover scenarios with Jedis
+aliases:
+- /2022/07/invoking-an-aws-lambda-function-during-cdk-deployment
 categories:
 - Software Engineering
 - AWS

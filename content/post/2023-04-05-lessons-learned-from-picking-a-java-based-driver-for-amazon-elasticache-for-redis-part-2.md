@@ -3,6 +3,8 @@ comments: false
 date: "2023-04-05T00:00:00Z"
 image: /assets/2023/photo-by-jainath-ponnala-unsplash.jpg
 subtitle: Exploring failover scenarios with Lettuce
+aliases:
+- /2023/04/lessons-learned-from-picking-a-java-based-driver-for-amazon-elasticache-for-redis-part-2
 categories:
 - Software Engineering
 - AWS
