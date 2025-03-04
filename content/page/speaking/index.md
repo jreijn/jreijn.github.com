@@ -13,6 +13,8 @@ readingTime: false
 | Title         | Venue         | Year  | Links |
 | ------------- |:-------------:| :-----:|-----:       |
 | Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed | [AWS Summit Amsterdam](https://aws.amazon.com/events/summits/emea/amsterdam) | 2024 | <a href="https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a> |
+| Azure vs AWS: Battle of the Clouds | Dutch Azure Meetup | 2024 | [Meetup](https://www.meetup.com/dutch-azure-meetup/events/300326315/) |
+| Lessons Learned from Running Serverless Java Workloads in AWS Lambda | Apeldoorn JUG Meetup | 2024 | [Meetup](https://www.meetup.com/apeldoornjug/events/299653572/) |
 | Accelerating Your AWS Journey: Open Source Tools for getting teams up to speed | [AWS Community Day NL](https://awscommunityday.nl) | 2023 | <a href="https://speakerdeck.com/jreijn/accelerating-your-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a>
 | Wat is een Technisch geweten bij Luminis (in Dutch) | [Luminis Tech Talks](https://open.spotify.com/show/18c2MuauRakL1do0G06FCY?si=dad910770f3b4f60) | 2023 | <a href="https://open.spotify.com/episode/0x6WgG7zOMrOKsRS4QMEFW?si=8df5b1e7b5894f36">Podcast</a>
 | Ten things that improve the performance of your Java based AWS Lambda functions | [JFall](https://2022.jfall.nl/) | 2022 | <a href="https://speakerdeck.com/jreijn/j-fall-2022-ten-performance-improvements-for-your-java-based-aws-lambda-functions">Slides</a>, <a href="https://www.youtube.com/watch?v=2xGsmAwFs60">Video</a>
