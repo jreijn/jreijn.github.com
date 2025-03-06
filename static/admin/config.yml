@@ -1,0 +1,37 @@
+# when using the default proxy server port
+local_backend: true
+
+media_folder: "static/assets"
+public_folder: "/assets" 
+
+backend:
+  name: github
+  repo: jreijn/jreijn.github.com
+  branch: master # Branch to update (optional; defaults to master)
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/post
+    label: "Posts" # Used in the UI
+    folder: "content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "MMMM Do, YYYY", time_format: "HH:mm"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Short Description", name: "description", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list" }
+      - {label: "Categories", name: "categories", widget: "list" }
+  - name: "pages"
+    label: "Pages" # Used in the UI
+    files: 
+      - file: "content/page/about/index.md"
+        name: "about"
+        label: "About"
+        fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime", date_format: "MMMM Do, YYYY", time_format: "HH:mm"}
+        - {label: "Featured Image", name: "image", widget: "image"}
+        - {label: "Body", name: "body", widget: "markdown"}

@@ -12,7 +12,14 @@ comments: false
 
 Hello 👋!
 
-My name is Jeroen Reijn and this is my personal website. I'm a highly experienced Solutions Architect, specializing in AWS, Java, and cloud-native development. With a career spanning over two decades working on resilient, scalable, and mission-critical systems, I've has worn many hats, including software engineer, consultant, trainer and software architect.
+My name is Jeroen Reijn and this is my personal website. I'm an experienced Solutions Architect, specializing in AWS, Java, and cloud-native development. With a career spanning over two decades working on resilient, scalable, and mission-critical systems, I've worn many hats, including software engineer, consultant, trainer and software architect.
+
+I work at [Luminis](https://www.luminis.eu) as a Cloud Solution Architect, where I help customers benefit from Public Cloud Computing. I focus on AWS and am an AWS Community Builder since August of 2022.
+
+{{< gallery class="content-gallery">}}
+ {{< gallery-img src="/assets/sa-pro.png">}}
+ {{< gallery-img src="/assets/awscb.png">}}
+{{< /gallery >}}
 
 When I'm not architecting cloud solutions or sharing my expertise, you’ll find me experimenting with emerging technologies and contributing to open source.
 

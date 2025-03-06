@@ -1,6 +1,8 @@
 ---
 title: Speaking
 image: "/assets/2024/presenting.jpg"
+aliases:
+- /presentations
 menu:
     main: 
         weight: 4
