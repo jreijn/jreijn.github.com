@@ -14,7 +14,7 @@ Hello 👋!
 
 My name is Jeroen Reijn and this is my personal website. I'm an experienced Solutions Architect, specializing in AWS, Java, and cloud-native development. With a career spanning over two decades working on resilient, scalable, and mission-critical systems, I've worn many hats, including software engineer, consultant, trainer and software architect.
 
-I work at [Luminis](https://www.luminis.eu) as a Cloud Solution Architect, where I help customers benefit from Public Cloud Computing. I focus on AWS and am an AWS Community Builder since August of 2022.
+I work at [Luminis](https://www.luminis.eu) as a Cloud Solutions Architect, where I help customers benefit from Public Cloud Computing. I focus on AWS and have been accepted into the AWS Community Builder since August of 2022.
 
 {{< gallery class="content-gallery">}}
  {{< gallery-img src="/assets/sa-pro.png">}}
@@ -48,6 +48,8 @@ I like to share my experience and thoughts through public speaking and below are
 
 ### 2017
 - [Hoe releasen minder pijnlijk werd bij ANWB Alarmcentrale](https://www.slideshare.net/jreijn/hoe-releasen-minder-pijnlijk-werd-bij-de-anwb-alarmcentrale-79301666) - [Luminis DevCon](https://devcon.luminis.eu)
+
+![](1667511608298.jpeg) ![](1712851994317.jpeg) ![](IMG_0663.jpeg) ![](jeroen-reijn-1.png)
 
 ## Podcasts and videos 🎙️
 
