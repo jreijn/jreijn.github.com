@@ -28,7 +28,7 @@ When I'm not architecting cloud solutions or sharing my expertise, you’ll find
 I like to share my experience and thoughts through public speaking and below are some of the events I’ve had the privilege to participate as a speaker.
 
 ### 2025
-- [Production-ready Lambda functions with Lambda PowerTools]([https://www.meetup.com/dutch-azure-meetup/events/300326315/](https://www.meetup.com/awsugnl/events/306912455/)) - AWS User Group The Netherlands Meetup
+- [Production-ready Lambda functions with Lambda PowerTools](https://www.meetup.com/awsugnl/events/306912455/) - AWS User Group The Netherlands Meetup
 
 
 ### 2024
