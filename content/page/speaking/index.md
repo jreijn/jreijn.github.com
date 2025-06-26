@@ -15,7 +15,7 @@ readingTime: false
 | Title         | Venue         | Year  | Links |
 | ------------- |:-------------:| :-----:|-----:       |
 | Java Cloud Migrations | [Java in the Cloud](https://www.youtube.com/@JavaInTheCloud) | 2025 | <a href="https://www.youtube.com/watch?v=6I8FTA8iiBw">Video</a>  |
-| Production-ready Lambda functions with Lambda PowerTools | [AWS User Group The Netherlands Meetup](https://www.meetup.com/awsugnl/events/306912455/) | 2025 |  |
+| Production-ready Lambda functions with Lambda PowerTools | [AWS User Group The Netherlands](https://www.meetup.com/awsugnl/) | 2025 | [Meetup](https://www.meetup.com/awsugnl/events/306912455/) |
 | Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed | [AWS Summit Amsterdam](https://aws.amazon.com/events/summits/emea/amsterdam) | 2024 | <a href="https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a> |
 | Azure vs AWS: Battle of the Clouds | Dutch Azure Meetup | 2024 | [Meetup](https://www.meetup.com/dutch-azure-meetup/events/300326315/) |
 | Lessons Learned from Running Serverless Java Workloads in AWS Lambda | Apeldoorn JUG Meetup | 2024 | [Meetup](https://www.meetup.com/apeldoornjug/events/299653572/) |
