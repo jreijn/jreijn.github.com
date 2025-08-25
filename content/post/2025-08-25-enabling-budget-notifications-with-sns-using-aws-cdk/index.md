@@ -207,6 +207,6 @@ In this post, we explored how to create AWS Budgets with AWS CDK and send notifi
 
 With these pieces in place, you'll have a setup that alerts your team when costs exceed thresholds via email, chat, or custom integrations.
 
-The code mentioned in this blogpost can be found in the [following GitHub repo](https://github.com/jreijn/demos-aws-cdk/tree/develop/aws-cdk-budget-notifications).
+A fully working CDK application with the code mentioned in this blogpost can be found in the [following GitHub repo](https://github.com/jreijn/demos-aws-cdk/tree/develop/aws-cdk-budget-notifications).
 
 > Photo by <a href="https://unsplash.com/@towfiqu999999?utm_source=sveltia-cms&amp;utm_medium=referral">Towfiqu barbhuiya</a> on <a href="https://unsplash.com/?utm_source=sveltia-cms&amp;utm_medium=referral">Unsplash</a>
