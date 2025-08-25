@@ -154,7 +154,7 @@ If you have an SNS topic with **encryption enabled** (via KMS) you will need to 
 
 ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDBnMnA1ZXdhazdhZ2pzcmwyMXRwNXQzNGEyN3dqMzdjMWV6M2J0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ySMINwPzf50IM/giphy.gif)
 
-I should have [read the documentation](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-sns-policy.html#configure-kms-perm) as it is explicitly stated to do so 🤦‍♂️. I guess I should start with the docs instead of diving right into the AWS CDK code. 🙃 
+I should have [read the documentation](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-sns-policy.html#configure-kms-perm) as it is explicitly stated to do so. I guess I should start with the docs instead of diving right into the AWS CDK code.
 
 ```typescript
 // Create KMS key used for encryption
