@@ -85,7 +85,9 @@ Based on the notification settings, interested parties are notified when the spe
 
 Depending on your team or organization it might be beneficial to switch to using an SNS topic. The advantage of using an SNS topic over a set of email subscribers is that you can add different kind of subscribers (email, chat, custom lambda functions) to your SNS topic. With an SNS topic you have a single place to configure subscribers and if you change your mind you can do so in one place instead of updating all budgets. Using an SNS Topic also allows you to push budget notifications to for instance a chat client like MS Teams or Slack.
 
-Let's start by creating an SNS topic in AWS CDK.
+![](/assets/2025/budget-sns.jpg)
+
+In this case we wil make use of SNS in combination with email subscribers. Let's start by defining an SNS topic with the AWS CDK.
 
 ```typescript
 // Create a topic for email notifications
