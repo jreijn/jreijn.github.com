@@ -27,6 +27,10 @@ When I'm not architecting cloud solutions or sharing my expertise, you’ll find
 
 I like to share my experience and thoughts through public speaking and below are some of the events I’ve had the privilege to participate as a speaker.
 
+### 2025
+- [Production-ready Lambda functions with Lambda PowerTools](https://www.meetup.com/awsugnl/events/306912455/) - AWS User Group The Netherlands Meetup
+
+
 ### 2024
 
 - [Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed](https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed) - AWS Summit Amsterdam
@@ -53,5 +57,6 @@ I like to share my experience and thoughts through public speaking and below are
 
 ## Podcasts and videos 🎙️
 
+- [Java Cloud Migrations](https://www.youtube.com/watch?v=6I8FTA8iiBw) - Java in the Cloud
 - Wat is een Technisch geweten bij Luminis (in Dutch) - [Luminis Tech Talks](https://open.spotify.com/show/18c2MuauRakL1do0G06FCY?si=dad910770f3b4f60).
 - [Cloud Engineering panel discussion](https://www.youtube.com/watch?v=nitdepIdhq0) - Club Cloud 2021
