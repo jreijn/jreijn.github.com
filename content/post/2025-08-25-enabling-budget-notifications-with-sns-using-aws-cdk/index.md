@@ -7,7 +7,7 @@ description: Learn how to set up AWS Budget notifications with SNS using AWS CDK
 tags:
   - aws
   - typescript
-  - cdk
+  - aws-cdk
   - finops
 categories:
   - AWS
