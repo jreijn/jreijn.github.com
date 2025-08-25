@@ -56,7 +56,7 @@ new cdk.aws_budgets.CfnBudget(this, 'fixed-monthly-cost-budget', {
 }
 ```
 
-In the above example we've created a budget with a limit of **$100 per month**. A budget alone isn’t very useful. You’d still have to check the in the AWS console manually to see what your spend it compared to your budget. The important thing is that we want to get notified in case we reach our budget or our forecasted budget will reach our threshold, so let's add a notification and a subscriber.
+In the above example we've created a budget with a limit of **$100 per month**. A budget alone isn’t very useful. You’d still have to check into the AWS console manually to see what your spend is compared to your budget. The important thing is that we want to get notified in case we reach our budget or our forecasted budget will reach our threshold, so let's add a notification and a subscriber.
 
 ```typescript
 new cdk.aws_budgets.CfnBudget(this, 'fixed-monthly-cost-budget', {
