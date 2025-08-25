@@ -195,7 +195,7 @@ key.addToResourcePolicy(new PolicyStatement({
 
 ## Putting it all together
 
-If you've configured configured everything correctly and deployed your stack to your target account you should be good to go. Once you cross your threshold you should be notified by email that your budget is exceeding one of your thresholds (depending on the threshold set).
+If you've configured everything correctly and deployed your stack to your target account you should be good to go. Once you cross your threshold you should be notified by email that your budget is exceeding one of your thresholds (depending on the threshold set).
 
 ![](/assets/budget-alert.png)
 
