@@ -13,7 +13,7 @@ categories:
   - AWS
   - Cloud Engineering
 ---
-Keeping track of AWS spend is very important. Especially since it's so easy to create resources. Costs can creep up fast if you don’t put guardrails in place.
+Keeping track of AWS spend is very important. Especially since it's so easy to create resources. You might forget to turn off an EC2 instance or container you started, or remove a CDK stack for a specific experiment. Costs can creep up fast if you don’t put guardrails in place.
 
 Recently, I had to set up budgets across multiple AWS accounts for my team. Along the way, I learned a few gotchas (especially around SNS and KMS policies) that weren't immediately clear to me as I started out writing AWS CDK code. In this post, we'll go through how to:
 
