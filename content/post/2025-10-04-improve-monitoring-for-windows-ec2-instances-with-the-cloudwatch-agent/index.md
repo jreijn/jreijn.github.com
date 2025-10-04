@@ -46,7 +46,7 @@ The CloudWatch Agent configuration file is a JSON file with four sections:
 - **logs** - specifies what log files are published to CloudWatch Logs. This can include events from the Windows Event Log if the server runs Windows Server.
 - **traces** - specifies the sources for traces that are collected and sent to AWS X-Ray
 
-As you can see there is a lot you can do with the CloudWatch agent. However in this post we will try to focus on system level metrics.
+As you can see there is a lot you can do with the CloudWatch agent. However, in this post we will focus only on metrics.
 
 Let's take a look at an example configuration:
 
@@ -86,7 +86,22 @@ const cwAgentConfig = {
 const configJson = JSON.stringify(cwAgentConfig);
 ```
 
-In the above example configuration we specify that the CloudWatch Agent needs to collect metrics every 60 seconds. If you gather more than just metrics you can also specify collection intervals per section (metrics, logs, traces). In this configuration we collect metrics for the Windows Performance object _LogicalDisk_ and _Memory_. If you're doing this for the first time you might wonder what performance objects are available. You can see the performance objects by running the following command on your Windows instance.
+In the above example configuration we specify that the CloudWatch Agent needs to collect metrics every 60 seconds. 
+If you gather more than just metrics you can also specify collection intervals per section (metrics, logs, traces).
+
+For clarity the namespace is explicitly set to **CWAgent**, but if you omit the namespace all metrics will be stored in the **CWAgent** namespace by default. You can of course set your own custom namespace.
+
+For each collected metric an additional dimension is added for the *InstanceId*. When collecting metrics for EC2 instances you can also think of other dimensions like InstanceType, AutoScalingGroupName or ImageId which would reflect in the JSON as:
+
+```json
+"append_dimensions": {
+    "InstanceId": "${aws:InstanceId}",
+    "InstanceType": "${aws:InstanceType}",
+    "AutoScalingGroupName": "${aws:AutoScalingGroupName}"
+}
+```
+
+Looking at the metrics **metrics_collected** section you can see we want to collect metrics for the Windows Performance object _LogicalDisk_ and _Memory_. If you're doing this for the first time you might wonder what other performance objects and metrics are available. You can see the performance objects by running the following command on your Windows instance.
 
 Powershell:
 
@@ -102,9 +117,7 @@ TypePerf.exe –q
 
 Running one of the above command will return quite a list of performance objects and corresponding metrics.  You can expect to see all kinds of different objects. From SQL Server to Windows Events.
 
-Now let's take a closer look at the measurement section in which the metrics are defined which we want to store and if needed what unit the metric needs to be stored as (Percentage, MegaBytes. etc). 
-
-In the example we've also explicitly set a namespace, but if you omit the namespace it will be **CWAgent** by default.
+Now let's take a closer look at the measurement section in which the metrics are defined that we want to store. For each metrics you can also specify a name and if needed what unit the metric needs to be stored as (Percentage, MegaBytes. etc).
 
 Before going all in and gathering all kinds of metrics keep in mind that all metrics collected with the CloudWatch agent are considered custom metrics and are billed separately. A custom metric costs about $0.30 per metric per month (depending on your region), so costs can add up quickly.
 
