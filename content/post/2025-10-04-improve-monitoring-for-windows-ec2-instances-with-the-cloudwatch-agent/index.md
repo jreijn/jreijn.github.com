@@ -153,7 +153,7 @@ Now that we’ve configured IAM and stored our agent configuration, let’s crea
 
 ## Creating a Windows Server EC2 instance
 
-When creating a Windows instance in AWS CDK you will need to place the instance in one of the subnets of your VPC. Pick a specific Windows AMI like Windows Server 2022 and make sure to reference our IAM instance role when creating the image, otherwise a default role is created without the proper permissions.
+When creating a Windows instance in AWS CDK you will need to place the instance in one of the subnets of your VPC. Pick a specific Windows AMI like Windows Server 2022 and make sure to reference our IAM instance role, otherwise a default role is created without the proper permissions.
 
 ```typescript
 // Create a Windows based EC2 instance
@@ -200,7 +200,7 @@ Once the deployment is finished you should be able to see more metrics in the mo
 
 ![Monitoring Tab in the EC2 AWS Console with CWAgent metrics displayed](moniting-included-cwagent-namespace.png)
 
-If the agent doesn’t publish your custom metrics, login with remote desktop and check CloudWatch Agent log file `C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs\amazon-cloudwatch-agent.log` for errors. If the file is not there it might be the case the CloudWatch Agent isn't running, so you will need to troubleshoot that first.
+If the agent doesn’t publish your custom metrics, login with remote desktop and check the CloudWatch Agent log file `C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs\amazon-cloudwatch-agent.log` for errors. If the file is not there it might be the case the CloudWatch Agent isn't running, so you will need to troubleshoot that first.
 
 ## Creating CloudWatch Alarms
 
