@@ -17,7 +17,7 @@ Amazon CloudWatch monitors Windows EC2 instances out of the box, but only gives 
 
 ## Default collected metrics
 
-By default the Elastic Compute Cloud (EC2) instance sends [a set of predefined metrics](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) to CloudWatch. Most of these metrics are system related and focus on CPU and Networking metrics. The metrics are measured from outside of the VM. Under the monitoring tab in the AWS EC2 Console  you can get a quick overview of some of the available metrics for your EC2 instance.
+Elastic Compute Cloud (EC2) instances send [a set of predefined metrics](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) to CloudWatch. Most of these metrics are system related and focus on CPU and Networking metrics. Under the monitoring tab in the AWS EC2 Console you can get a quick overview of some of out of the box available metrics for your EC2 instance.
 
 ![Monitoring Tab in the EC2 AWS Console](default-ec2-monitoring.png)
 
