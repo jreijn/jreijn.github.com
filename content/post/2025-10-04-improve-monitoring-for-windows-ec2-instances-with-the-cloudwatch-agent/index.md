@@ -11,7 +11,6 @@ tags:
 categories:
   - AWS
   - Cloud Engineering
-featured_image: ''
 ---
 Amazon CloudWatch monitors Windows EC2 instances out of the box, but only gives you basic host-level metrics like CPU and network usage. In this post, you'll learn how to extend observability with the Amazon CloudWatch Agent. We will use AWS CDK in TypeScript to automatically deploy an example instance with an installed and configured CloudWatch Agent.
 
@@ -21,7 +20,7 @@ Elastic Compute Cloud (EC2) instances send [a set of predefined metrics](https:/
 
 ![Monitoring Tab in the EC2 AWS Console](default-ec2-monitoring.png)
 
-It's a great starting set, but what if you need more? What if you need metrics from inside of the VM? In this post we'll look at how to improve observability for your Windows based systems with the CloudWatch Agent and provision that via AWS CDK.
+It's a great starting set, but what if you need more? What if you need metrics from inside of the VM?
 
 ## Gathering additional metrics
 
