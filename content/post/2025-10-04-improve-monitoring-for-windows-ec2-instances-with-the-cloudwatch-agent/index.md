@@ -12,7 +12,7 @@ categories:
   - AWS
   - Cloud Engineering
 ---
-Amazon CloudWatch monitors Windows EC2 instances out of the box, but only gives you basic host-level metrics like CPU and network usage. In this post, you'll learn how to extend observability with the Amazon CloudWatch Agent. We will use AWS CDK in TypeScript to automatically deploy an example instance with an installed and configured CloudWatch Agent.
+[Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) monitors Windows EC2 instances out of the box, but only gives you basic host-level metrics like CPU and network usage. In this post, you'll learn how to extend observability with the Amazon CloudWatch Agent. We will use AWS CDK in TypeScript to automatically deploy an example instance with an installed and configured CloudWatch Agent.
 
 ## Default collected metrics
 
@@ -24,22 +24,22 @@ It's a great starting set, but what if you need more? What if you need metrics f
 
 ## Gathering additional metrics
 
-If you need more system or application level metrics you can make use of the Amazon provided [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html). The CloudWatch agent is service which you can run on the EC2 instance and it's great for:
+If you need more system or application level metrics you can make use of the Amazon [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html). The CloudWatch agent is service which you can run on the EC2 instance and it's great for:
 
 - Collecting system-level metrics (CPU, memory, disk, network)
 - Gathering custom metrics from your application(s)
 - Collecting and centralizing logs from various sources
 - Monitoring both AWS and on-premises environments with a single tool
 
-You can install the CloudWatch agent via the EC2 user data, Systems Manager automation, or via the AWS EC2 Console. From a high-level overview the setup we will create in this post will look similar to the diagram
+For a high-level overview of the CloudWatch Agent and how it interacts with an EC2 instance and the CloudWatch service is shown in the following diagram.
 
 [![Cloud Watch agent monitoring architecture](cloudwatch-agent-architecture-1024x514.png "Image source")](https://aws.amazon.com/blogs/infrastructure-and-automation/collect-custom-metrics-with-amazon-cloudwatch-strategic-tagging/)
 
-In this post we will add the CloudWatch agent and it's configuration leveraging the user data feature of an EC2 instance. Before we can actually install the agent, let's first create a CloudWatch Agent configuration, which we can use later on during the installation.
+You can install the CloudWatch agent via EC2 user data, AWS Systems Manager, or via the AWS EC2 Console. In this post we will install the CloudWatch Agent and its configuration using the user data feature of an EC2 instance. Before we can actually install the agent, we first need to create a CloudWatch Agent configuration, which we can use later on during the installation.
 
 ## Create a CloudWatch Agent Configuration
 
-The CloudWatch Agent configuration file is a JSON file with four  sections: 
+The CloudWatch Agent configuration file is a JSON file with four sections:
 
 - **agent** - includes fields for the overall configuration of the agent
 - **metrics** - specifies the custom metrics for collection and publishing to CloudWatch
