@@ -13,7 +13,7 @@ categories:
   - Cloud Engineering
 featured_image: ''
 ---
-Amazon CloudWatch monitors Windows EC2 instances out of the box, but only gives you basic host-level metrics like CPU and network usage. In this post, you'll learn how to extend observability with the Amazon CloudWatch Agent. We will use AWS CDK in TypeScript to automatically deploy an example instance with an installed and configured CloudWatch agent.
+Amazon CloudWatch monitors Windows EC2 instances out of the box, but only gives you basic host-level metrics like CPU and network usage. In this post, you'll learn how to extend observability with the Amazon CloudWatch Agent. We will use AWS CDK in TypeScript to automatically deploy an example instance with an installed and configured CloudWatch Agent.
 
 ## Default collected metrics
 
