@@ -63,7 +63,7 @@ const cwAgentConfig = {
         metrics_collected: {
             LogicalDisk: {
                 measurement: [
-                    {name: "% Free Space", "unit": "Percent"},
+                    {name: "% Free Space", unit: "Percent"},
                     {name: "Free Megabytes", unit: "Megabytes"},
                 ],
                 "resources": [
@@ -117,9 +117,9 @@ TypePerf.exe –q
 
 Running one of the above command will return quite a list of performance objects and corresponding metrics.  You can expect to see all kinds of different objects. From SQL Server to Windows Events.
 
-Now let's take a closer look at the measurement section in which the metrics are defined that we want to store. For each metrics you can also specify a name and if needed what unit the metric needs to be stored as (Percentage, MegaBytes. etc).
+Now let's take a closer look at the measurement section in which the metrics are defined that we want to store. For each metrics you can explicitly specify a metric name and unit the metric needs to be stored as (Percentage, MegaBytes. etc). If you leave out the unit type the agent will try to pick the right one.
 
-Before going all in and gathering all kinds of metrics keep in mind that all metrics collected with the CloudWatch agent are considered custom metrics and are billed separately. A custom metric costs about $0.30 per metric per month (depending on your region), so costs can add up quickly.
+Due note that all metrics collected with the CloudWatch agent are considered custom metrics and are billed separately. A custom metric costs about $0.30 per metric per month (depending on your region), so **costs can add up quickly**.
 
 ## Storing the configuration in Systems Manager Parameter store
 
