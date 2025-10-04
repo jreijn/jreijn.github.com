@@ -239,7 +239,7 @@ Now that the alarm is in place, CloudWatch will notify the subscribers of the SN
 
 ## Summary
 
-In this post, we explored how to create metrics and  alarms for Windows based EC2 instances by leveraging the CloudWatch agent CloudWatch alarms. We've used AWS CDK for provisioning the infrastructure. Along the way, we covered some important topics like:
+In this post, we explored how to create metrics and alarms for Windows based EC2 instances by leveraging the CloudWatch Agent and CloudWatch alarms. We've used AWS CDK for provisioning the infrastructure. Along the way, we covered some important topics like:
 
 - CloudWatch agent configuration
 - Windows Performance objects and metrics.
