@@ -2,7 +2,7 @@
 title: Improve observability for Windows EC2 instances with the CloudWatch Agent
 date: 2025-10-04T21:28:00+02:00
 image: cloudwatch-ec2-feature.jpg
-draft: true
+draft: false
 description: Learn how to improve observability for Windows based EC2 instances with the CloudWatch agent via AWS CDK in TypeScript, including CloudWatch agent configuration and Windows performance counters.
 tags:
   - aws
