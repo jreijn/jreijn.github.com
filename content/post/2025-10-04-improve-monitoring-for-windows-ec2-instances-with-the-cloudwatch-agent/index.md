@@ -31,7 +31,7 @@ If you need more system or application level metrics you can make use of the Ama
 - Collecting and centralizing logs from various sources
 - Monitoring both AWS and on-premises environments with a single tool
 
-For a high-level overview of the CloudWatch Agent and how it interacts with an EC2 instance and the CloudWatch service is shown in the following diagram.
+A high-level overview of the CloudWatch Agent and how it interacts with an EC2 instance and the CloudWatch service is shown in the following diagram.
 
 [![Cloud Watch agent monitoring architecture](cloudwatch-agent-architecture-1024x514.png "Image source")](https://aws.amazon.com/blogs/infrastructure-and-automation/collect-custom-metrics-with-amazon-cloudwatch-strategic-tagging/)
 
