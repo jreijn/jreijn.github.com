@@ -245,6 +245,6 @@ In this post, we explored how to create metrics and alarms for Windows based EC2
 - Windows Performance objects and metrics.
 - CloudWatch alarms for custom metrics
 
-With these pieces in place, you’ll have a setup that alerts your team when your windows metrics exceed their threshold. Next, you could extend this setup with other instance metrics, application-level metrics and log collection.
+With these pieces in place, you’ll have a setup that alerts your team when your Windows metrics exceed their threshold. Next, you could extend this setup with other instance metrics, application-level metrics and log collection.
 
 A fully working CDK application with the code mentioned in this blogpost can be found in the [following GitHub repo](https://github.com/jreijn/demos-aws-cdk/tree/develop/aws-cdk-windows-diskspace-monitoring).
