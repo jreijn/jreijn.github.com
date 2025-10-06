@@ -168,6 +168,7 @@ const instance = new Instance(this, "windows-demo-instance", {
     vpcSubnets: {subnetType: SubnetType.PRIVATE_WITH_EGRESS},
     detailedMonitoring: true,
 })
+
 securityGroup.addIngressRule(Peer.anyIpv4(), Port.tcp(3389), "Allow RDP Connections")
 ```
 
