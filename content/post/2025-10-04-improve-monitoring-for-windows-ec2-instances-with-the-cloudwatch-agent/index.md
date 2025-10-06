@@ -235,9 +235,9 @@ lowDiskSpaceCVolumeAlarm.addOkAction(new SnsAction(topic));
 
 This should result in an alarm that's monitoring the amount of free disk space for the C: drive of our windows instance. It took me a couple of attempts to get the alarm working properly so it's good to validate your alarm dimensions and check the alarm in the AWS Console.
 
-![Free diskspace alarm in the CloudWatch AWS Console](free-disk-space-alarm.png)
+![Free disk space alarm in the CloudWatch AWS Console](free-disk-space-alarm.png)
 
-Now that the alarm is in place, CloudWatch will notify the subscribers of the SNS topic in case the alarm state is trigged.
+Now that the alarm is in place, CloudWatch will notify the subscribers of the SNS topic in case the alarm state is triggered.
 
 ## Summary
 
