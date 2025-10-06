@@ -8,6 +8,7 @@ tags:
   - aws
   - typescript
   - aws-cdk
+  - observability
 categories:
   - AWS
   - Cloud Engineering
