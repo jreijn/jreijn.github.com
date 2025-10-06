@@ -202,7 +202,7 @@ Once the deployment is finished you should be able to see more metrics in the mo
 
 If the agent doesn’t publish your custom metrics, login with remote desktop and check the CloudWatch Agent log file `C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs\amazon-cloudwatch-agent.log` for errors. If the file is not there it might be the case the CloudWatch Agent isn't running, so you will need to troubleshoot that first.
 
-## Creating CloudWatch Alarms
+## Creating CloudWatch Alarms for proactive monitoring
 
 Adding metrics is great for trend analysis, but you really also want to have some alarms in place. Let's look at the scenario in case the disk is running out of space. Let's create an alarm for the "LogicalDisk % Free Space" metric.
 
