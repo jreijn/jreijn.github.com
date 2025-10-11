@@ -1,6 +1,8 @@
 ---
 categories:
 - Software Engineering
+tags:
+- java
 comments: false
 date: "2012-11-13T00:00:00Z"
 title: Hippo CMS, Servlet 3 and WebJars
