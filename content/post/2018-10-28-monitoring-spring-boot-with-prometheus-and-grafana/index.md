@@ -7,6 +7,7 @@ categories:
 tags:
 - java
 - spring-boot
+- observability
 title: Monitoring Spring Boot applications with Prometheus and Grafana
 ---
 

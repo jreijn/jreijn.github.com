@@ -3,6 +3,8 @@ comments: false
 date: "2018-06-06T23:32:51Z"
 tags:
 - aws
+categories:
+- AWS
 title: Looking back on AWS Summit Benelux 2018
 ---
 
