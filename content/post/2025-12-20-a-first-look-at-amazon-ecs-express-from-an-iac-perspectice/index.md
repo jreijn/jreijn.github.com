@@ -1,8 +1,8 @@
 ---
 title: Amazon ECS Express Mode from an IaC perspective
-date: 2025-12-13T14:58:00+01:00
+date: 2025-12-20T22:10:00+01:00
 image: https://images.unsplash.com/photo-1590497008432-598f04441de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTc5ODl8MHwxfHNlYXJjaHw4fHxjb250YWluZXJzfGVufDB8fHx8MTc2NTIxMDU0N3ww&ixlib=rb-4.1.0&q=80&w=1080
-draft: true
+draft: false
 description: Amazon recently launched a new feature for Amazon ECS called ECS Express Mode. While reading the announcement, I got curious as I use ECS on a regular basis. In this post, we'll look at what ECS Express Mode is, how you can use it from Infrastructure as Code by means of AWS CDK, and what the limitations are.
 tags:
   - aws
@@ -20,7 +20,7 @@ Most posts I’ve seen look at ECS Express Mode from an AWS Console (ClickOps) o
 
 [Amazon Elastic Container Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) (Amazon ECS) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. With ECS you can run all kinds of container based workloads. You can run container instances for data processing, web applications or spin up containers based on events.
 
-ECS Express Mode is a new feature of Amazon ECS with the promise to go from container image to a fully operational ‘production grade’ web application without thinking too much about infrastructure. The intended promise is to let application development teams focus on the application and let AWS apply the best practices around container infrastructure, scaling, and deployments. It will simplify the process of getting started with ECS and all the different components outside of ECS you will need to set up to run, for instance, a public accessible web-application.
+[ECS Express Mode](https://aws.amazon.com/blogs/aws/build-production-ready-applications-without-infrastructure-complexity-using-amazon-ecs-express-mode/)[ is a new feature](https://aws.amazon.com/blogs/aws/build-production-ready-applications-without-infrastructure-complexity-using-amazon-ecs-express-mode/) of Amazon ECS with the promise to go from container image to a fully operational ‘production grade’ web application without thinking too much about infrastructure. The intended promise is to let application development teams focus on the application and let AWS apply the best practices around container infrastructure, scaling, and deployments. It will simplify the process of getting started with ECS and all the different components outside of ECS you will need to set up to run, for instance, a public accessible web-application.
 
 ECS Express Mode is focused on deploying web applications and APIs. It provides a fully integrated set of AWS resources out of the box. Resources that you would normally have to define, configure, and wire together manually using infrastructure as code. If you’re an experienced ECS user, you’ll immediately appreciate how much heavy lifting Express Mode handles for you.
 
@@ -37,11 +37,11 @@ When you create your first Express Mode service, ECS automatically provisions an
 - **ACM Certificates** - An SSL/TLS certificate is created for each service to enable HTTPS. These certificates are managed in your account.
 - **Security Groups -** Security groups are created for each layer of the network stack (load balancer, tasks, etc.). They follow the principle of least privilege—you only configure the application port once, and Express Mode manages the rest.
 - **Application Auto Scaling -** A default auto scaling policy is created along with the necessary CloudWatch alarms. By default, scaling is based on CPU utilization, but you can switch to memory utilization or request count.
-- **Cloudwatch Logs** - A new Cloudwatch log group is created for your service. You can configure the log group and change the prefix if you want.
+- **Cloudwatch Logs** - A new CloudWatch log group is created for your service. You can configure the log group and change the prefix if you want.
 
 One of the great benefits is that ECS deploys all these resources in **your** account, which means you can see all individual components, view the configuration, and make changes to the existing configuration if required.
 
-As you can see, that’s quite a list of things to configure if you had to do this manually. If there are a lot of unknown elements in the above list, ECS Express mode might be a great fit for you. To get started with ECS Express Mode, you only need three things:
+As you can see from the above list, that’s quite a list of things to configure if you had to do this manually. If you are a user new to ECS and see a lot of unknown elements in the above list, ECS Express mode might be a great fit for you. To get started with ECS Express Mode, you only need three things:
 
 1. **An existing container image**
 2. **An infrastructure role** - an IAM role that lets the ECS provision (non-ECS) resources in your account.
@@ -49,7 +49,7 @@ As you can see, that’s quite a list of things to configure if you had to do th
 
 ## Creating an ECS Express Mode service in AWS CDK
 
-ECS Express mode has support for CloudFormation and therefor also support in AWS CDK, but as it takes care of provisioning all of the resources for you, there are only a few CloudFormation resources for the service itself. Let's take a look at what using AWS CDK to provision an ECS Express Mode service looks like.
+ECS Express mode has support for CloudFormation and therefor also support in AWS CDK. The ECS Express Mode service takes care of provisioning all of the resources for you, so there is only a few CloudFormation resources for the express mode service itself. Let's take a look at what using AWS CDK to provision an ECS Express Mode service looks like.
 
 ### IAM roles and permissions
 
@@ -184,8 +184,13 @@ I'm not sure if that's a problem in the documentation or if I misconfigured some
 
 ### Alternative configuration options
 
-The express mode service we created before uses most best practices as seen by AWS how user use ECS. You can change some specific parts of the configuration items from the express service. As you can image, setting cpu and memory requirements for your container is supported. If you want to run your container in a private or public subnet, this is something you can also change on the express gateway service. Because you can change the cluster, you can use EC2-based compute instead of Fargate, I assume. I have not tested that though, and it might be something for another blog post.
-Some things can't be changed right now. Canary deployment is the only supported deployment strategy. I think it's a great default, but I hope they will add linear or blue/green deployment as these strategies are now ECS-native supported strategies.
+The express mode service we created previously uses AWS best practices. If you have slightly different requirements, you can change specific parts of the configuration. For your container you can change for instance the cpu and memory requirements.
+
+By default the ECS server will run in the default VPC and in a public subnet. You can specify alternative network settings for your service depending on your requirements. For instance your can switch to a different VPC and subnet. Because you can change the ECS cluster, you can probably also use Fargate Spot or EC2 based compute instead. I have not tested that though, and it might be something for another blog post.
+
+Some settings can't be changed right now. Canary deployment for instance is the only supported deployment strategy. I think it's a great default, but I hope they will add linear or blue/green deployment as these strategies are now [ECS supported deployment strategies](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html).
+
+ECS Express mode only allows you to configure a single container. If you're currently using ECS and are using a sidecar container for for instance observability purposes, you won't be able to do that with ECS express mode. You might want to consider using an Open Telemetry library, which integrates with your application framework.
 
 ### Configuring a WAF for your ECS service
 
@@ -207,7 +212,7 @@ There is a tricky problem I foresee, which is when you hit the 25 services limit
 
 ## Resource state management
 
-After playing with ECS Express Mode for a while, it made me think. Who is in control of the resources created in your account? Who is responsible for its state? According to the ECS team they are not using CloudFormation internally, but are working with the direct APIs and use their own internal state for managing all resources. If you want to change specific parts of the default generated solution, you can import resources into CloudFormation/CDK and change them, but the ECS service will always be the owner of the resources. In an enterprise context where I see a lot of infrastructure as code, I wonder about the developer experience and aspects like compliance rules. 
+After playing with ECS Express Mode for a while, it made me think. Who is in control of the resources created in your account? Who is responsible for its state? According to the ECS team they are not using CloudFormation internally, but are working with the direct APIs and use their own internal state for managing all resources. If you want to change specific parts of the default generated solution, you can import resources into CloudFormation/CDK and change them, but the ECS service will always be the owner of the resources. In an enterprise context where I see a lot of infrastructure as code, I wonder about the developer experience and aspects like compliance rules.
 
 ### CDK L3 constructs vs ECS Express Mode
 
@@ -215,14 +220,14 @@ If you're an experienced ECS and AWS CDK user you might question how Express Mod
 
 ## Closing Thoughts
 
-I like what the ECS team has created for ECS Express Mode. You get a lot of value for a little bit of configuration. For getting things up and running fast, I'm  definitely going to use it. It's really great to go from a container image to a production like environment in a matter of minutes. If you're already a heavy CDK user, you might have created something similar in the past based on L2 or L3 constructs.
-There are still quite some cases I want to explore further to see how ECS express mode compares to a set of L2/L3 constructs. The service is quite new therefor I hope the service gets some nice updates in the near future, like more deployment strategy, and perhaps custom domain support.
+I like what the ECS team has created with ECS Express Mode. It's really great to go from a container image to a production like environment in a matter of minutes. This is going to work great for demo's and quick PoCs. Looking at this from an infrastructure as code perspective it feels a bit unnatural though as the ExpressGatewayService hides a lot of other AWS resources. If you're already a heavy CDK user, you might feel you have too little control over your resources. You can get a similar experience with creating your own L3 construct or using an existing one like the **ApplicationLoadBalancedFargateService.**
+There are still some cases I want to explore further to see how ECS express mode compares to a set of L2/L3 constructs and how to handle changes to the individual components created by the express gateway service. The service is quite new, therefor I hope it will get some nice updates in the near future, like more deployment strategies, and perhaps custom domain support. If you've not looked at ECS Express Mode before I think it's definitely worth to take a look and see if it works for your specific use case.
 
 ## Further resources
 
 - [Build production-ready applications with Amazon ECS Express Mode](https://www.youtube.com/watch?v=z9JUEQjpGgY) (Containers from the Couch)
 - [Build production-ready applications without infrastructure complexity using Amazon ECS Express Mode](https://aws.amazon.com/blogs/aws/build-production-ready-applications-without-infrastructure-complexity-using-amazon-ecs-express-mode/) (AWS Blog)
 - [From image to HTTPS endpoint in one step with ECS Express Mode](https://dev.to/aws-builders/from-image-to-https-endpoint-in-one-step-with-ecs-express-mode-1oi2)
-- GitHub repository containing an ECS Express Mode sample CDK application with code mentioned in this blogpost.
+- [GitHub repository](https://github.com/jreijn/demos-aws-cdk/tree/develop/aws-cdk-ecs-express) containing an ECS Express Mode sample CDK application with code mentioned in this blogpost.
 
 > Photo by <a href="https://unsplash.com/@timelabpro?utm_source=sveltia-cms&amp;utm_medium=referral">Timelab</a> on <a href="https://unsplash.com/?utm_source=sveltia-cms&amp;utm_medium=referral">Unsplash</a>
