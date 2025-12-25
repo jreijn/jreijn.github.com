@@ -188,9 +188,9 @@ The express mode service we created previously uses AWS best practices. If you h
 
 By default the ECS server will run in the default VPC and in a public subnet. You can specify alternative network settings for your service depending on your requirements. For instance your can switch to a different VPC and subnet. Because you can change the ECS cluster, you can probably also use Fargate Spot or EC2 based compute instead. I have not tested that though, and it might be something for another blog post.
 
-Some settings can't be changed right now. Canary deployment for instance is the only supported deployment strategy. I think it's a great default, but I hope they will add linear or blue/green deployment as these strategies are now [ECS supported deployment strategies](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html).
+Some settings can't be configured right now. Canary deployment for instance is the only supported deployment strategy. I think it's a great default, but I hope they will add linear or blue/green deployment as these strategies are now [ECS supported deployment strategies](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html).
 
-ECS Express mode only allows you to configure a single container. If you're currently using ECS and are using a sidecar container for for instance observability purposes, you won't be able to do that with ECS express mode. You might want to consider using an Open Telemetry library, which integrates with your application framework.
+ECS Express mode only allows you to configure a single container. If you're currently using ECS and are using a sidecar container for for instance observability purposes, you won't be able to do that during creation with ECS express mode. You might want to consider using an Open Telemetry library, which integrates with your application framework. If you really need a sidecar container you can import the task defintion into your stack, once it has been created. Express Mode will keep 'manual' changes during additional deployments / updates.
 
 ### Configuring a WAF for your ECS service
 
