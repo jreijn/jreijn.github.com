@@ -46,3 +46,11 @@ url = "https://stackoverflow.com/users/571007/jeroen"
 
 [social.params]
 icon = "brand-stackoverflow"
+
+[[social]]
+identifier = "medium"
+name = "Medium"
+url = "https://medium.com/@jreijn"
+
+[social.params]
+icon = "brand-medium"
