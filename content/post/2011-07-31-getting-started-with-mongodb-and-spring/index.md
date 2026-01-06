@@ -4,6 +4,8 @@ categories:
 comments: false
 date: "2011-07-31T00:00:00Z"
 title: Getting started with MongoDB and Spring Data
+aliases:
+- getting-started-with-mongodb-and-spring
 ---
 
 

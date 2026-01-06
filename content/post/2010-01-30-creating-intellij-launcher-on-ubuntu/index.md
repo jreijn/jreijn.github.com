@@ -4,6 +4,8 @@ categories:
 comments: true
 date: "2010-01-30T00:00:00Z"
 title: Creating an IntelliJ launcher on Ubuntu 9.10
+aliases:
+- creating-intellij-launcher-on-ubuntu
 ---
 
 Over the last couple of months I've slowly switched from <a href="http://www.eclipse.org/">Eclipse</a> to <a href="http://www.jetbrains.com/idea/">IntelliJ 9</a> as my main IDE for Java development. After having used Eclipse for more then 5 years I got pointed to IntelliJ by friends from <a href="http://jteam.nl/">JTEAM</a>, that I'm working with at one of my projects. They challenged me to start using IntelliJ, because I would eventually be impressed and would never want to switch back.

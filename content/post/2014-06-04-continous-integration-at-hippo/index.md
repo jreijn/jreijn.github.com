@@ -5,6 +5,8 @@ categories:
 - Software Engineering
 - CI/CD
 title: Continuous Integration at Hippo
+aliases:
+- continous-integration-at-hippo
 ---
 
 Personally I always like to read how other companies do software development, but sharing our way is probably just as interesting to others.

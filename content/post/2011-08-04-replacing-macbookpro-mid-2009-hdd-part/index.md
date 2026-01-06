@@ -2,6 +2,8 @@
 comments: false
 date: "2011-08-04T00:00:00Z"
 title: Replacing the MacBookPro mid 2009 HDD part 2
+aliases:
+- replacing-macbookpro-mid-2009-hdd-part
 ---
 
 As you might have read in my <a href="http://blog.jeroenreijn.com/2011/06/macbook-pro-replacing-internal-hdd.html">previous upgrade post</a> I initially wanted to upgrade my MacBookPro5,4 mid 2009 model with an SSD. Since my initial search for a compatible SSD I've read tons of articles on the web describing this same issue, but without a solid answer. It's been quite a challenge to figure out what to do and I almost gave up on the idea of being able to use an SSD until I found the <a href="http://failedexe.com/2010/04/08/installing-a-ssd-in-a-macbook-pro-unibody">this excellent blogpost</a> by David Leach.

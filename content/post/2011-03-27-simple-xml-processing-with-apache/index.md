@@ -4,6 +4,8 @@ categories:
 comments: false
 date: "2011-03-27T00:00:00Z"
 title: Simple XML processing with Apache Cocoon 3
+aliases:
+- simple-xml-processing-with-apache
 ---
 
 It's been a while since I've last used <a href="http://cocoon.apache.org/">Apache Cocoon</a>. I can still remember the day that I was using Cocoon for doing all my web development projects. My first introduction with Cocoon was when I started at <a href="http://www.onehippo.com/">Hippo</a> about 8 years ago. In comparison to other frameworks, I sometimes miss the simplicity of the Cocoon pipeline concept when I have to work with XML. Especially processing larger XML files is pain in most IDE's.

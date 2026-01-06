@@ -3,6 +3,8 @@ categories: null
 comments: false
 date: "2011-06-26T00:00:00Z"
 title: 'MacBook Pro: Replacing the internal HDD'
+aliases:
+- macbook-pro-replacing-internal-hdd
 ---
 
 <a href="http://1.bp.blogspot.com/-H-R6-ZM_YEs/TgeEHfAt1uI/AAAAAAAAAc8/CYUR-j867P8/s1600/Apple-logo.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-H-R6-ZM_YEs/TgeEHfAt1uI/AAAAAAAAAc8/CYUR-j867P8/s1600/Apple-logo.jpg" /></a>

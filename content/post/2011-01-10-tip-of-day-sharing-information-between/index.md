@@ -4,6 +4,8 @@ categories:
 comments: true
 date: "2011-01-10T00:00:00Z"
 title: 'Tip of the day: sharing information between HST components'
+aliases:
+- tip-of-day-sharing-information-between
 ---
 
 If you're working as a web developer with <a href="http://www.onehippo.org/">Hippo CMS</a>, I guess you have written quite a few HST components. I presume that by now you will have a basic understanding of what HST components can and can't do.

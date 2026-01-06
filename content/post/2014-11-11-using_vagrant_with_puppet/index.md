@@ -2,6 +2,8 @@
 comments: false
 date: "2014-11-11T00:00:00Z"
 title: Vagrant, provisioning and Puppet
+aliases:
+- using_vagrant_with_puppet
 ---
 
 I still remember my early days with [Vagrant](http://vagrantup.com). I was amazed with how easy it was to create a new virtual machine from scratch. Remember those days when you had to mount an ISO or DVD before installing Linux in a VM? I'm happy that that belongs to the past now. 

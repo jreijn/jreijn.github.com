@@ -4,6 +4,8 @@ categories:
 comments: true
 date: "2009-03-30T00:00:00Z"
 title: 'Apache Camel: open source integration framework'
+aliases:
+- apache-camel-open-source-integration
 ---
 
 I'm currently working on a project where we are looking at creating an integration layer for external applications to connect to our back-end applications. In our case, one of the back-end applications is <a href="http://docs.onehippo.org/">Hippo CMS 7's</a> repository.

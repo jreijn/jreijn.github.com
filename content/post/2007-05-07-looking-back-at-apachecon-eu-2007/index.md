@@ -2,6 +2,8 @@
 comments: true
 date: "2007-05-07T00:00:00Z"
 title: Looking back at the ApacheCon EU 2007
+aliases:
+- looking-back-at-apachecon-eu-2007
 ---
 
 Last week I had to finish up some work just before being able to leave for the <a title="ApacheCon" target="_blank" href="http://www.eu.apachecon.com/">ApacheCon</a> EU 2007. I wanted to go there on Wednesday, to see Stefano's <a href="http://www.eu.apachecon.com/program/talk/13">No-Nonsense Introduction to "semantic web" Technologies</a> and some Lucene talks, but I got held up until late in the afternoon.
