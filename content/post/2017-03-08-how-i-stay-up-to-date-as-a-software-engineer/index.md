@@ -1,9 +1,10 @@
 ---
-comments: false
-date: "2017-03-08T00:00:00Z"
 title: How I stay up to date as a software engineer
+date: 2017-03-08T00:00:00Z
+image: https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTc5ODl8MHwxfHNlYXJjaHwzOHx8bGVhcm5pbmd8ZW58MHx8fHwxNzY3NzAyMDc2fDA&ixlib=rb-4.1.0&q=80&w=1080
+description: ''
+comments: false
 ---
-
 I've been reading [this recent thread](https://news.ycombinator.com/item?id=13816627) on Hacker News with interest. Over the last couple of years (even before being a parent) I gave this a lot of thought and have been asked about how I stay up to date as a software engineer by co-workers quite often.
 As a software engineer it's important to keep learning and with learning, I don't just mean working with a new technology like Docker or React, but also learning about the concepts behind these technologies and what problems they are trying to solve.
 
@@ -28,6 +29,7 @@ Now that I think of it, there is a large variety of sources that I use to stay u
 I don't think listing all of them adds any value, so I'll highlight a few that help me out the most.
 
 ## Twitter
+
 Twitter is probably my biggest input stream of interesting content. The Twitter stream is an unlimited source of ideas, opinions, and links to interesting topics. It's almost instant and the amount of content during a day can be overwhelming.
 What I've learned is that it's important to be selective in which accounts you follow. So how do you choose who to follow on Twitter?
 
@@ -96,3 +98,5 @@ Just to name a few of the channel subscriptions I have on YouTube:
 ## Summary
 
 I hope you have a little inspiration now. My advice would be to digest at your own pace. Select topics that interest you or broaden your horizon and try to explore areas out of your comfort zone. Let me know if you have other valuable resources that I really need to see, read or listen too!
+
+> Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=sveltia-cms&amp;utm_medium=referral">Christin Hume</a> on <a href="https://unsplash.com/?utm_source=sveltia-cms&amp;utm_medium=referral">Unsplash</a>
