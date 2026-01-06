@@ -7,6 +7,8 @@ categories:
 tags:
 - java
 title: Heap dump with lots of 'Unresolved Name' objects
+aliases:
+- heapdump-unresolved-name
 ---
 
 If you're familiar with Java as a programming language you might have come across the following message: *java.lang.OutOfMemoryError: Java heap space*. We recently got that message in of the services that we're currently working on. 

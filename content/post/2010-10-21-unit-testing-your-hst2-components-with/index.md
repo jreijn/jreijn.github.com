@@ -4,6 +4,8 @@ categories:
 comments: true
 date: "2010-10-21T00:00:00Z"
 title: Unit testing your HST2 components with EasyMock
+aliases:
+- unit-testing-your-hst2-components-with
 ---
 
 Quality is an important aspect of every software development project. Writing unit tests is just one part of keeping an eye on quality. In this post I will try to explain how you can unit test your <a href="http://www.onehippo.org/site-toolkit/index.html">Hippo Site Toolkit (HST2)</a> components, so you can be sure that the component still behaves as expected even after multiple maintenance cycles.

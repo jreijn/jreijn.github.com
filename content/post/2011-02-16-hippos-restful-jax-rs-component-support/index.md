@@ -4,6 +4,8 @@ categories:
 comments: false
 date: "2011-02-16T00:00:00Z"
 title: HIPPOs RESTful JAX-RS Component Support and Spring Android
+aliases:
+- hippos-restful-jax-rs-component-support
 ---
 
 
