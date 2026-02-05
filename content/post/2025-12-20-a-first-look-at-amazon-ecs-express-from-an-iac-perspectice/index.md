@@ -60,7 +60,9 @@ const taskExecutionRole = new Role(this, 'executionRole', {
     roleName: 'cdk-ecs-express-demo-execution-role',
     assumedBy: new ServicePrincipal('ecs-tasks.amazonaws.com'),
     description: 'ECS Task Execution Role',
-    managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('service-role/AmazonECSTaskExecutionRolePolicy')]
+    managedPolicies: [
+        ManagedPolicy.fromAwsManagedPolicyName('service-role/AmazonECSTaskExecutionRolePolicy')
+    ]
 });
 ```
 
@@ -71,7 +73,9 @@ const infrastructureRole = new Role(this,'infrastructureRole', {
     roleName: 'cdk-ecs-express-demo-infrastructure-role',
     assumedBy: new ServicePrincipal('ecs.amazonaws.com'),
     description: 'ECS Task Infrastructure Role',
-    managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('service-role/AmazonECSInfrastructureRoleforExpressGatewayServices')]
+    managedPolicies: [
+        ManagedPolicy.fromAwsManagedPolicyName('service-role/AmazonECSInfrastructureRoleforExpressGatewayServices')
+    ]
 });
 ```
 
