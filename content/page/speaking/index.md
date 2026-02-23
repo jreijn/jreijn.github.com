@@ -14,6 +14,7 @@ readingTime: false
 
 | Title         | Venue         | Year  | Links |
 | ------------- |:-------------:| :-----:|-----:       |
+| re:Invent re:cap - Amazon ECS Express Mode | [AWS User Group The Netherlands](https://www.meetup.com/awsugnl/) | 2026 | [Meetup](https://www.meetup.com/awsugnl/events/312635517/) |
 | Java Cloud Migrations | [Java in the Cloud](https://www.youtube.com/@JavaInTheCloud) | 2025 | <a href="https://www.youtube.com/watch?v=6I8FTA8iiBw">Video</a>  |
 | Production-ready Lambda functions with Lambda PowerTools | [AWS User Group The Netherlands](https://www.meetup.com/awsugnl/) | 2025 | [Meetup](https://www.meetup.com/awsugnl/events/306912455/) |
 | Accelerating the AWS Journey: (Open Source) Tools for getting teams up to speed | [AWS Summit Amsterdam](https://aws.amazon.com/events/summits/emea/amsterdam) | 2024 | <a href="https://speakerdeck.com/jreijn/accelerating-the-aws-journey-open-source-tools-for-getting-teams-up-to-speed">Slides</a> |
