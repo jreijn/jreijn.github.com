@@ -2,7 +2,10 @@
 title: "AWS Transit Gateway Stack Walkthrough" 
 date: 2025-02-14
 draft: true
-tags: [aws, networking, transit-gateway, vpn, ram, ssm, cloudformation] 
+tags: [aws, networking, transit-gateway, vpn, ram, ssm, cloudformation]
+categories:
+- AWS
+- Cloud Engineering
 ---
 Overview
 
