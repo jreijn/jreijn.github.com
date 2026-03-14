@@ -1,5 +1,4 @@
 ---
-canonical_url: https://www.luminis.eu/blog/develop-and-test-your-github-actions-workflow-locally-with-act/
 comments: false
 date: "2023-07-03T00:00:00Z"
 image: /assets/2023/helio-dilolwa-jFbhhadKV5g-unsplash.jpg
