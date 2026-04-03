@@ -1,5 +1,4 @@
 ---
-canonical_url: https://www.luminis.eu/blog/cloud-en/improve-aws-security-and-compliance-with-cdk-nag/
 comments: false
 date: "2023-04-12T00:00:00Z"
 image: /assets/2023/niv-singer-LkD_IH8_K8k-unsplash.jpg

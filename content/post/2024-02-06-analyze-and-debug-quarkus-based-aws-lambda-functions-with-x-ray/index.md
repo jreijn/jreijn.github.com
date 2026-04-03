@@ -1,5 +1,4 @@
 ---
-canonical_url: https://www.luminis.eu/blog/analyze-and-debug-quarkus-based-aws-lambda-functions-with-x-ray/
 comments: false
 date: "2024-02-06T20:00:00Z"
 image: /assets/2024/mari-lezhava-q65bNe9fW-w-unsplash.jpg

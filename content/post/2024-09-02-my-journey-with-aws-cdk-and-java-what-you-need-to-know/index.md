@@ -1,6 +1,4 @@
 ---
-canonical: https://www.luminis.eu/blog/my-journey-with-aws-cdk-and-java-what-you-need-to-know/
-canonical_url: https://www.luminis.eu/blog/my-journey-with-aws-cdk-and-java-what-you-need-to-know/
 comments: false
 date: "2024-09-02T11:00:00Z"
 image: /assets/2024/scott-rodgerson-PSpf_XgOM5w-unsplash_layered.jpg

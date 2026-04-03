@@ -27,6 +27,10 @@ When I'm not architecting cloud solutions or sharing my expertise, you’ll find
 
 I like to share my experience and thoughts through public speaking and below are some of the events I’ve had the privilege to participate as a speaker.
 
+### 2026
+- [AWS re:Invent re:Cap Amazon ECS Express Mode - From an IaC perspective ](https://speakerdeck.com/jreijn/aws-re-invent-re-cap-amazon-ecs-express-mode) - AWS User Group The Netherlands Meetup
+
+
 ### 2025
 - [Production-ready Lambda functions with Lambda PowerTools](https://www.meetup.com/awsugnl/events/306912455/) - AWS User Group The Netherlands Meetup
 
