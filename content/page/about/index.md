@@ -29,6 +29,7 @@ I like to share my experience and thoughts through public speaking and below are
 
 ### 2026
 - [AWS re:Invent re:Cap Amazon ECS Express Mode - From an IaC perspective ](https://speakerdeck.com/jreijn/aws-re-invent-re-cap-amazon-ecs-express-mode) - AWS User Group The Netherlands Meetup
+- [Lessons learned from building AI Agents With Java, Spring AI and Amazon Bedrock AgentCore](https://speakerdeck.com/jreijn/lessons-learned-from-building-ai-agents-with-java-spring-ai-and-amazon-bedrock-agentcore) - AWS User Group The Netherlands Meetup
 
 
 ### 2025
