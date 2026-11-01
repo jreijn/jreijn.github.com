@@ -2,7 +2,7 @@
 title: How a missing IAM policy statement slowly increased the AWS bill
 date: 2026-11-01T19:05:00+01:00
 image: https://images.unsplash.com/photo-1730804518415-75297e8d2a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTA0ODl8MHwxfHNlYXJjaHwxfHxtaXNzaW5nfGVufDB8fHx8MTc5MzU1NjYwOXww&ixlib=rb-4.1.0&q=80&w=1080
-description: How a missing EC2 Image Builder IAM permission left old EBS snapshots behind and slowly increased the AWS bill.
+description: Learn how a missing ec2:CreateTags permission in AWS EC2 Image Builder left EBS snapshots untagged, blocked lifecycle cleanup, and drove up cloud costs.
 tags:
   - aws
   - iam
