@@ -1,5 +1,5 @@
 baseURL="https://www.jeroenreijn.com"
-#languageCode="en-us"
+locale="en-us"
 title="Build with Jeroen"
 theme="hugo-theme-stack"
 ignoreLogs = ['warning-goldmark-raw-html']
